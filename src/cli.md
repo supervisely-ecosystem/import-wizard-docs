@@ -45,4 +45,5 @@ In the following **optional** arguments, replace:
 > The list of formats currently available to upload using the CLI is not final and may be extended in the future. If you find that a certain format you need is not currently available, you can contact the developers and request that it be added.
 
 TODO: Change project level to dataset level (upload dataset using CLI)
+
 TODO: Add sly.ImportManager in CLI
