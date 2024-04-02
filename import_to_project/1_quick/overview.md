@@ -1,9 +1,7 @@
 # Quick import
 
-description: >-
-Drag and drop your local data to upload it quickly.
+> description: Drag and drop your local data to upload it quickly.
 
-overview: >-
 The Drag and Drop widget allows you to upload your local data to the Supervisely platform quickly. Supported formats presented below.
 
 ℹ️ If no format is detected, the application will import only items without annotations.

@@ -1,9 +1,8 @@
 # Python
 
-description: >-
-Use Supervisely SDK to upload your local data to Supervisely platform.
+> description: Use Supervisely SDK to upload your local data to Supervisely platform.
 
-Learn more about the Supervisely SDK [here](https://developer.supervisely.com/getting-started/python-sdk-tutorials).
+Learn more about the Supervisely SDK in out [developer portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials).
 
 ## Ready-to-use Python script
 
@@ -22,8 +21,8 @@ if sly.is_development():
 api = sly.Api()
 
 # Set your project type and source directory with your local dataset
-PROJECT_TYPE = sly.ProjectType.IMAGES
-SRC_DIR = "path/to/your/local/dataset"
+PROJECT_TYPE = sly.ProjectType.IMAGES # ⬅️ Set your project type
+SRC_DIR = "path/to/your/local/dataset" # ⬅️ Set your source directory
 
 workspace_id = sly.env.workspace_id()
 project = api.project.create(workspace_id, "My project", PROJECT_TYPE, change_name_if_conflict=True)
@@ -35,7 +34,7 @@ importer = sly.ImportManager(SRC_DIR, PROJECT_TYPE)
 # upload dataset
 importer.upload_dataset(dataset.id)
 
-print("Success! Your dataset has been uploaded.")
+print("✅ Your dataset has been uploaded.")
 ```
 
 ## Prerequisites

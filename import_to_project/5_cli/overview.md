@@ -1,7 +1,6 @@
 # Command Line Interface (CLI)
 
-description: >-
-Use CLI to upload your data right inside your console locally to Supervisely platform.
+> description: Use CLI to upload your data right inside your console locally to Supervisely platform.
 
 ## Prerequisites
 

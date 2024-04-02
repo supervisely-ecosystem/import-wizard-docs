@@ -1,0 +1,1 @@
+Check out our youtube tutorials: for [Windows](https://www.youtube.com/watch?v=WR9qrPTn2X8) or for [Linux/MacOS](https://www.youtube.com/watch?v=aO7Zc4kTrVg).
