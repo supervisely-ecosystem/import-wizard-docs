@@ -6,17 +6,29 @@
 
 > Before you start, read our [from script to supervisely app](https://developer.supervisely.com/app-development/basics/from-script-to-supervisely-app) guide if you are unfamiliar with the file structure of a Supervisely app repository because it addresses the majority of the potential questions.
 
-Supervisely provides [complete guidance](https://developer.supervisely.com/app-development/create-import-app/overview) with 3 options to create an import application:
+Supervisely provides 3 options to create an import application:
 
     - From template - simple (recommended ✅)
     - From scratch - simple
     - From scratch GUI - advanced
 
-We recommend using the import template for creating custom import applications using class `sly.app.Import` from Supervisely SDK. It is the easiest way to create import app with a convenient GUI. It is designed to speed up and simplify the development of import apps.
+In this guide, we will show you the easiest way to create an import application – from template. Learn more about the other options in the [complete guidance](https://developer.supervisely.com/app-development/create-import-app/overview).
+
+## ❔ What does it mean to create an import application from a template?
+
+It means using the class `sly.app.Import` from Supervisely SDK. Only thing you need to do is to reimplement the `process` method.
+
+The template will take care of the rest:
+
+    - It will create a GUI for you.
+    - It will handle the upload process.
+    - It will provide you with the necessary variables in the `context` object.
+
+It is the easiest way to create import app with a convenient GUI. It is designed to speed up and simplify the development of import apps.
 
 📚 You can find the example of the import app in the GitHub [repository](https://github.com/supervisely-ecosystem/template-import-app)
 
-# How to create a custom import application:
+## How to create a custom import application:
 
 1. Fork and Clone the [template-import-app](https://github.com/supervisely-ecosystem/template-import-app)
 

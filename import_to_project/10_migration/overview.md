@@ -2,7 +2,7 @@
 
 > description: Import data from other labeling services.
 
-Supervisely provides a way to import data from other labeling services. This option allows you to import data from other labeling services, such as Labelbox, CVAT, V7, Roboflow (the list can be extended).
+Supervisely provides a way to import data from other labeling services. This option allows you to import your data from Labelbox, CVAT, V7, and Roboflow (the list can be extended).
 
 Here is the list of applications that can be used for migration:
 

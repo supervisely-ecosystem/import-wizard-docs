@@ -2,8 +2,9 @@
 
 > description: Import your data without duplicating it in Supervisely platform. Data stored in your storage and will be visible in Supervisely.
 
-This method allows you to import data to Supervisely without duplicating it in the platform. The data will be stored in your storage and will be visible in Supervisely.
-It can be useful when you have a large dataset (hundreds of gigabytes or more) and you don't want to upload it to Supervisely.
+This method allows you to import data to Supervisely without duplicating it in the platform.
+
+The data will be stored in your storage and will be visible in Supervisely. It can be useful when you have a large dataset (hundreds of gigabytes or more) and you don't want to upload it to Supervisely.
 
 Application will upload data using links to your data.
 
