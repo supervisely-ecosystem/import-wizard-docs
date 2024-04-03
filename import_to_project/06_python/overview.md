@@ -88,5 +88,8 @@ WORKSPACE_ID=942
 TEAM_ID=506
 ```
 
+**5. Run the script**
+
+
 TODO: automatically add project_id to the script
 TODO: automatically add dataset name to the script

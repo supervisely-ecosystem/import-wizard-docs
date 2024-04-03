@@ -2,9 +2,9 @@
 
 > description: Import data from Team Files.
 
-This option allows you to import data from the Team Files.
+This option allows you to import data from the Team Files. It is a convenient way to import data without uploading it manually every time you want to import the same data.
 
-✅ It is a convenient way to import data without uploading it manually every time you want to import the same data.
+    === Team Files selector widget ===
 
 ## How to use:
 

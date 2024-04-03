@@ -2,6 +2,10 @@
 
 > description: Import data to Supervisely platform using your agent (local machine, server, etc.).
 
+Import data to Supervisely platform using Your Agent. Supports the same data types and formats as the `Quick` import method.
+
+    === Agent files/folders selector widget ===
+
 Suppervisely allows you to connect your own computers with GPU to the platform and use them for model training, inference and evaluation ✨ for FREE.
 
 ✅ It is as simple as running a single command in the terminal on your machine. Check out our youtube tutorials: for [Windows](https://www.youtube.com/watch?v=WR9qrPTn2X8) or for [Linux/MacOS](https://www.youtube.com/watch?v=aO7Zc4kTrVg).

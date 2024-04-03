@@ -2,7 +2,7 @@
 
 > description: Import data from connected cloud storage to Supervisely platform.
 
-☁️ Cloud storage import allows you to import data from connected cloud storage to Supervisely platform.
+☁️ Cloud storage import allows you to import data from cloud storage connected to Supervisely platform.
 
 It is a convenient way to import data without downloading it to your local machine first. It is especially useful when you have large datasets stored in the cloud.
 
