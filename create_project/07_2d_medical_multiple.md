@@ -1,0 +1,1 @@
+Import DICOM images and activate the grouped view in the Labeling Tool Interface to display them on a single screen. This is useful for medical images that are part of a series, such as MRIs and CT scans.
