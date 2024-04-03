@@ -2,7 +2,7 @@
 
 > description: Use CLI to upload your data right inside your console locally to Supervisely platform.
 
-## Prerequisites
+### Prerequisites
 
 **1. Install Supervisely package**
 
@@ -25,7 +25,7 @@ SERVER_ADDRESS="https://app.supervise.ly"
 API_TOKEN="4r47N.....blablabla......xaTatb"
 ```
 
-## Upload a Project using CLI
+### Upload a Project using CLI
 
 ```bash
 supervisely project upload -s <source-local> -id <workspace-id> -n <project-name>

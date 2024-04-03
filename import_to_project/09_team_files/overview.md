@@ -6,7 +6,7 @@ This option allows you to import data from the Team Files. It is a convenient wa
 
     === Team Files selector widget ===
 
-## How to use:
+### How to use
 
 1. Upload your data to the Team Files (if it is not already there).
 

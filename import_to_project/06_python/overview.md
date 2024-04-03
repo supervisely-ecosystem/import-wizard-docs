@@ -4,7 +4,7 @@
 
 Learn more about the Supervisely SDK in out [developer portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials).
 
-## Ready-to-use Python script
+### Ready-to-use Python script
 
 Use the Supervisely SDK to upload your local data to the Supervisely platform. Here is a ready-to-use Python script that you can run in your local environment to upload your dataset to Supervisely platform:
 
@@ -37,7 +37,7 @@ importer.upload_dataset(dataset.id)
 print("✅ Your dataset has been uploaded.")
 ```
 
-## Prerequisites
+### How to use
 
 Before running the script, make sure you have completed the following steps:
 

@@ -12,7 +12,7 @@ Suppervisely allows you to connect your own computers with GPU to the platform a
 
 And one of features of Your Agent is the ability to run applications on your local machine. You can use it to upload images, videos, volumes, pointclouds, and annotations to Supervisely platform.
 
-Here are the main steps to use Your Agent:
+### How to use
 
 0. Prerequisites: Connect Your Agent (if you haven't done it yet)
 

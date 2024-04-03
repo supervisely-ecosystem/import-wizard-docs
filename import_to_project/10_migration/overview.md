@@ -6,7 +6,7 @@ Supervisely provides a way to import data from other labeling services. This opt
 
 Here is the list of applications that can be used for migration:
 
-== Labelbox, CVAT, V7, Roboflow migration apps==
+    == Labelbox, CVAT, V7, Roboflow migration apps==
 
 ℹ️ Note:
 

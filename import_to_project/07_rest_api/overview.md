@@ -10,18 +10,18 @@ Find the full list of available endpoints in the [API Documentation](https://api
 
 > ℹ️ For Python developers, we recommend using our Python SDK because it wraps up all API methods and can save you a lot of time with built-in error handling, network re-connection, response validation, request pagination, and so on.
 
-## Authentication
+### Authentication
 
 The client has to send authentication header to endpoints. Please obtain your token by selecting `Account Settings` -> `API Tokens` in [user menu](https://app.supervisely.com/user/settings/tokens). Provide this token in every request in header `x-api-key.`
 
-## Making HTTP requests
+### Making HTTP requests
 
 Please follow these rules working with Supervisely API:
 
 - HTTP methods (like `GET` or `POST`) mentioned here are totally optionally. We accept any method: i.e. you can send every request with POST.
 - When sending data, you must explicitly set the Content-type HTTP header to `application/json`. We won't interpret your POST body as such without it.
 
-## Example
+### Example
 
 cURL Example (replace `<your-token-here>` with your actual token) and `<your-workspace-id>` with your actual workspace id)
 

@@ -14,7 +14,7 @@ Supervisely provides 3 options to create an import application:
 
 In this guide, we will show you the easiest way to create an import application – from template. Learn more about the other options in the [complete guidance](https://developer.supervisely.com/app-development/create-import-app/overview).
 
-## ❔ What does it mean to create an import application from a template?
+### What does it mean to create an import application from a template?
 
 It means using the class `sly.app.Import` from Supervisely SDK. Only thing you need to do is to reimplement the `process` method.
 
@@ -28,7 +28,7 @@ It is the easiest way to create import app with a convenient GUI. It is designed
 
 📚 You can find the example of the import app in the GitHub [repository](https://github.com/supervisely-ecosystem/template-import-app)
 
-## How to create a custom import application:
+### How to create a custom import application:
 
 1. Fork and Clone the [template-import-app](https://github.com/supervisely-ecosystem/template-import-app)
 
