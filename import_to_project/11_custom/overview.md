@@ -34,9 +34,31 @@ It is the easiest way to create import app with a convenient GUI. It is designed
 
 2. Open the cloned repository in your favorite IDE
 
-3. Set up the working environment - here is a link with a description of the steps.
+```bash
+git clone <your_forked_repo>
+cd template-import-app
+code .
+```
+
+3. Set up the working virtual environment and install the required packages.
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 4. Open `local.env` files and set up environment variables by inserting your values here for debugging.
+
+```env
+TEAM_ID=8                      # ⬅️ change it to your team ID
+WORKSPACE_ID=349               # ⬅️ change it to your workspace ID
+SLY_APP_DATA_DIR="input/"      # ⬅️ path to directory for local debugging
+
+# Optional. Specify following variables if you want to import data to existing:
+# PROJECT_ID=20811             # ⬅️ put your value here
+# DATASET_ID=64686             # ⬅️ put your value here | requires PROJECT_ID
+```
 
 5. Open `main.py` and write your logic to upload data to Supervisely platform.
 
@@ -58,10 +80,31 @@ else:
 
 class MyImport(sly.app.Import):
     def process(self, context: sly.app.Import.Context):
+        # create api object to communicate with Supervisely Server
+        api = sly.Api.from_env()
 
-        # ... your logic here
+        # get or create project
+        project_id = context.project_id
+        if project_id is None:
+            project = api.project.create(
+                workspace_id=context.workspace_id,
+                name=context.project_name or "My Project",
+                change_name_if_conflict=True,
+            )
+            project_id = project.id
 
-        return project_id # ⬅️ return project_id
+        # get or create dataset
+        dataset_id = context.dataset_id
+        if dataset_id is None:
+            dataset = api.dataset.create(
+                project_id=project_id, name="ds0", change_name_if_conflict=True
+            )
+            dataset_id = dataset.id
+
+        # * your logic here:
+        # ...
+
+        return project_id # ℹ️ return project_id
 
 
 app = MyImport()
