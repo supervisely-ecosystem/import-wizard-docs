@@ -4,7 +4,7 @@
 
 The Drag and Drop widget allows you to upload your local data to the Supervisely platform quickly. Supported formats presented below.
 
-ℹ️ If no annotation format is specified, the data will be uploaded without annotations.
+ℹ️ If no annotation format is detected, the data will be uploaded without annotations.
 
 ===== D&D widget =====
 
