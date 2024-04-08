@@ -4,7 +4,7 @@
 
 This converter allows to import images with `.json` annotations in [Cityscapes](https://github.com/mcordts/cityscapesScripts) format.
 
-⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` format.
+⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` extension.
 
 * **Supported file formats:** all image formats which supported by Supervisely.
 * **With annotations:** Yes
