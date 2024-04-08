@@ -4,6 +4,8 @@
 
 This converter allows to import images with `.json` annotations in [Cityscapes](https://github.com/mcordts/cityscapesScripts) format.
 
+⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` format.
+
 * **Supported file formats:** all image formats which supported by Supervisely.
 * **With annotations:** Yes
 * **Grouped by:** No
@@ -135,7 +137,7 @@ Here's an example of the correct directory structure:
 
 # Python SDK example
 
-You can also use Supervisely Python SDK to import multispectral images. Here's an example of how to do it:
+You can also use Supervisely Python SDK to import cityscape format. Here's an example of how to do it:
 
 ```python
 # TBD after converter release
