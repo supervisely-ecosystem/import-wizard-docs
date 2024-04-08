@@ -30,7 +30,7 @@ Here's an example of the correct directory structure:
 
 # Python SDK example
 
-You can also use Supervisely Python SDK to import multispectral images. Here's an example of how to do it:
+You can also use Supervisely Python SDK to import `.PDF` files. Here's an example of how to do it:
 
 ```python
 # TBD after converter release
