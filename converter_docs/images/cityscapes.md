@@ -10,10 +10,10 @@ This converter allows to import images with `.json` annotations in [Cityscapes](
 * **Supported image types:** Not applicable
 * **Supported alpha channels:** Not applicable
 
-![pdf_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/488fec72-f2fe-4078-a4b3-3105a06e1b8a)
+![cityscapes_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/70b2704b-d986-42e8-88f7-0d150b5cfec0)
 
 # How to use
-You can download an example of data for import [here](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14905329/Sample_PDF.zip).<br>
+You can download an example of data for import [here](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14908276/sample_cityscapes.zip).<br>
 
 In order to import custom annotations for the images, you need to provide a `class_to_id.json` file.
 This file should contain a list with dictionaries.
