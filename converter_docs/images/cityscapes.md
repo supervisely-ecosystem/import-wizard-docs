@@ -21,7 +21,7 @@ In order to import custom annotations for the images, you need to provide a `cla
 This file should contain a list with dictionaries.
 Each dictionary should contain information about the class with the following keys:
 * `name` - the name of the class. It should be unique.
-* `id` - the ID of the class. From 0 to N-1, where N is the number of classes.
+* `id` - the ID of the class. From 1 to N-1, where N is the number of classes.
 * `color` - the color of the class in RGB format. If not specified, the color will be generated randomly
 
 <details>
