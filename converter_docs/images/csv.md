@@ -4,7 +4,14 @@
 
 # Overview
 
-You can easily import Images into Supervisely project using a `.csv`, `.tsv` or `.txt` file. It supports importing images from **Team Files** and by **URLs**. It also allows you to automatically assign tags to each image.
+You can import Images into Supervisely project using a `.csv`, `.tsv` or `.txt` file. Converter supports importing images from **Team Files** and by **URLs**. It also allows you to automatically assign tags to each image.
+
+# Supported file formats
+
+**Supported image formats:** `.csv`, `.tsv`, and `.txt`.<br>
+**With annotations:** no<br>
+**Supported annotation format:** Not applicable<br>
+**Grouped by:** Not applicable<br>
 
 ## Key Features
 - Import Images from **Team Files**
@@ -15,7 +22,6 @@ You can easily import Images into Supervisely project using a `.csv`, `.tsv` or 
 ## How to Use
 
 All images will be uploaded to a single dataset, so you don't have to worry about the full project structure in Supervisely format. All you need is to prepare a file with URLs or paths and drop this file in quick import.
-
 
 ## Input files structure
 
