@@ -9,7 +9,7 @@ Each page of the `.PDF` file will be converted to a separate image. The images w
 
 # Supported file formats
 
-**Supported image formats:** `.pdf`
+**Supported image formats:** `.pdf`<br>
 **With annotations:** Yes<br>
 **Supported annotation format:** No<br>
 **Grouped by:** Not Applicable<br>
