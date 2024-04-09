@@ -1,4 +1,8 @@
-# Import Images via CSV, TSV or TXT file
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/34979d8d-6aca-49b0-b3da-7ea38cb21f63" width="80"> CSV, TSV and TXT Converter </h1>
+
+<br>
+
+# Overview
 
 You can easily import Images into Supervisely project using a `.csv`, `.tsv` or `.txt` file. It supports importing images from **Team Files** and by **URLs**. It also allows you to automatically assign tags to each image.
 
