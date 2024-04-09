@@ -8,14 +8,14 @@ This converter allows to import images with `.json` annotations in [Cityscapes](
 
 ⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` extension.
 
+![cityscapes_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0a7c5af7-158d-4658-a5ab-9902155d9dc1)
+
 # Supported file formats
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
 **Grouped by:** any structure (uploaded to a single dataset)<br>
-
-![cityscapes_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/70b2704b-d986-42e8-88f7-0d150b5cfec0)
 
 # Input files structure
 

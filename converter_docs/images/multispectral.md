@@ -3,25 +3,20 @@
 This converter allows to import of multispectral images as channels or as separate images without annotations.<br>
 Images will be grouped by directories, files from the "split" directory will be split into separate images by channels and the files from the "images" directory will be uploaded as they are.<br>
 
-# Supported file formats
-All image formats which supported by Supervisely. | Добавить ссылку?
-
-# Results?
-Сделать минималистичную инфографику что это картинки, что нет аннотаций, что они сгруппированы? Какие типо изображений поддерживаются (ну там типо 8 битные, альфа каналы и проч)? Совместить этот раздел с предыдущим? Или вообще это все в Overview?<br>
-
-**Supported file formats:** all image formats which supported by Supervisely.<br>
-**With annotations:** no<br>
-**Grouped by:** directories<br>
-**Supported image types:** 8-bit<br>
-**Supported alpha channels:** yes<br>
-
-
 ![Result of the import](https://developer.supervisely.com/~gitbook/image?url=https:%2F%2Fgithub-production-user-asset-6210df.s3.amazonaws.com%2F118521851%2F286217532-c6551cd6-d207-4d13-a9ce-9b31d3e57b8f.png&width=768&dpr=2&quality=100&sign=5575e36422d48d1b5023237e4dd251079e05d8bb2227741e4fc119501625c1b5)
 
-# How to use
+# Supported file formats
+
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**With annotations:** No<br>
+**Supported annotation format:** Not applicable <br>
+**Grouped by:** folders<br>
+
+# Input files structure
 
 You can download an example of data for import [here](https://github.com/supervisely-ecosystem/import-multispectral-images/files/13487269/demo_data.zip).<br>
-Here's an example of the correct directory structure:
+
+Recommended directory structure:
 
 ```text
 📦 project_name

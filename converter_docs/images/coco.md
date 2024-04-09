@@ -8,14 +8,14 @@ This converter allows to import images with annotations in [COCO](https://cocoda
 
 Supervisely supports the following annotation types: instances, keypoints, captions.
 
+![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173)
+
 # Supported file formats
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
 **Grouped by:** any structure (uploaded to a single dataset)<br>
-
-![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/f8d6dd1f-a2a1-4144-92ae-f7a4f90b9bea)
 
 # Input files structure
 

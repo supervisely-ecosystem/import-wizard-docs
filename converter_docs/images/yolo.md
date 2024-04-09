@@ -8,6 +8,8 @@ This converter allows to import images with annotations in [YOLO](https://docs.u
 
 ⚠️ **Note:** If YOLO project do not contain `data_config.yaml` file, it will use default COCO class names.
 
+![yolo_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/4452bac4-9316-41f4-a90c-e27786af738a)
+
 <details>
     <summary> Default COCO class names </summary>
 
@@ -106,9 +108,6 @@ names:
 **With annotations:** yes<br>
 **Supported annotation format:** `.txt`.<br>
 **Grouped by:** any structure (uploaded to a single dataset)<br>
-
-
-![yolo_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/eb79cbe8-74b3-46b4-aadc-1ecb760207a8)
 
 # Input files structure
 
