@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Favatar-1586509921877.png%3Fgeneration=1586509922435383%26alt=media&width=32&dpr=2&quality=100&sign=addbd62464eb0d2b232a524fa7363f850b1cbfc2133351c76bb3e2464d6c4c59" width="80"> Supervisely format Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0546b78a-ce53-4fea-a534-b288a3e6bd30" width="80"> Supervisely format Converter </h1>
 
 <br>
 
