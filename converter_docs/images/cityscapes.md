@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/8c27c4ef-9e60-48cc-9797-57872283f9ac" width="80"> Cityscapes Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/8c27c4ef-9e60-48cc-9797-57872283f9ac" width="80" style="padding-right: 20px;"> Cityscapes Format </h1>
 
 <br>
 
@@ -10,7 +10,7 @@ This converter allows to import images with `.json` annotations in [Cityscapes](
 
 ![cityscapes_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0a7c5af7-158d-4658-a5ab-9902155d9dc1)
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>

@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/34979d8d-6aca-49b0-b3da-7ea38cb21f63" width="80"> CSV, TSV and TXT Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://imgur.com/zlcLjAM.png" width="80" style="padding-right: 20px;"> CSV, TSV and TXT Format </h1>
 
 <br>
 
@@ -6,11 +6,11 @@
 
 You can import Images into Supervisely project using a `.csv`, `.tsv` or `.txt` file. Converter supports importing images from **Team Files** and by **URLs**. It also allows you to automatically assign tags to each image.
 
-# Supported file formats
+# Format description
 
-**Supported image formats:** `.csv`, `.tsv`, and `.txt`.<br>
-**With annotations:** no<br>
-**Supported annotation format:** Not applicable<br>
+**Supported file formats:** `.csv`, `.tsv`, and `.txt`.<br>
+**With annotations:** yes (optional)<br>
+**Supported annotation types:** tags <br>
 **Grouped by:** Not applicable<br>
 
 ## Key Features
@@ -64,6 +64,12 @@ Regardless of the file format you choose (`.csv`, `.tsv`, or `.txt`), you can sp
         https://images.io/image_example_2.png	tag3
         https://images.io/image_example_3.png
     ```
-
-    **Cloud storage link example:**
+    
+    Cloud storage link example:
     <img src="https://user-images.githubusercontent.com/57998637/229191946-d58f8da8-e03e-4e81-bcf2-4c8d804a9843.png" width="1198px">
+
+
+# Useful links
+- [[Supervisely Ecosystem] Import Images from CSV](https://ecosystem.supervise.ly/apps/import-images-from-csv)
+
+    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-from-csv" src="https://imgur.com/Cqe7fjv.png" width="450px" style='padding-bottom: 20px'/>  

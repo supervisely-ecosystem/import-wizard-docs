@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://user-images.githubusercontent.com/48913536/182406824-47397e33-b596-49e7-b7c9-50a22c7e575f.png" width="80">Images with masks converter</h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://user-images.githubusercontent.com/48913536/182406824-47397e33-b596-49e7-b7c9-50a22c7e575f.png" width="80" style="padding-right: 20px;">Images with masks Format</h1>
 
 <br>
 
@@ -7,7 +7,7 @@
 Allows to upload images with annotations in the format of PNG masks. Masks are 3-(1-)channel images containing only pixels that have the same values in all channels, to map pixel masks with the appropriate class app requires `obj_class_to_machine_color.json` file to match classes and colors, otherwise app won't start.
 The converter supports both semantic and instance segmentation masks. All data will be uploaded to a single dataset.
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>

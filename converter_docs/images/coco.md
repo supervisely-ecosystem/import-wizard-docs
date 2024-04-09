@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7ef86a06-c0ba-4dee-ae81-c5e8a959305f" width="80"> COCO Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7ef86a06-c0ba-4dee-ae81-c5e8a959305f" width="80" style="padding-right: 20px;"> COCO Format </h1>
 
 <br>
 
@@ -10,7 +10,7 @@ Supervisely supports the following annotation types: instances, keypoints, capti
 
 ![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173)
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>

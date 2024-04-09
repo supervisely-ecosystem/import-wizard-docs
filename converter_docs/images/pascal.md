@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/79905215/bd1113e2-b3a5-426a-892f-c747c2eda209" width="80">Pascal format Converter</h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/79905215/bd1113e2-b3a5-426a-892f-c747c2eda209" width="80" style="padding-right: 20px;">Pascal VOC Format</h1>
 
 <br>
 
@@ -7,7 +7,7 @@
 The Pascal VOC (Visual Object Classes) format stands as one of the benchmarks established relatively early for object classification, segmentation and detection. It furnishes a standardized dataset for identifying object classes, utilizing an XML-based export format that enjoys widespread adoption in computer vision tasks.
 This converter converts Pascal VOC format to Supervisely format. Learn more how to prepare data in Pascal VOC format and how to import the original Pascal VOC dataset in the [Import Pascal VOC](https://ecosystem.supervisely.com/apps/import-pascal-voc) app.
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
@@ -43,3 +43,11 @@ lemon 81 198 170
 ```
 
 **Action and Layout Classification Image Sets are not supported by import application.**
+
+
+# Useful links
+- [The PASCAL Visual Object Classes Homepage](http://host.robots.ox.ac.uk/pascal/VOC/)
+- [Pascal VOC Ground Truth Annotation](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html#SECTION00035000000000000000)
+- [[Supervisely Ecosystem] Import Pascal VOC](https://ecosystem.supervisely.com/apps/import-pascal-voc)
+
+    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-pascal-voc" src="https://github.com/supervisely-ecosystem/import-pascal-voc/assets/57998637/147d2ad4-327e-462a-b5b5-bc0887ac3c19" width="350px" style='padding-bottom: 10px'/>

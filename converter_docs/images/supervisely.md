@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0546b78a-ce53-4fea-a534-b288a3e6bd30" width="80"> Supervisely format Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0546b78a-ce53-4fea-a534-b288a3e6bd30" width="80" style="padding-right: 20px;"> Supervisely Format </h1>
 
 <br>
 
@@ -6,7 +6,7 @@
 
 Easily import your images with annotations in the [Supervisely format](https://docs.supervise.ly/data-organization/00_ann_format_navi). The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
@@ -139,3 +139,12 @@ Example:
   ]
 }
 ```
+
+# Useful links
+- [Supervisely Annotation Format](https://developer.supervisely.com/getting-started/supervisely-annotation-format)
+- [Supervisely Image Annotation](https://developer.supervisely.com/getting-started/supervisely-annotation-format/images)
+- [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
+- [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
+- [[Supervisely Ecosystem] Import images in Supervisely format](https://ecosystem.supervisely.com/apps/import-images-in-sly-format)
+
+  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-in-sly-format" src="https://i.imgur.com/Y6RcQPT.png" width="350px" style='padding-bottom: 10px'/>

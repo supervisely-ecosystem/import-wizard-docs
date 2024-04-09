@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/1d3c1360-083b-404b-aecc-fc7caa4b06b6" width="80"> Multispectral Images Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/1d3c1360-083b-404b-aecc-fc7caa4b06b6" width="80" style="padding-right: 20px;"> Multispectral Images Format </h1>
 
 <br>
 
@@ -9,7 +9,7 @@ Images will be grouped by directories, files from the "split" directory will be 
 
 ![Result of the import](https://developer.supervisely.com/~gitbook/image?url=https:%2F%2Fgithub-production-user-asset-6210df.s3.amazonaws.com%2F118521851%2F286217532-c6551cd6-d207-4d13-a9ce-9b31d3e57b8f.png&width=768&dpr=2&quality=100&sign=5575e36422d48d1b5023237e4dd251079e05d8bb2227741e4fc119501625c1b5)
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** No<br>
