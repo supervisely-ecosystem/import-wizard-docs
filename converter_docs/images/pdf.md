@@ -2,19 +2,25 @@
 
 <br>
 
+# Overview
+
 This converter allows to import `.PDF` files as images in `.PNG` format.
 Each page of the `.PDF` file will be converted to a separate image. The images will have a suffix added to their names to indicate the page number.
 
-* **Supported file formats:** `.PDF`
-* **With annotations:** No
-* **Grouped by:** No
-* **Supported image types:** Not applicable
-* **Supported alpha channels:** Not applicable
+# Supported file formats
+
+**Supported image formats:** `.pdf`
+**With annotations:** Yes<br>
+**Supported annotation format:** No<br>
+**Grouped by:** Not Applicable<br>
 
 ![pdf_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/488fec72-f2fe-4078-a4b3-3105a06e1b8a)
-# How to use
+
+# Input files structure
+
 You can download an example of data for import [here](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14905329/Sample_PDF.zip).<br>
-Here's an example of the correct directory structure:
+
+Recommended directory structure:
 
 ```text
 📦project name

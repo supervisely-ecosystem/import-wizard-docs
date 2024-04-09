@@ -2,22 +2,43 @@
 
 <br>
 
+# Overview
+
 This converter allows to import images with annotations in [COCO](https://cocodataset.org/#home) format. COCO format have all annotations in one `.json` file, usually named `instances.json`.
 
 Supervisely supports the following annotation types: instances, keypoints, captions.
 
-* **Supported file formats:** all image formats which supported by Supervisely.
-* **With annotations:** Yes
-* **Grouped by:** No
-* **Supported image types:** Not applicable
-* **Supported alpha channels:** Not applicable
+# Supported file formats
+
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**With annotations:** yes<br>
+**Supported annotation format:** `.json`.<br>
+**Grouped by:** any structure (uploaded to a single dataset)<br>
 
 ![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/f8d6dd1f-a2a1-4144-92ae-f7a4f90b9bea)
 
-# How to use
+# Input files structure
+
 You can download an example of data for import:
 * [instances](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918161/sample_coco.zip)
 * [keypoints](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918389/sample_coco_keypoints.zip)
+
+Recommended directory structure:
+
+```text
+📦project name
+ ┗ dataset
+   ┣ 📂annotations
+   ┃ ┗ 📜instances.json
+   ┗ 📂images
+     ┣ 🖼️0001.png
+     ┣ 🖼️0002.png
+     ┣ 🖼️0003.png
+     ┣ 🖼️0004.png
+     ┗ 🖼️0005.png
+```
+
+# COCO Annotation
 
 COCO format is a complex format that can contain multiple types of annotations. Supervisely import supports only `instances`, `keypoints`, and `captions`.
 The COCO dataset is formatted in `.json` and is a dictionary of keys `info`, `licenses`, `images`, `annotations`, `categories` (in most cases).
@@ -28,24 +49,9 @@ The COCO dataset is formatted in `.json` and is a dictionary of keys `info`, `li
 * `annotations` - contains a list of every individual object annotation from every image in the dataset.
 * `categories` - contains a list of categories (e.g. dog, boat) and each of those belongs to a supercategory (e.g. animal, vehicle). The original COCO dataset contains 90 categories. You can use the existing COCO categories or create an entirely new list of your own. Each category id must be unique among the rest of the categories.
 
-### Directory structure
-
-Example of the correct directory structure:
-
-```text
-📦project name
- ┗ dataset
-   ┣ 📂annotations
-   ┃ ┗ instances.json
-   ┗ 📂images
-     ┣ 🖼️0001.png
-     ┣ 🖼️0002.png
-     ┣ 🖼️0003.png
-     ┣ 🖼️0004.png
-     ┗ 🖼️0005.png
-```
-
 ### Instances
+
+Regions of interest indicated by these annotations are specified by `segmentations`, which are usually a list of polygon vertices around the object, but can also be a run-length-encoded (RLE) bit mask. Typically, RLE is used for groups of objects (like a large stack of books).
 
 Example annotation for instances for one image in COCO format:
 
@@ -300,11 +306,3 @@ Image caption annotations are pretty simple. There are no categories in this `.j
 - [COCO dataset](https://cocodataset.org/#home)
 - [COCO annotation structure](https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch)
 - [[Supervisely Ecosystem] Import COCO](https://ecosystem.supervisely.com/apps/import-coco)
-
-# Python SDK example
-
-You can also use Supervisely Python SDK to import coco format. Here's an example of how to do it:
-
-```python
-# TBD after converter release
-```
