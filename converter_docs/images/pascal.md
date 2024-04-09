@@ -12,7 +12,6 @@ This converter converts Pascal VOC format to Supervisely format. Learn more how 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.xml` (bounding boxes), `.png` (segmentation masks)<br>
-**Grouped by:**
 
 # Input files structure
 
