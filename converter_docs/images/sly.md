@@ -1,3 +1,7 @@
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Favatar-1586509921877.png%3Fgeneration=1586509922435383%26alt=media&width=32&dpr=2&quality=100&sign=addbd62464eb0d2b232a524fa7363f850b1cbfc2133351c76bb3e2464d6c4c59" width="80"> Supervisely format Converter </h1>
+
+<br>
+
 # Overview
 
 Easily import your images with annotations in the [Supervisely format](https://docs.supervise.ly/data-organization/00_ann_format_navi). The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
