@@ -39,7 +39,7 @@ Uses `.nrrd` extension.
 
 </details>
 
-![medical2d_result]()
+![medical2d_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/b56c3c90-05ef-4932-a5d2-7b3714a43d1d)
 
 # Format description
 
