@@ -4,7 +4,9 @@
 
 # Overview
 
-This import organizes images into groups, adds grouping tags, and activates grouping and multi-tag modes in the project settings.
+Multi-view mode is a feature that allows you to view and annotate multiple images simultaneously. It is especially useful when you need to label objects from different perspectives, 3D reconstruction images, Autonomous vehicle camera views or depth estimation task images. Labeling in multi-view mode can significantly increase the speed of the labeling process (for example, you don't need to switch between images and select a desired class to label the same object)
+
+Just organize images into groups and drop them to the import. The app will do the rest: it will detect groups, tag images, and activate grouping and multi-view modes in the project settings.
 
 # Format description
 
