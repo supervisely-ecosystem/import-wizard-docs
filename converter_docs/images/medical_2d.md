@@ -6,17 +6,38 @@
 
 Medical 2D Converter allows to import 2D files with `.nrrd`, `.dcm`, `.nii` and `.nii.gz` extensions. Files with extensions different from `.nrrd` will be converted to `.nrrd`
 
-**What is DCM file?**<br>
+<details>
+<summary><b>What is DCM file?</b></summary>
 
-DCM file is an image following Digital Imaging and Communications in Medicine (DICOM) format. Format is used to store various medical images like CT scans, MRIs, PET, ultrasound, etc.
+ <br>
 
-**What is NII file?**<br>
+`DCM` file is an image following Digital Imaging and Communications in Medicine (DICOM) format. Format is used to store various medical images like CT scans, MRIs, PET, ultrasound, etc.
 
-NII format is created by Neuroimaging Informatics Technology Initiative. It is commonly used to store magnetic resonance imaging (MRI) data.
+Uses `.dcm` and `.DICOM` extensions
 
-**What is NRRD file?**<br>
+</details>
 
-NRRD file is a medical imaging format. It is used to store 2D and 3D images along with metadata. It is commonly used in medical imaging.
+<details>
+<summary><b>What is NII file?</b></summary>
+
+ <br>
+
+`NII` format is commonly used to store magnetic resonance imaging (MRI) data.
+
+Uses `.nii` and `.nii.gz` extensions.
+
+</details>
+
+<details>
+<summary><b>What is NRRD file?</b></summary>
+
+ <br>
+
+`NRRD` file is a medical imaging format. It is used to store 2D and 3D images along with metadata. It is commonly used in medical imaging.
+
+Uses `.nrrd` extension.
+
+</details>
 
 ![medical2d_result]()
 
@@ -43,8 +64,6 @@ Recommended directory structure:
  ┣ 📜Image_6.nrrd
  ┗ 📜Image_7.nii
 ```
-
-</details>
 
 # Useful links
 - [[Supervisely Ecosystem] Import dicom studies](https://ecosystem.supervisely.com/apps/import-dicom-studies)
