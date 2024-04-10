@@ -15,6 +15,8 @@ Easily import your images with annotations in the [Supervisely format](https://d
 
 # Input files structure
 
+Example of data for import ([download ⬇️](https://github.com/supervisely-ecosystem/import-images-in-sly-format/files/12537201/robots_project.zip)).
+
 You can upload a directory or an archive. All images will be uploaded to a single dataset, so you don't have to worry about the full project structure in Supervisely format. All you need is to prepare images with annotations and `meta.json` file (recommended).
 
 <!-- {% hint style="success" %} -->
@@ -141,6 +143,7 @@ Example:
 ```
 
 # Useful links
+
 - [Supervisely Annotation Format](https://developer.supervisely.com/getting-started/supervisely-annotation-format)
 - [Supervisely Image Annotation](https://developer.supervisely.com/getting-started/supervisely-annotation-format/images)
 - [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)

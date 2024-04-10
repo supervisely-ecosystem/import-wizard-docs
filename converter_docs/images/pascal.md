@@ -15,6 +15,8 @@ This converter converts Pascal VOC format to Supervisely format. Learn more how 
 
 # Input files structure
 
+Example of data for import ([download ⬇️](https://github.com/supervisely-ecosystem/import-pascal-voc/files/12600118/sample_project.zip)).
+
 Pascal VOC archive or directory must have the following structure:
 
 ```
@@ -44,8 +46,8 @@ lemon 81 198 170
 
 **Action and Layout Classification Image Sets are not supported by import application.**
 
-
 # Useful links
+
 - [The PASCAL Visual Object Classes Homepage](http://host.robots.ox.ac.uk/pascal/VOC/)
 - [Pascal VOC Ground Truth Annotation](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html#SECTION00035000000000000000)
 - [[Supervisely Ecosystem] Import Pascal VOC](https://ecosystem.supervisely.com/apps/import-pascal-voc)
