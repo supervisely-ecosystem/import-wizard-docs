@@ -41,7 +41,7 @@ Uses `.nrrd` extension.
 
 ![medical2d_result]()
 
-# Supported file formats
+# Format description
 
 **Supported image formats:** `.nrrd`, `.dcm`, `.nii` and `.nii.gz`<br>
 **With annotations:** No<br>
