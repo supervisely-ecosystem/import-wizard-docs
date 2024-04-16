@@ -17,7 +17,7 @@ Easily import your videos with annotations in the Supervisely format. The Superv
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-in-sly-format/files/12537201/robots_project.zip).
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-videos-in-sly-format/files/12546490/my_videos_project.zip).
 
 Both directory and archive are supported.
 
