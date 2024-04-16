@@ -4,43 +4,44 @@
 
 # Overview
 
-Easily import your images with annotations in the [Supervisely format](https://docs.supervise.ly/data-organization/00_ann_format_navi). The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
+Easily import your images with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
+
+> All information about the Supervisely JSON format can be found [here](https://docs.supervise.ly/data-organization/00_ann_format_navi)
 
 # Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (uploaded to a single dataset)<br>
+**Grouped by:** any structure (will be uploaded to a single dataset)<br>
 
 # Input files structure
 
-Example of data for import ([download ⬇️](https://github.com/supervisely-ecosystem/import-images-in-sly-format/files/12537201/robots_project.zip)).
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-in-sly-format/files/12537201/robots_project.zip).
 
-You can upload a directory or an archive. All images will be uploaded to a single dataset, so you don't have to worry about the full project structure in Supervisely format. All you need is to prepare images with annotations and `meta.json` file (recommended).
+Both directory and archive are supported.
 
-<!-- {% hint style="success" %} -->
-
-Items even can be placed in any subdirectories or the root directory. Just make sure that an annotation file names matche the image file names (e.g. annotaions file `image_1.jpg.json` is for the image `image_1.jpg`) and that the annotation file format is correct (we will provide an example in the next section). The application will do the rest.
-
-<!-- {% endhint %} -->
-
-Recommended directory structure:
+**Recommended directory structure:**
 
 ```text
-📦 input_folder
- ┣ 📂 dataset_name_01
- ┃ ┣ 📂 ann
- ┃ ┃ ┣ 📄 IMG_0748.jpeg.json
- ┃ ┃ ┗ 📄 IMG_8144.jpeg.json
- ┃ ┣ 📂 img
- ┃ ┃ ┣ 🏞️ IMG_0748.jpeg
- ┃ ┃ ┗ 🏞️ IMG_8144.jpeg
- ┃ ┗ 📂 meta (optional)
- ┃ ┃ ┣ 📄 IMG_0748.jpeg.json
- ┃ ┃ ┗ 📄 IMG_8144.jpeg.json
- ┗ 📄 meta.json
+  📦input_folder
+   ┣ 📂dataset_name_01
+   ┃  ┣ 📂ann
+   ┃  ┃  ┣ 📄IMG_0748.jpeg.json
+   ┃  ┃  ┗ 📄IMG_8144.jpeg.json
+   ┃  ┣ 📂img
+   ┃  ┃  ┣ 🏞️IMG_0748.jpeg
+   ┃  ┃  ┗ 🏞️IMG_8144.jpeg
+   ┃  ┗ 📂meta (optional)
+   ┃     ┣ 📄IMG_0748.jpeg.json
+   ┃     ┗ 📄IMG_8144.jpeg.json
+   ┗ 📄meta.json
 ```
+
+**Struggled with the structure?** No worries!
+All images will be uploaded to a single dataset, so you don't have to worry about the full project structure in Supervisely format. All you need is to prepare images with annotations and `meta.json` file (recommended).
+
+Items even can be placed in any subdirectories or the root directory. Just make sure that an annotation file names match the image file names (e.g. annotaions file `image_1.jpg.json` is for the image `image_1.jpg`) and that the annotation file format is correct (we will provide an example in the next section). The application will do the rest.
 
 Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file [here](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags).
 
@@ -73,7 +74,7 @@ For each image, we store the annotations in a separate `json` file named `image_
 
 ## Image annotation example with objects and tags
 
-![image example](https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Fuploads%252Fgit-blob-552eebcf9ad197da6e9f93912abde5100bd0b196%252Fimage.png%3Falt=media&width=768&dpr=4&quality=100&sign=dec49d5954f46bb85a1ce7ac90dca123b1c3f1e86b35edbea04e012b440d9a29)
+![Image annotation example](https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Fuploads%252Fgit-blob-552eebcf9ad197da6e9f93912abde5100bd0b196%252Fimage.png%3Falt=media&width=768&dpr=4&quality=100&sign=dec49d5954f46bb85a1ce7ac90dca123b1c3f1e86b35edbea04e012b440d9a29)
 
 Example:
 

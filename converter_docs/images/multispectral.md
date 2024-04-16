@@ -18,26 +18,26 @@ Images will be grouped by directories, files from the "split" directory will be 
 
 # Input files structure
 
-Example of data for import: ([download ⬇️](https://github.com/supervisely-ecosystem/import-multispectral-images/files/13487269/demo_data.zip))<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-multispectral-images/files/13487269/demo_data.zip)<br>
 
 Recommended directory structure:
 
 ```text
-📦 project_name
- ┣ 📂 group_name_1
- ┃ ┣ 📂 split
- ┃ ┃ ┗ 🏞️ demo1.png
- ┣ 📂 group_name_2
- ┃ ┣ 📂 images
- ┃ ┃ ┣ 🏞️ demo4-rgb.png
- ┃ ┃ ┗ 🏞️ demo4-thermal.png
- ┃ ┣ 📂 split
- ┃ ┃ ┗ 🏞️ demo4-thermal copy.png
- ┣ 📂 group_name_3
- ┃ ┣ 📂 images
- ┃ ┃ ┣ 🏞️ demo8-mri1.png
- ┃ ┃ ┣ 🏞️ demo8-mri2.png
- ┃ ┃ ┗ 🏞️ demo8-rgb.png
+  📦project_name
+   ┣ 📂group_name_1
+   ┃  ┗ 📂split
+   ┃     ┗ 🏞️demo1.png
+   ┣ 📂group_name_2
+   ┃  ┣ 📂images
+   ┃  ┃  ┣ 🏞️demo4-rgb.png
+   ┃  ┃  ┗ 🏞️demo4-thermal.png
+   ┃  ┗ 📂split
+   ┃     ┗ 🏞️demo4-thermal copy.png
+   ┗ 📂group_name_3
+      ┗ 📂images
+         ┣ 🏞️demo8-mri1.png
+         ┣ 🏞️demo8-mri2.png
+         ┗ 🏞️demo8-rgb.png
 ```
 
 In this example, we have 3 groups with images. In the first group, we have one image, which should be split. In the second group, we have one image, which should be split and two images, which should be uploaded as is. In the third group, we have three images, which should be uploaded as is.<br>

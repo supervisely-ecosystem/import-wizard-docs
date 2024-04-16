@@ -69,58 +69,42 @@ Just organize images into groups and drop them to the import. The app will do th
   #### Structure explained:
 
   - Archive must contain only 1 project directory.
-  - Inside the project directory must be 1 dataset directory.
-  - Group directories must be populated with images and placed inside the dataset directory. All images inside groups will be tagged with folder name value.
-  - All images in the root dataset directory will be uploaded as regular images and will not be tagged.
+  - Inside project directory must be 1 dataset directory.
+  - Group directories must be populated with images and placed inside dataset directory. All images inside groups will be tagged with folder name value.
+  - All images in the root dataset directory will be uploaded as a regular images and will not be tagged.
 
-  You can download an example of data for import:
+  You can download an example data:
 
-       - images ([download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip))
-       - NRRD ([download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/research.zip))
+  - images: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip)
+  - NRRD: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/research.zip)
 
-  Example data representation:
-
-  - **Dataset name:** ds0
-
-
-    |    Image name     |        Tag         |
-    | :---------------: | :----------------: |
-    | car_105_front.jpg | `multiview`: `105` |
-    |  car_105_top.jpg  | `multiview`: `105` |
-    | car_202_front.jpg | `multiview`: `202` |
-    |  car_202_top.jpg  | `multiview`: `202` |
-    | car_357_front.jpg | `multiview`: `357` |
-    |  car_357_top.jpg  | `multiview`: `357` |
-    | car_401_front.jpg |
-    |  car_401_top.jpg  |
-    | car_401_side.jpg  |
 
 
 - To display single images switch off `Images Grouping` setting.
 
-  <img src="https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.2/enabled-disabled.gif?raw=true"/>
+  ![Switch off multi view mode](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.2/enabled-disabled.gif?raw=true)
 
 - If you want to disable images grouping for the whole project, go to `Project` → `Settings` → `Visuals` and uncheck
 
-   <img src="https://i.imgur.com/qOGICD3.png"/>
+   ![Disable multi view in project settings](https://i.imgur.com/qOGICD3.png)
 
 - Windowing tool is available when working with `.nrrd` files. It helps to filter pixels to see bones, air, liquids etc.
 
-  <img src="https://i.imgur.com/gW37Tyn.png"/>
+  ![Nrrd windowing tool]("https://i.imgur.com/gW37Tyn.png")
 
 - Images view synchronization
 
   <div>
     <table>
       <tr style="width: 100%">
-        <td>
-          <b>Synchronization OFF</b>
-          <img src="https://user-images.githubusercontent.com/48913536/172838253-4817336b-814b-4504-86cc-870c6665a14b.png" style="width:100%;"/>
-        </td>
-        <td>
-          <b>Synchronization ON</b>
-          <img src="https://user-images.githubusercontent.com/48913536/172838244-45fa76cc-50e2-41e5-819a-81ceb3387ade.png" style="width:100%;"/>
-        </td>
+    <td>
+    <b>Synchronization OFF</b>
+    <img src="https://user-images.githubusercontent.com/48913536/172838253-4817336b-814b-4504-86cc-870c6665a14b.png" style="width:100%;"/>
+    </td>
+    <td>
+    <b>Synchronization ON</b>
+    <img src="https://user-images.githubusercontent.com/48913536/172838244-45fa76cc-50e2-41e5-819a-81ceb3387ade.png" style="width:100%;"/>
+    </td>
       </tr>
     </table>
   </div>

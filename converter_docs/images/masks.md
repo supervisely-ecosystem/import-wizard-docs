@@ -15,7 +15,7 @@ The converter supports both semantic and instance segmentation masks. All data w
 
 # Input files structure
 
-Example of data for import ([download ⬇️](https://github.com/supervisely-ecosystem/import-images-with-masks/releases/download/0.0.1/demo_project.zip)).
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-with-masks/releases/download/0.0.1/demo_project.zip)
 
 Images should be in the folder `"img"` and masks should be in one (or more) of the following folders below:
 
@@ -26,21 +26,21 @@ Images should be in the folder `"img"` and masks should be in one (or more) of t
 **Input data structure example:**
 
 ```text
-Drag & Drop
-├── obj_class_to_machine_color.json
-├── img
-│   ├── image_1.jpg
-│   └── image_2.jpg
-├── masks_instances
-│   ├── image_1
-│   │   ├── dog_1.png # <- `dog` class instance mask
-│   │   └── dog_2.png
-│   └── image_2
-│       ├── dog_1.png
-│       └── dog_2.png
-└── masks_machine
-    ├── image_1.png # <- class name for each pixel > 0 must be in the obj_class_to_machine_color.json
-    └── image_2.png
+   📦Drag & Drop
+    ┣ 📜obj_class_to_machine_color.json
+    ┣ 📂img
+    ┃  ┣ 🖼️image_1.jpg
+    ┃  ┗ 🖼️image_2.jpg
+    ┣ 📂masks_instances
+    ┃  ┣ 📂image_1
+    ┃  ┃  ┣ 🖼️dog_1.png # <- `dog` class instance mask
+    ┃  ┃  ┗ 🖼️dog_2.png
+    ┃  ┗ 📂image_2
+    ┃     ┣ 🖼️dog_1.png
+    ┃     ┗ 🖼️dog_2.png
+    ┗ 📂masks_machine
+        ┣ 🖼️image_1.png # <- class name for each pixel > 0 must be in the obj_class_to_machine_color.json
+        ┗ 🖼️image_2.png
 ```
 
 **`obj_class_to_machine_color.json`** example:
@@ -54,7 +54,7 @@ Drag & Drop
 
 **Semantic (machine) masks example**
 
-In this configuration example all pixels in the mask which value **equal to 170** will be combined in one Bitmap figure and will be assigned to the class **"Lemon"** and **equal to 85** will be assigned to the class **"Kiwi"**.
+In this configuration example, all pixels in the mask with value **equal to 170** will be combined in one Bitmap figure and will be assigned to the class **"Lemon"** and **equal to 85** will be assigned to the class **"Kiwi"**.
 
 ![](https://i.imgur.com/a5cVpAB.png)
 

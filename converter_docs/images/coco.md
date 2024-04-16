@@ -4,7 +4,7 @@
 
 # Overview
 
-This converter allows to import images with annotations in [COCO](https://cocodataset.org/#home) format. COCO format have all annotations in one `.json` file, usually named `instances.json`.
+This converter allows to import images with annotations in [COCO](https://cocodataset.org/#home) format. COCO format has all annotations in one `.json` file, usually named `instances.json`.
 
 Supervisely supports the following annotation types: instances, keypoints, captions.
 
@@ -19,46 +19,45 @@ Supervisely supports the following annotation types: instances, keypoints, capti
 
 # Input files structure
 
-You can download an example of data for import:
+You can download an example data:
 
-- instances ([download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918161/sample_coco.zip))
-- keypoints ([download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918389/sample_coco_keypoints.zip))
-
+- instances: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918161/sample_coco.zip)
+- keypoints: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14918389/sample_coco_keypoints.zip)
 
 Recommended directory structure:
 
 ```text
-📦project name
- ┗ dataset
-   ┣ 📂annotations
-   ┃ ┗ 📜instances.json
-   ┗ 📂images
-     ┣ 🖼️0001.png
-     ┣ 🖼️0002.png
-     ┣ 🖼️0003.png
-     ┣ 🖼️0004.png
-     ┗ 🖼️0005.png
+    📦project name
+     ┗ 📂dataset
+        ┣ 📂annotations
+        ┃  ┗ 📜instances.json
+        ┗ 📂images
+           ┣ 🖼️0001.png
+           ┣ 🖼️0002.png
+           ┣ 🖼️0003.png
+           ┣ 🖼️0004.png
+           ┗ 🖼️0005.png
 ```
 
 # COCO Annotation
 
 COCO format is a complex format that can contain multiple types of annotations. Supervisely import supports only `instances`, `keypoints`, and `captions`.
-The COCO dataset is formatted in `.json` and is a dictionary of keys `info`, `licenses`, `images`, `annotations`, `categories` (in most cases).
+The COCO dataset is formatted in `.json` and is a dictionary of keys `info`, `licenses`, `images`, `annotations`, and `categories` (in most cases).
 
-* `info` - contains high level information about the dataset
-* `licenses` - contains a list of image licenses that apply to images in the dataset.
-* `images` - contains the complete list of images in your dataset. Note that image ids need to be unique among other images.
-* `annotations` - contains a list of every individual object annotation from every image in the dataset.
-* `categories` - contains a list of categories (e.g. dog, boat) and each of those belongs to a supercategory (e.g. animal, vehicle). The original COCO dataset contains 90 categories. You can use the existing COCO categories or create an entirely new list of your own. Each category id must be unique among the rest of the categories.
+- `info` - contains high-level information about the dataset
+- `licenses` - contains a list of image licenses that apply to images in the dataset.
+- `images` - contains the complete list of images in your dataset. Note that image ids need to be unique among other images.
+- `annotations` - contains a list of every individual object annotation from every image in the dataset.
+- `categories` - contains a list of categories (e.g. dog, boat) and each of those belongs to a supercategory (e.g. animal, vehicle). The original COCO dataset contains 90 categories. You can use the existing COCO categories or create an entirely new list of your own. Each category ID must be unique among the rest of the categories.
 
-### Instances
+## Instances
 
 Regions of interest indicated by these annotations are specified by `segmentations`, which are usually a list of polygon vertices around the object, but can also be a run-length-encoded (RLE) bit mask. Typically, RLE is used for groups of objects (like a large stack of books).
 
 Example annotation for instances for one image in COCO format:
 
 <details>
-    <summary>📜instances.json</summary>
+    <summary>📜 instances.json</summary>
 
 ```json
 {
@@ -134,24 +133,34 @@ Example annotation for instances for one image in COCO format:
 
 </details>
 
-### Keypoints
+## Keypoints
 
 Annotations for keypoints are just like in Object Detection (Segmentation) above, except a number of keypoints is specified in sets of 3, (x, y, v).
 
-* **x** and **y** indicate pixel positions in the image.
-* **v** indicates visibility — v=0: not labeled (in which case x=y=0), v=1: labeled but not visible (behind an object for example), and v=2: labeled and visible  
+- **x** and **y** indicate pixel positions in the image.
+- **v** indicates visibility — v=0: not labeled (in which case x=y=0), v=1: labeled but not visible (behind an object for example), and v=2: labeled and visible
 
 All keypoints with 0 visibility are ignored and will not be presented in the project.
 As for other 2: you can specify label preferences in the modal window whether you want to include key points that are labeled, but not visible or import only clearly visible keypoints.
 
-<details>
-    <summary>Visibility flag example</summary>
+**Visibility flag example:**
 
-|                                                              Visibility = 1                                                               |                                                              Visibility = 2                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/48913536/215511152-c6d181be-9bb8-4b39-a43e-0b6ba9cdb3d6.png" style="max-width:100%;"> | <img src="https://user-images.githubusercontent.com/48913536/215511138-d909dd0e-bf2d-4686-80c8-586ade92c271.png" style="max-width:100%;"> |
-
-</details>
+<div>
+    <table style="width: 100%">
+        <tr>
+            <th>Visibility = 1</th>
+            <th>Visibility = 2</th>
+        </tr>
+        <tr>
+            <td style="width:50%">
+            <img src="https://user-images.githubusercontent.com/48913536/215511152-c6d181be-9bb8-4b39-a43e-0b6ba9cdb3d6.png" style="max-width:100%;">
+            </td>
+            <td style="width:50%">
+            <img src="https://user-images.githubusercontent.com/48913536/215511138-d909dd0e-bf2d-4686-80c8-586ade92c271.png" style="max-width:100%;">
+            </td>
+        </tr>
+    </table>
+</div>
 
 **Example:** 229, 256, 2 means there’s a keypoint at pixel x=229, y=256 and 2 indicates that it is a visible keypoint
 
@@ -162,7 +171,7 @@ For example, [16, 14] means "left_ankle" connects to "left_knee".
 Example of the annotation file with keypoints:
 
 <details>
-    <summary>📜instances.json with keypoints</summary>
+    <summary>📜 instances.json with keypoints</summary>
 
 ```json
 {
@@ -257,54 +266,55 @@ Example of the annotation file with keypoints:
 
 </details>
 
-### Captions
+## Captions
 
 Image caption annotations are pretty simple. There are no categories in this `.json` file, just annotations with caption descriptions.
 
 <details>
-    <summary>📜instances.json with captions</summary>
+    <summary>📜 instances.json with captions</summary>
 
 ```json
 {
-    "info": {
-        "description": "",
-        "url": "None",
-        "version": "1.0",
-        "year": 2023,
-        "contributor": "Supervisely",
-        "date_created": "2023-08-22T09:33:23.811Z"
-    },
-    "licenses": [
-        {
-            "url": "None",
-            "id": 0,
-            "name": "None"
-        }
-    ],
-    "images": [
-        {
-            "license": "None",
-            "file_name": "IMG_1836.jpeg",
-            "url": "None",
-            "height": 800,
-            "width": 1067,
-            "date_captured": "2023-08-22T09:33:23.890Z",
-            "id": 22027400
-        }
-    ],
-    "annotations": [
-        {
-            "image_id": 22027400,
-            "id": 1,
-            "caption": "An image of 2 pieces of kiwi and 1 lemon."
-        }
-    ]
+  "info": {
+    "description": "",
+    "url": "None",
+    "version": "1.0",
+    "year": 2023,
+    "contributor": "Supervisely",
+    "date_created": "2023-08-22T09:33:23.811Z"
+  },
+  "licenses": [
+    {
+      "url": "None",
+      "id": 0,
+      "name": "None"
+    }
+  ],
+  "images": [
+    {
+      "license": "None",
+      "file_name": "IMG_1836.jpeg",
+      "url": "None",
+      "height": 800,
+      "width": 1067,
+      "date_captured": "2023-08-22T09:33:23.890Z",
+      "id": 22027400
+    }
+  ],
+  "annotations": [
+    {
+      "image_id": 22027400,
+      "id": 1,
+      "caption": "An image of 2 pieces of kiwi and 1 lemon."
+    }
+  ]
 }
 ```
 
 </details>
 
 # Useful links
+
 - [COCO dataset](https://cocodataset.org/#home)
 - [COCO annotation structure](https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch)
 - [[Supervisely Ecosystem] Import COCO](https://ecosystem.supervisely.com/apps/import-coco)

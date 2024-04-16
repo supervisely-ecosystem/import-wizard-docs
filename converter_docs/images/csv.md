@@ -26,7 +26,7 @@ All images will be uploaded to a single dataset, so you don't have to worry abou
 
 ## Input files structure
 
-Example of data for import ([download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14934860/sample_csv.zip)).
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14934860/sample_csv.zip)
 
 In your input file, the first column is crucial as it contains either the paths or URLs to the images you want to import. This column is mandatory for the importer to function correctly.
 
@@ -61,17 +61,27 @@ Regardless of the file format you choose (`.csv`, `.tsv`, or `.txt`), you can sp
        /horses/img_01.jpeg;horse
    ```
 
-2. **URLs**: Create a `.txt` file with columns for the full URL-link to the image and the image tag. In this example, tab (`\t`) delimiters are used.
+2. **URLs**:
 
-   ```text
-       url	tag
-       https://images.io/image_example_1.png	tag1,tag2
-       https://images.io/image_example_2.png	tag3
-       https://images.io/image_example_3.png
-   ```
+   - Create a `.txt` file with columns for the full URL-link to the image and the image tag. In this example, tab (`\t`) delimiters are used.
 
-   Cloud storage link example:
-   <img src="https://user-images.githubusercontent.com/57998637/229191946-d58f8da8-e03e-4e81-bcf2-4c8d804a9843.png" width="1198px">
+     ```text
+         url	tag
+         https://images.io/image_example_1.png	tag1,tag2
+         https://images.io/image_example_2.png	tag3
+         https://images.io/image_example_3.png
+     ```
+
+   - Cloud storage link example:
+
+     link structure: `<provider name>://<bucket name>/<path to image>`
+
+     ```csv
+     url;tag
+     s3://remote-img-test/08. images YOLO masks, bboxes (mix)/ds1_IMG_0748.jpeg;1
+     azure://supervisely-test/TEST-NEW-IMPORT/01. images SLY (from export)/ds1/img/IMG_1836.jpeg
+     google://sly-dev-test/test_img_new/berries-02.jpeg;3
+     ```
 
 # Useful links
 

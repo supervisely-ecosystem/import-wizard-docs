@@ -8,7 +8,7 @@ This converter allows to import images with annotations in [YOLO](https://docs.u
 
 ⚠️ **Note:** If YOLO project do not contain `data_config.yaml` file, it will use default COCO class names.
 
-![yolo_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/4452bac4-9316-41f4-a90c-e27786af738a)
+![Import results example](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/4452bac4-9316-41f4-a90c-e27786af738a)
 
 <details>
     <summary> Default COCO class names </summary>
@@ -111,41 +111,42 @@ names:
 
 # Input files structure
 
-Example of data for import: ([download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14919196/sample_yolo.zip))<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14919196/sample_yolo.zip)<br>
 
 Recommended directory structure:
 
 ```text
-project name
- ┣ 📂images
- ┃ ┣ 📂train
- ┃ ┃ ┣ 🖼️IMG_0748.jpeg
- ┃ ┃ ┣ 🖼️IMG_1836.jpeg
- ┃ ┃ ┣ 🖼️IMG_2084.jpeg
- ┃ ┃ ┗ 🖼️IMG_3861.jpeg
- ┃ ┗ 📂val
- ┃ ┃ ┣ 🖼️IMG_4451.jpeg
- ┃ ┃ ┗ 🖼️IMG_8144.jpeg
- ┣ 📂labels
- ┃ ┣ 📂train
- ┃ ┃ ┣ 📜IMG_0748.txt
- ┃ ┃ ┣ 📜IMG_1836.txt
- ┃ ┃ ┣ 📜IMG_2084.txt
- ┃ ┃ ┗ 📜IMG_3861.txt
- ┃ ┗ 📂val
- ┃ ┃ ┣ 📜IMG_4451.txt
- ┃ ┃ ┗ 📜IMG_8144.txt
- ┗ 📜data_config.yaml
+  📂project name
+   ┣ 📂images
+   ┃  ┣ 📂train
+   ┃  ┃  ┣ 🖼️IMG_0748.jpeg
+   ┃  ┃  ┣ 🖼️IMG_1836.jpeg
+   ┃  ┃  ┣ 🖼️IMG_2084.jpeg
+   ┃  ┃  ┗ 🖼️IMG_3861.jpeg
+   ┃  ┗ 📂val
+   ┃     ┣ 🖼️IMG_4451.jpeg
+   ┃     ┗ 🖼️IMG_8144.jpeg
+   ┣ 📂labels
+   ┃  ┣ 📂train
+   ┃  ┃  ┣ 📜IMG_0748.txt
+   ┃  ┃  ┣ 📜IMG_1836.txt
+   ┃  ┃  ┣ 📜IMG_2084.txt
+   ┃  ┃  ┗ 📜IMG_3861.txt
+   ┃  ┗ 📂val
+   ┃     ┣ 📜IMG_4451.txt
+   ┃     ┗ 📜IMG_8144.txt
+   ┗ 📜data_config.yaml
 ```
 
 # Format Config File
 
 File `data_config.yaml` should contain the following keys:
-* `names` - a list of class names
-* `colors` - a list of class colors in RGB format
-* `nc` - the number of classes
-* `train` - the path to the train images
-* `val` - the path to the validation images
+
+- `names` - a list of class names
+- `colors` - a list of class colors in RGB format
+- `nc` - the number of classes
+- `train` - the path to the train images
+- `val` - the path to the validation images
 
 <details>
     <summary>📜data_config.yaml</summary>
@@ -183,8 +184,9 @@ The label file corresponding to the below image contains 2 persons (class 0) and
 27 0.364844 0.795833 0.078125 0.400000
 ```
 
-![yolo_annotation_example](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/44917812-acf9-4f3c-8a14-fbc2cb3fe71e)
+![Yolo coordinates explanation](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/44917812-acf9-4f3c-8a14-fbc2cb3fe71e)
 
 # Useful links
+
 - [YOLO format](https://docs.ultralytics.com/datasets/detect/)
 - [[Supervisely Ecosystem] Convert YOLO v5 to Supervisely format](https://ecosystem.supervisely.com/apps/convert-yolov5-to-supervisely-format)

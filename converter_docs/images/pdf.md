@@ -14,31 +14,23 @@ Each page of the `.PDF` file will be converted to a separate image. The images w
 **Supported annotation format:** No<br>
 **Grouped by:** Not Applicable<br>
 
-![pdf_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/488fec72-f2fe-4078-a4b3-3105a06e1b8a)
+![PDF import results](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/488fec72-f2fe-4078-a4b3-3105a06e1b8a)
 
 # Input files structure
 
-Example of data for import: ([download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14905329/Sample_PDF.zip))<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/14905329/Sample_PDF.zip)<br>
 
 Recommended directory structure:
 
 ```text
-📦project name
- ┣ 📜Demo_1.pdf
- ┣ 📜Demo_2.pdf
- ┣ 📜Demo_3.pdf
- ┣ 📜Demo_4.pdf
- ┗ 📜Demo_5.pdf
+  📦project name
+   ┣ 📜Demo_1.pdf
+   ┣ 📜Demo_2.pdf
+   ┣ 📜Demo_3.pdf
+   ┣ 📜Demo_4.pdf
+   ┗ 📜Demo_5.pdf
 ```
 
 # Useful links
 
 - [[Supervisely Ecosystem] Import PDF as Images](https://ecosystem.supervisely.com/apps/import-pdf-as-images)
-
-# Python SDK example
-
-You can also use Supervisely Python SDK to import `.PDF` files. Here's an example of how to do it:
-
-```python
-# TBD after converter release
-```
