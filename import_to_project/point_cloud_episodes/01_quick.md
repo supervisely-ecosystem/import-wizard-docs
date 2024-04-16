@@ -1,9 +1,13 @@
 # Quick
 
+### Description
+
+Upload point cloud episodes or labeled data from you computer with auto-detection of annotation format.
+
 ### Overview
 
-Drag and drop file(s), folder(s) or an archive(s). Import Wizard will automatically detect annotation format, validate, verify, and import your data.
-When uploading to an existing project, Import Wizard will automatically validate and merge classes, tags, and annotations.
+Drag and drop files, folders or an archive. Supervisely will automatically detect annotation format, verify, and import your data.
+When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
 **Supported point cloud episodes formats:** `.pcd`
 
