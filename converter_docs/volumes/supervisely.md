@@ -276,9 +276,9 @@ JSON file format of `key_id_map.json`:
 # Useful links
 
 - [Supervisely Annotation Format](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi)
-- [Supervisely Video Annotation](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/06_supervisely_format_videos)
+- [Supervisely Volume Annotation](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/08_supervisely_format_volume)
 - [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
 - [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
-- [[Supervisely Ecosystem] Import video in Supervisely format](https://ecosystem.supervisely.com/apps/import-videos-in-sly-format)
+- [[Supervisely Ecosystem] Import Volumes in Supervisely format](https://ecosystem.supervisely.com/apps/import-volumes-with-anns)
 
-  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-videos-in-sly-format" src="https://i.imgur.com/PF9YLqA.png" width="350px" style='padding-bottom: 10px'/>
+  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-volumes-with-anns" src="https://i.imgur.com/B9VUQPv.png" width="350px" style='padding-bottom: 10px'/>
