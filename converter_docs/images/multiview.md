@@ -78,19 +78,17 @@ Just organize images into groups and drop them to the import. The app will do th
   - images: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip)
   - NRRD: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/research.zip)
 
-
-
 - To display single images switch off `Images Grouping` setting.
 
   ![Switch off multi view mode](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.2/enabled-disabled.gif?raw=true)
 
 - If you want to disable images grouping for the whole project, go to `Project` → `Settings` → `Visuals` and uncheck
 
-   ![Disable multi view in project settings](https://i.imgur.com/qOGICD3.png)
+  ![Disable multi-view mode in project settings](https://i.imgur.com/qOGICD3.png)
 
 - Windowing tool is available when working with `.nrrd` files. It helps to filter pixels to see bones, air, liquids etc.
 
-  ![Nrrd windowing tool]("https://i.imgur.com/gW37Tyn.png")
+  ![Nrrd windowing tool](https://i.imgur.com/gW37Tyn.png)
 
 - Images view synchronization
 
