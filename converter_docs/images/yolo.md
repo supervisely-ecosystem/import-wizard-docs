@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/35246ba4-4062-4f0f-90ca-5d60cd32c9ba" width="80" style="padding-right: 20px;"> YOLO Format </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/yolo_logo.png" width="80" style="padding-right: 20px;"> YOLO Format </h1>
 
 <br>
 

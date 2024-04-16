@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/99998ee5-b20c-4104-82af-9a787e863a3b" width="80"> Medical 2D Files Converter </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/medical2d_logo.png" width="80"> Medical 2D Files Converter </h1>
 
 <br>
 

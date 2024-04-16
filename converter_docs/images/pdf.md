@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/35d9e8eb-fd4b-4b25-96de-be8d8f191d46" width="80" style="padding-right: 20px;"> PDF Format </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/pdf_logo.png" width="80" style="padding-right: 20px;"> PDF Format </h1>
 
 <br>
 

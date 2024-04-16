@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/79905215/bd1113e2-b3a5-426a-892f-c747c2eda209" width="80" style="padding-right: 20px;">Pascal VOC Format</h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/pascal_logo.png" width="80" style="padding-right: 20px;">Pascal VOC Format</h1>
 
 <br>
 

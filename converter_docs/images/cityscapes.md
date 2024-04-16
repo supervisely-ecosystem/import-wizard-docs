@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/8c27c4ef-9e60-48cc-9797-57872283f9ac" width="80" style="padding-right: 20px;"> Cityscapes Format </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/cityscapes_logo.png" width="80" style="padding-right: 20px;"> Cityscapes Format </h1>
 
 <br>
 

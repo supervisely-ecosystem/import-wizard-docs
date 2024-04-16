@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7ef86a06-c0ba-4dee-ae81-c5e8a959305f" width="80" style="padding-right: 20px;"> COCO Format </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/coco_logo.png" width="80" style="padding-right: 20px;"> COCO Format </h1>
 
 <br>
 

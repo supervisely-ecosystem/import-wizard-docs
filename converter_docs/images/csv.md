@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://imgur.com/zlcLjAM.png" width="80" style="padding-right: 20px;"> CSV, TSV and TXT Format </h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/csv_logo.png" width="80" style="padding-right: 20px;"> CSV, TSV and TXT Format </h1>
 
 <br>
 

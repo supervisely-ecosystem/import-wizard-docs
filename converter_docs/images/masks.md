@@ -1,4 +1,4 @@
-<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://user-images.githubusercontent.com/48913536/182406824-47397e33-b596-49e7-b7c9-50a22c7e575f.png" width="80" style="padding-right: 20px;">Images with masks Format</h1>
+<h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/masks_logo.png" width="80" style="padding-right: 20px;">Images with masks Format</h1>
 
 <br>
 
