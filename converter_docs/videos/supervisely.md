@@ -13,7 +13,7 @@ Easily import your videos with annotations in the Supervisely format. The Superv
 **Supported video formats:** `.avi`, `.mp4`, `.3gp`, `.flv`, `.webm`, `.wmv`, `.mov`, and `.mkv` <br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (will be uploaded to a single dataset)<br>
+**Data structure:** any structure (will be uploaded to a single dataset)<br>
 
 # Input files structure
 

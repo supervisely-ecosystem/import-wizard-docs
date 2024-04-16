@@ -13,7 +13,7 @@ Easily import your pointcloud episodes with annotations in the Supervisely forma
 **Supported point cloud format:** `.pcd`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (will be uploaded to a single dataset)<br>
+**Data structure:** any structure (will be uploaded to a single dataset)<br>
 
 # Input files structure
 
