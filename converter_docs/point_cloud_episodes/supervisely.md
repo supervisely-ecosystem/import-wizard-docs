@@ -10,7 +10,7 @@ Easily import your pointcloud episodes with annotations in the Supervisely forma
 
 # Format description
 
-**Supported volume formats:** `.nrrd`, `.dcm`<br>
+**Supported point cloud format:** `.pcd`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
 **Grouped by:** any structure (will be uploaded to a single dataset)<br>
@@ -39,80 +39,78 @@ Root folder for the project named `project name`
 # Format of Annotations
 
 ```json
-[
-  {
-    "description": "",
-    "key": "e9f0a3ae21be41d08eec166d454562be",
-    "tags": [],
-    "objects": [
-      {
-        "key": "6663ca1d20c74bea83bd48c24568989d",
-        "classTitle": "car",
-        "tags": []
-      }
-    ],
-    "framesCount": 48,
-    "frames": [
-      {
-        "index": 0,
-        "figures": [
-          {
-            "key": "cb8e067dadfc423aa8575a0c4e62de33",
-            "objectKey": "6663ca1d20c74bea83bd48c24568989d",
-            "geometryType": "cuboid_3d",
-            "geometry": {
-              "position": {
-                "x": -10.863547325134277,
-                "y": -93.57706451416016,
-                "z": -4.598618030548096
-              },
-              "rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 3.250733629393711
-              },
-              "dimensions": {
-                "x": 1.978,
-                "y": 4.607,
-                "z": 1.552
-              }
+{
+  "description": "",
+  "key": "e9f0a3ae21be41d08eec166d454562be",
+  "tags": [],
+  "objects": [
+    {
+      "key": "6663ca1d20c74bea83bd48c24568989d",
+      "classTitle": "car",
+      "tags": []
+    }
+  ],
+  "framesCount": 48,
+  "frames": [
+    {
+      "index": 0,
+      "figures": [
+        {
+          "key": "cb8e067dadfc423aa8575a0c4e62de33",
+          "objectKey": "6663ca1d20c74bea83bd48c24568989d",
+          "geometryType": "cuboid_3d",
+          "geometry": {
+            "position": {
+              "x": -10.863547325134277,
+              "y": -93.57706451416016,
+              "z": -4.598618030548096
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 3.250733629393711
+            },
+            "dimensions": {
+              "x": 1.978,
+              "y": 4.607,
+              "z": 1.552
             }
           }
-        ]
-      },
-      {
-        "index": 1,
-        "figures": [
-          {
-            "key": "71e0fe52dc4f4f6aaf059ad095f43c1f",
-            "objectKey": "6663ca1d20c74bea83bd48c24568989d",
-            "labelerLogin": "username",
-            "updatedAt": "2021-11-11T17:19:11.448Z",
-            "createdAt": "2021-11-11T16:53:03.670Z",
-            "geometryType": "cuboid_3d",
-            "geometry": {
-              "position": {
-                "x": -11.10418701171875,
-                "y": -91.33098602294922,
-                "z": -4.5446248054504395
-              },
-              "rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 3.24780199600921
-              },
-              "dimensions": {
-                "x": 1.978,
-                "y": 4.607,
-                "z": 1.552
-              }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "figures": [
+        {
+          "key": "71e0fe52dc4f4f6aaf059ad095f43c1f",
+          "objectKey": "6663ca1d20c74bea83bd48c24568989d",
+          "labelerLogin": "username",
+          "updatedAt": "2021-11-11T17:19:11.448Z",
+          "createdAt": "2021-11-11T16:53:03.670Z",
+          "geometryType": "cuboid_3d",
+          "geometry": {
+            "position": {
+              "x": -11.10418701171875,
+              "y": -91.33098602294922,
+              "z": -4.5446248054504395
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 3.24780199600921
+            },
+            "dimensions": {
+              "x": 1.978,
+              "y": 4.607,
+              "z": 1.552
             }
           }
-        ]
-      }
-    ]
-  }
-]
+        }
+      ]
+    }
+  ]
+}
 ```
 
 **Optional fields and loading**
