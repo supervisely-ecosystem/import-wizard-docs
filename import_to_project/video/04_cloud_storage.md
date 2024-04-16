@@ -2,31 +2,34 @@
 
 ### Description
 
-Import data from connected cloud storage such as AWS S3, Google Cloud or Azure with auto-detection of annotation format.
+Import data from connected cloud storage, such as AWS S3, Google Cloud or Azure, with auto-detection of format.
 
 ### Overview
 
-✨ Available in Enterprise Edition.
+✨ _Available in Enterprise Edition._
 
-Import data from connected cloud storages without re-uploading it to Supervisely. Useful for large datasets.
+Import data from connected cloud storage without re-uploading it to Supervisely. Useful for large datasets.
 
-Select folders or files and press `Run`. Supervisely will automatically detect annotation format, convert, if needed, and upload it. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
+Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
 
-Select the folder or archive withing containing your data withing your provider and bucket and press the RUN button.
-When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
+**Supported providers:** 
 
-**Supported providers:** `S3 (AWS S3)` `GCS (Google Cloud Storage)` `Azure (Azure Blob Storage)`
+`AWS S3` `GCS (Google Cloud Storage)` `Azure (Azure Blob Storage)`
 
-**Supported video formats:** `.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
+**Supported image formats:** 
 
-**Annotation formats (click to see instructions):**
+`.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
 
-- Videos without annotations
-- [Supervisely]()
+**Annotation formats** (click to see instructions):
+
+- Videos in any directory structure without annotations
+- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md)
+- DAVIS (coming soon)
+- MOT (coming soon)
 
 <br>
 
-**Single video file size limits:**
+**Video file size limit:**
 
 - Community Free plan: 100MB
 - Community Pro plan: 500MB

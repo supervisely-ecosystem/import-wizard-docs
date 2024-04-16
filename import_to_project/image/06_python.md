@@ -31,3 +31,5 @@ cat = sly.Label(sly.Rectangle(top=100, left=150, bottom=200, right=250), cat_cla
 ann = sly.Annotation(img_size=[img.height, img.width], labels=[cat])
 api.annotation.upload_ann(image_info.id, ann)
 ```
+
+To learn more about Supervisely Python SDK click [here](https://developer.supervisely.com/).

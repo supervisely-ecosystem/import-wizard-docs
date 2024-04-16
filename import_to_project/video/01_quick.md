@@ -9,16 +9,20 @@ Upload videos or labeled data from you computer with auto-detection of annotatio
 Drag and drop files, folders or an archive. Supervisely will automatically detect annotation format, verify, and import your data.
 When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
-**Supported video formats:** `.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
+**Supported video formats:**
 
-**Annotation formats (click to see instructions):**
+`.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
 
-- Videos without annotations
-- [Supervisely]()
+**Annotation formats** (click to see instructions):
+
+- Videos in any directory structure without annotations
+- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md)
+- DAVIS (coming soon)
+- MOT (coming soon)
 
 <br>
 
-**Single video file size limits:**
+**Video file size limit:**
 
 - Community Free plan: 100MB
 - Community Pro plan: 500MB

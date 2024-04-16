@@ -10,6 +10,6 @@ Supervisely provides a way to import data from other labeling services. This opt
 
 Here is the list of applications that can be used for migration:
 
-* [Labelbox to Supervisely Migration Tool](https://ecosystem.supervisely.com/apps/labelbox-to-sly)
+<!-- * [Labelbox to Supervisely Migration Tool](https://ecosystem.supervisely.com/apps/labelbox-to-sly)
 * [CVAT to Supervisely Migration Tool](https://ecosystem.supervisely.com/apps/cvat-to-sly/migration_tool)
-* [V7 to Supervisely Migration Tool](https://ecosystem.supervisely.com/apps/v7-to-supervisely/migration_tool)
+* [V7 to Supervisely Migration Tool](https://ecosystem.supervisely.com/apps/v7-to-supervisely/migration_tool) -->

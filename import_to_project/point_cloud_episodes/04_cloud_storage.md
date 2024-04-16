@@ -2,31 +2,32 @@
 
 ### Description
 
-Import data from connected cloud storage such as AWS S3, Google Cloud or Azure with auto-detection of annotation format.
+Import data from connected cloud storage, such as AWS S3, Google Cloud or Azure, with auto-detection of format.
 
 ### Overview
 
-✨ Available in Enterprise Edition.
+✨ _Available in Enterprise Edition._
 
 Import data from connected cloud storages without re-uploading it to Supervisely. Useful for large datasets.
 
-Select folders or files and press `Run`. Supervisely will automatically detect annotation format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
+Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
 
-Select the folder or archive withing containing your data withing your provider and bucket and press the RUN button.
-When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
+**Supported providers:**
 
-**Supported providers:** `S3 (AWS S3)` `GCS (Google Cloud Storage)` `Azure (Azure Blob Storage)`
+`AWS S3`, `GCS (Google Cloud Storage)`, `Azure (Azure Blob Storage)`
 
-**Supported point cloud episodes formats:** `.pcd`
+**Supported point cloud format:**
 
-**Annotation formats (click to see instructions):**
+`.pcd`
+
+**Annotation formats** (click to see instructions):
 
 - PCD Episodes without annotations
-- [Supervisely]()
+- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/supervisely.md)
 
 <br>
 
-**Single point cloud episodes file size limits:**
+**Point cloud episodes file size limit:**
 
 - Community Free plan: XX MB
 - Community Pro plan: XXX MB
