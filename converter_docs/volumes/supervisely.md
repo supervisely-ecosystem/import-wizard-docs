@@ -280,5 +280,3 @@ JSON file format of `key_id_map.json`:
 - [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
 - [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
 - [[Supervisely Ecosystem] Import Volumes in Supervisely format](https://ecosystem.supervisely.com/apps/import-volumes-with-anns)
-
-  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-volumes-with-anns" src="https://i.imgur.com/B9VUQPv.png" width="350px" style='padding-bottom: 10px'/>

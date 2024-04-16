@@ -168,5 +168,3 @@ Fields definitions:
 - [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
 - [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
 - [[Supervisely Ecosystem] Import video in Supervisely format](https://ecosystem.supervisely.com/apps/import-videos-in-sly-format)
-
-  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-videos-in-sly-format" src="https://i.imgur.com/PF9YLqA.png" width="350px" style='padding-bottom: 10px'/>

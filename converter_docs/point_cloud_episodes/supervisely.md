@@ -285,5 +285,3 @@ This file create for mapping between pointcloud files and annotation frames in t
 - [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
 - [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
 - [[Supervisely Ecosystem] Import Pointcloud Episodes in Supervisely](https://ecosystem.supervisely.com/apps/import-pointcloud-episode)
-
-  <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-pointcloud-episode" src="https://github.com/supervisely-ecosystem/import-pointcloud-episode/releases/download/v1.0.0/icon.png" width="350px" style='padding-bottom: 10px'/>
