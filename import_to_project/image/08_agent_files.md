@@ -20,7 +20,7 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-Images in any directory structure without annotations<span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/images.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Images</a><span> | </span>
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/coco.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >COCO</a><span> | </span>
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/yolo.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >YOLO</a><span> | </span>
