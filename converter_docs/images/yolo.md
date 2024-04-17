@@ -1,7 +1,5 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/yolo_logo.png" width="80" style="padding-right: 20px;"> YOLO Format </h1>
 
-<br>
-
 # Overview
 
 This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> format. YOLO format has a config `.yaml` file that contains information about classes and datasets, usually named `data_config.yaml` . Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image.

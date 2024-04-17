@@ -1,7 +1,5 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/coco_logo.png" width="80" style="padding-right: 20px;"> COCO Format </h1>
 
-<br>
-
 # Overview
 
 This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file, usually named `instances.json`.

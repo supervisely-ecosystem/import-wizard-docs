@@ -1,7 +1,5 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/pdf_logo.png" width="80" style="padding-right: 20px;"> PDF Format </h1>
 
-<br>
-
 # Overview
 
 This converter allows to import `.PDF` files as images in `.PNG` format.

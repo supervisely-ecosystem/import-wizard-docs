@@ -1,7 +1,5 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/cityscapes_logo.png" width="80" style="padding-right: 20px;"> Cityscapes Format </h1>
 
-<br>
-
 # Overview
 
 This converter allows to import images with `.json` annotations in <a href="https://github.com/mcordts/cityscapesScripts" target="_blank">Cityscapes</a> format.

@@ -1,7 +1,5 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/multispectral_logo.png" width="80" style="padding-right: 20px;"> Multispectral Images Format </h1>
 
-<br>
-
 # Overview
 
 This converter allows to import of multispectral images as channels or as separate images without annotations.<br>
