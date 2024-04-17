@@ -6,7 +6,7 @@
 
 Easily import your pointclouds with annotations in the Supervisely format. The Supervisely json-based annotation format supports `cuboid_3d` shape figures. It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found [here](https://docs.supervise.ly/data-organization/00_ann_format_navi)
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
@@ -66,7 +66,7 @@ Every `.pcd` file in a sequence has to be stored inside a `pointcloud` folder of
 
 All the positional coordinates (x, y, z) are in meters. Supervisely supports all PCD encoding: ASCII, binary, binary_compressed.
 
-The PCD file format description can be found [here](https://pointclouds.org/documentation/tutorials/pcd_file_format.html)
+The PCD file format description can be found <a href="https://pointclouds.org/documentation/tutorials/pcd_file_format.html" target="_blank">here</a>
 
 # Format of Annotations
 
@@ -131,7 +131,7 @@ The list of `objects` is defined for the entire dataset, even if the object's fi
 - `createdAt` - string - date and time of figure creation
 - `updatedAt` - string - date and time of the last figure update
 
-Main idea of `key` fields and `id` you can see below in [Key id map file](point-clouds.md#key-id-map-file) section.
+Main idea of `key` fields and `id` you can see below in "Key id map" file section.
 
 **Fields definitions:**
 
@@ -171,14 +171,14 @@ Main idea of `key` fields and `id` you can see below in [Key id map file](point-
 
 Rotation values bound inside \[**-pi** ; **pi**] When `yaw = 0` box direction will be strict `+y`
 
-Read more about the `key_id_map.json` file and photo context annotations in the documentation [here](https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds#key-id-map-file).
+Read more about the `key_id_map.json` file and photo context annotations in the documentation <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds#key-id-map-file" target="_blank">here</a>.
 
 # Useful links
 
-- [Supervisely Annotation Format](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi)
-- [Supervisely Pointcloud Annotation](https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds)
-- [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
-- [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
-- [Import Point Cloud Project](https://ecosystem.supervise.ly/apps/import-pointcloud-project) app.
-- [Export pointclouds project in Supervisely format](https://ecosystem.supervise.ly/apps/export-pointclouds-project-in-supervisely-format) app.
-- [Demo pointcloud project with labels](https://ecosystem.supervise.ly/projects/demo-pointcloud-project-annotated)
+- <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi" target="_blank">Supervisely Annotation Format</a>
+- <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds" target="_blank">Supervisely Pointcloud Annotation</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
+- <a href="https://ecosystem.supervise.ly/apps/import-pointcloud-project" target="_blank">Import Point Cloud Project</a> app.
+- <a href="https://ecosystem.supervise.ly/apps/export-pointclouds-project-in-supervisely-format" target="_blank">Export pointclouds project in Supervisely format</a> app.
+- <a href="https://ecosystem.supervise.ly/projects/demo-pointcloud-project-annotated" target="_blank">Demo pointcloud project with labels</a>

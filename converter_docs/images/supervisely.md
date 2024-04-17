@@ -6,7 +6,7 @@
 
 Easily import your images with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found [here](https://docs.supervise.ly/data-organization/00_ann_format_navi)
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
@@ -43,7 +43,7 @@ All images will be uploaded to a single dataset, so you don't have to worry abou
 
 Items even can be placed in any subdirectories or the root directory. Just make sure that an annotation file names match the image file names (e.g. annotaions file `image_1.jpg.json` is for the image `image_1.jpg`) and that the annotation file format is correct (we will provide an example in the next section). The application will do the rest.
 
-Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file [here](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags).
+Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags" target="_blank">here</a>.
 
 # Individual Image Annotations
 
@@ -69,8 +69,8 @@ For each image, we store the annotations in a separate `json` file named `image_
 - `size` - stores image size. Mostly, it is used to get the image size without the actual image reading to speed up some data processing steps.
 - `width` - image width in pixels
 - `height` - image height in pixels
-- `tags` - **list** of strings that will be interpreted as image [tags](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/03_supervisely_format_tags)
-- `objects` - **list** of [objects on the image](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects)
+- `tags` - **list** of strings that will be interpreted as image <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/03_supervisely_format_tags" target="_blank">tags</a>
+- `objects` - **list** of <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects" target="_blank">objects on the image</a>
 
 ## Image annotation example with objects and tags
 
@@ -145,10 +145,10 @@ Example:
 
 # Useful links
 
-- [Supervisely Annotation Format](https://developer.supervisely.com/getting-started/supervisely-annotation-format)
-- [Supervisely Image Annotation](https://developer.supervisely.com/getting-started/supervisely-annotation-format/images)
-- [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
-- [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
-- [[Supervisely Ecosystem] Import images in Supervisely format](https://ecosystem.supervisely.com/apps/import-images-in-sly-format)
+- <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format" target="_blank">Supervisely Annotation Format</a>
+- <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/images" target="_blank">Supervisely Image Annotation</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-images-in-sly-format" target="_blank">[Supervisely Ecosystem] Import images in Supervisely format</a>
 
   <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-in-sly-format" src="https://i.imgur.com/Y6RcQPT.png" width="350px" style='padding-bottom: 10px'/>

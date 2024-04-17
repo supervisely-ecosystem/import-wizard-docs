@@ -5,7 +5,7 @@
 # Overview
 
 The Pascal VOC (Visual Object Classes) format stands as one of the benchmarks established relatively early for object classification, segmentation and detection. It furnishes a standardized dataset for identifying object classes, utilizing an XML-based export format that enjoys widespread adoption in computer vision tasks.
-This converter converts Pascal VOC format to Supervisely format. Learn more how to prepare data in Pascal VOC format and how to import the original Pascal VOC dataset in the [Import Pascal VOC](https://ecosystem.supervisely.com/apps/import-pascal-voc) app.
+This converter converts Pascal VOC format to Supervisely format. Learn more how to prepare data in Pascal VOC format and how to import the original Pascal VOC dataset in the <a href="https://ecosystem.supervisely.com/apps/import-pascal-voc" target="_blank">Import Pascal VOC</a> app.
 
 # Format description
 
@@ -47,8 +47,8 @@ lemon 81 198 170
 
 # Useful links
 
-- [The PASCAL Visual Object Classes Homepage](http://host.robots.ox.ac.uk/pascal/VOC/)
-- [Pascal VOC Ground Truth Annotation](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html#SECTION00035000000000000000)
-- [[Supervisely Ecosystem] Import Pascal VOC](https://ecosystem.supervisely.com/apps/import-pascal-voc)
+- <a href="http://host.robots.ox.ac.uk/pascal/VOC/" target="_blank">The PASCAL Visual Object Classes Homepage</a>
+- <a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html#SECTION00035000000000000000" target="_blank">Pascal VOC Ground Truth Annotation</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-pascal-voc" target="_blank">[Supervisely Ecosystem] Import Pascal VOC</a>
 
     <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-pascal-voc" src="https://github.com/supervisely-ecosystem/import-pascal-voc/assets/57998637/147d2ad4-327e-462a-b5b5-bc0887ac3c19" width="350px" style='padding-bottom: 10px'/>

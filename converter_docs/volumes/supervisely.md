@@ -6,7 +6,7 @@
 
 Easily import your volumes with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found [here](https://docs.supervise.ly/data-organization/00_ann_format_navi)
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
@@ -28,12 +28,12 @@ Root 📁 `project_name` folder named with the project name
 - 📄 `meta.json` file
 - 📄 `key_id_map.json` file (optional)
 - 📁 `dataset_name` folders, each named with the dataset name and containing:
-  - 📁 `volume` folder, contains source volume files in [NRRD file-format](https://teem.sourceforge.net/nrrd/index.html), for example `CTChest.nrrd`
+  - 📁 `volume` folder, contains source volume files in <a href="https://teem.sourceforge.net/nrrd/index.html" target="_blank">NRRD file-format</a>, for example `CTChest.nrrd`
   - 📁 `ann` - folder, with annotations for volumes. (named as volume + `.json`) for example `CTChest.nrrd.json`
   - 📁 `mask` optional folder, created automatically while downloading project.
-    - 📁 folders, named according to volume (`CTChest.nrrd`), which contains an additional data files with geometries for annotation objects of class type `Mask3D` stored in [NRRD file format](https://teem.sourceforge.net/nrrd/index.html), named with hex hash code of objects from key_id_map. For example: `daff638a423a4bcfa34eb12e42243a87.nrrd`
+    - 📁 folders, named according to volume (`CTChest.nrrd`), which contains an additional data files with geometries for annotation objects of class type `Mask3D` stored in <a href="https://teem.sourceforge.net/nrrd/index.html" target="_blank">NRRD file format</a>, named with hex hash code of objects from key_id_map. For example: `daff638a423a4bcfa34eb12e42243a87.nrrd`
   - 📁 `interpolation` ℹ️ optional folder, created automatically while downloading project.
-    - 📁 folders, named according to volume (`CTChest.nrrd`), which contains an additional data files in [STL file format](<https://en.wikipedia.org/wiki/STL_(file_format)>), named with hex hash code of objects from key_id_map. For example: `24a56a26ed784e648d3dd6c5186b46ca.stl`
+    - 📁 folders, named according to volume (`CTChest.nrrd`), which contains an additional data files in <a href="<https://en.wikipedia.org/wiki/STL_(file_format" target="_blank">STL file format</a>>), named with hex hash code of objects from key_id_map. For example: `24a56a26ed784e648d3dd6c5186b46ca.stl`
 
 ℹ️ - It is recommended to upload 3D objects as Mask3D and not to use STL. But if you already have a prepared STL file, all STL interpolations will be automatically converter to a Mask3D object during project upload.
 
@@ -162,12 +162,12 @@ annotation JSON file - `/project_name/dataset_name/ann/CTChest.nrrd.json`
 - `key` - string - a unique identifier of given object represented as `UUID.hex` value (used in `key_id_map.json` to get the object ID)
 - `tags` - list of strings that will be interpreted as volume tags
 - `objects` - list of objects that may be present on the volume
-- `planes` - a list of figures that defined in these planes: [`coronal, sagittal, axial`](https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system)
+- `planes` - a list of figures that defined in these planes: <a href="https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system" target="_blank">`coronal, sagittal, axial`</a>
 - `spatialFigures` - list of 3D figures may be present as the volume annotation
 
 #### `volumeMeta` fields description:
 
-- `ACS` - string - "RAS" or "LPS" - name of type of [Anatomical coordinate system](https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system) i.e. RAS means is Right-Anterior-Superior
+- `ACS` - string - "RAS" or "LPS" - name of type of <a href="https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system" target="_blank">Anatomical coordinate system</a> i.e. RAS means is Right-Anterior-Superior
 
 ```
 ╔════════╦════════════╗
@@ -186,8 +186,8 @@ annotation JSON file - `/project_name/dataset_name/ann/CTChest.nrrd.json`
 - `windowWidth` - float - Specify a linear conversion. Window Width contains the width of the window
 - `windowCenter` - float - Specify a linear conversion. Window Center contains the value that is the center of the window
 - `channelsCount` - float - channel count of your image data. Default: 1
-- `dimensionsIJK` - dict {"x": int, "y": int, "z": int} - dimensions of volume described as vector in [IJK notation](https://en.wikipedia.org/wiki/Unit_vector)
-- `IJK2WorldMatrix` - matrix to transform coordinates from IJK to world (cartesian). See [here](https://www.slicer.org/wiki/Coordinate_systems#Image_transformation)
+- `dimensionsIJK` - dict {"x": int, "y": int, "z": int} - dimensions of volume described as vector in <a href="https://en.wikipedia.org/wiki/Unit_vector" target="_blank">IJK notation</a>
+- `IJK2WorldMatrix` - matrix to transform coordinates from IJK to world (cartesian). See <a href="https://www.slicer.org/wiki/Coordinate_systems#Image_transformation" target="_blank">here</a>
 
 Grayscale transformations to be applied to Pixel Data are defined by the equivalent of the Modality LUT and Rescale Intercept, Value of Interest Attributes, Photometric Interpretation and the equivalent of the Presentation LUT.
 
@@ -207,7 +207,7 @@ Grayscale transformations to be applied to Pixel Data are defined by the equival
 
 #### `planes` fields description:
 
-- `name` - string - the name of the plane, where the figures are placed. Can be [coronal, sagittal or axial](https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system)
+- `name` - string - the name of the plane, where the figures are placed. Can be <a href="https://www.slicer.org/wiki/Coordinate_systems#Anatomical_coordinate_system" target="_blank">coronal, sagittal or axial</a>
 
   ![Anatomical space](https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Fuploads%252Fgit-blob-b7938ea148776bd2e8500fd57112903723536900%252Fbody_planes.png%3Falt=media&width=768&dpr=2&quality=100&sign=144e6a783876f39cd31b16a4617757731b20c88e63d1c8dcc82e5bb2348b2cef)
 
@@ -224,11 +224,11 @@ Grayscale transformations to be applied to Pixel Data are defined by the equival
 #### `slices` fields description:
 
 - `index` - int value of slice index
-- `figures` - list of figures placed on a slice. It can be [bitmap](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#bitmap) or [rectangle](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#rectangle).
+- `figures` - list of figures placed on a slice. It can be <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#bitmap" target="_blank">bitmap</a> or <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#rectangle" target="_blank">rectangle</a>.
 
 #### `spatialFigures` fields description
 
-This list contains 3D objects of type [Mask3D](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#mask3d-3d-annotation)
+This list contains 3D objects of type <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects#mask3d-3d-annotation" target="_blank">Mask3D</a>
 
 - `key` - string - unique key for a given figure (used in `key_id_map.json`)
 - `objectKey` - string - unique key to link figure to object (used in `key_id_map.json`)
@@ -243,7 +243,7 @@ Example:
 
 `/project_name/dataset_name/mask/CTChest.nrrd/daff638a423a4bcfa34eb12e42243a87.nrrd` connected with spatial figure `"key": "daff638a423a4bcfa34eb12e42243a87"`
 
-Definitions for its fields can be found [here](https://teem.sourceforge.net/nrrd/format.html)
+Definitions for its fields can be found <a href="https://teem.sourceforge.net/nrrd/format.html" target="_blank">here</a>
 
 ## Key id map file
 
@@ -270,13 +270,13 @@ JSON file format of `key_id_map.json`:
 - `figures` - dictionary, where the key is a unique string, generated inside Supervisely environment to set mapping of object on volume in annotation, and value is unique integer ID related to the current volume
 - `videos` - dictionary, where the key is unique string, generated inside Supervisely environment to set mapping of volumes in annotation, and value is a unique integer ID related to the current volume
 - `tags` - dictionary, where the keys are unique strings, generated inside Supervisely environment to set mapping of tag on current volume in annotation, and value is a unique integer ID related to the current tag
-- **Key** - generated by [python3 function `uuid.uuid4().hex`](https://docs.python.org/3/library/uuid.html#uuid.uuid4). The unique string. All key and ID values should be unique inside single project and can not be shared between entities.
+- **Key** - generated by <a href="https://docs.python.org/3/library/uuid.html#uuid.uuid4" target="_blank">python3 function `uuid.uuid4().hex`</a>. The unique string. All key and ID values should be unique inside single project and can not be shared between entities.
 - **Value** - returned by server integer identifier while uploading object / figure / volume / tag.
 
 # Useful links
 
-- [Supervisely Annotation Format](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi)
-- [Supervisely Volume Annotation](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/08_supervisely_format_volume)
-- [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
-- [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
-- [[Supervisely Ecosystem] Import Volumes in Supervisely format](https://ecosystem.supervisely.com/apps/import-volumes-with-anns)
+- <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi" target="_blank">Supervisely Annotation Format</a>
+- <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/08_supervisely_format_volume" target="_blank">Supervisely Volume Annotation</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-volumes-with-anns" target="_blank">[Supervisely Ecosystem] Import Volumes in Supervisely format</a>

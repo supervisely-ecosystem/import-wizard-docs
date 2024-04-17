@@ -10,25 +10,17 @@ Import data from connected cloud storage such as AWS S3, Google Cloud or Azure w
 
 Import data from connected cloud storage without re-uploading it to Supervisely. Useful for large datasets.
 
-Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
+Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage <a href="https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3" target="_blank">here</a>.
 
-**Supported providers:**
+<div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
+  <b style="font-weight: 600; flex: none;" class="mr5">Providers:</b>
+  <span>AWS S3, Google Cloud Storage, Azure Blob Storage, File System.</span>
+  <b style="font-weight: 600; flex: none;" class="mr5">Point cloud formats:</b>
+  <span><code>.pcd</code>, <code>.ply</code>, <code>.las</code>, <code>.laz</code></span>
 
-`AWS S3`, `GCS (Google Cloud Storage)`, `Azure (Azure Blob Storage)`
+<b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
+<span>Point clouds in any directory structure without annotations (PCD, PLY, LAS, LAZ files)<span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
+</span>
 
-**Supported point cloud formats:**
-
-`.pcd` `.ply` `.las` `.laz`
-
-**Annotation formats** (click to see instructions):
-
-- Point clouds in any directory structure without annotations (PCD, PLY, LAS, LAZ files)
-- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md)
-
-<br>
-
-**Point cloud file size limit:**
-
-- Community Free plan: XX MB
-- Community Pro plan: XXX MB
-- Enterprise Edition: Unlimited
+</div>

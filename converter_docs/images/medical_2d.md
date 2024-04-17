@@ -59,7 +59,7 @@ Recommended directory structure:
 
 # Useful links
 
-- [[Supervisely Ecosystem] Import DICOM studies](https://ecosystem.supervisely.com/apps/import-dicom-studies)
-- [Nearly Raw Raster Data (NRRD): Format, Examples etc.](https://teem.sourceforge.net/nrrd/)
-- [Overview of The Content of The DICOM Standard](https://dicom.nema.org/medical/dicom/current/output/html/part01.html#chapter_6)
-- [Neuroimaging Informatics Technology Initiative (NIfTI)](https://nifti.nimh.nih.gov/)
+- <a href="https://ecosystem.supervisely.com/apps/import-dicom-studies" target="_blank">[Supervisely Ecosystem] Import DICOM studies</a>
+- <a href="https://teem.sourceforge.net/nrrd/" target="_blank">Nearly Raw Raster Data (NRRD): Format, Examples etc.</a>
+- <a href="https://dicom.nema.org/medical/dicom/current/output/html/part01.html#chapter_6" target="_blank">Overview of The Content of The DICOM Standard</a>
+- <a href="https://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative (NIfTI)</a>

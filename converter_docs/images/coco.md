@@ -4,7 +4,7 @@
 
 # Overview
 
-This converter allows to import images with annotations in [COCO](https://cocodataset.org/#home) format. COCO format has all annotations in one `.json` file, usually named `instances.json`.
+This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file, usually named `instances.json`.
 
 Supervisely supports the following annotation types: instances, keypoints, captions.
 
@@ -315,6 +315,6 @@ Image caption annotations are pretty simple. There are no categories in this `.j
 
 # Useful links
 
-- [COCO dataset](https://cocodataset.org/#home)
-- [COCO annotation structure](https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch)
-- [[Supervisely Ecosystem] Import COCO](https://ecosystem.supervisely.com/apps/import-coco)
+- <a href="https://cocodataset.org/#home" target="_blank">COCO dataset</a>
+- <a href="https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch" target="_blank">COCO annotation structure</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-coco" target="_blank">[Supervisely Ecosystem] Import COCO</a>

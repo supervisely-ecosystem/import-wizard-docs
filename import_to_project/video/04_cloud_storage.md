@@ -10,27 +10,27 @@ Import data from connected cloud storage, such as AWS S3, Google Cloud or Azure,
 
 Import data from connected cloud storage without re-uploading it to Supervisely. Useful for large datasets.
 
-Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage [here](https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3).
+Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage <a href="https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3" target="_blank">here</a>.
 
-**Supported providers:** 
+<div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
+  <b style="font-weight: 600; flex: none;" class="mr5">Providers:</b>
+  <span>AWS S3, Google Cloud Storage, Azure Blob Storage, File System</span>
+  <b style="font-weight: 600; flex: none;" class="mr5">Video formats:</b>
+  <span><code>.avi</code>, <code>.mp4</code>, <code>.3gp</code>, <code>.flv</code>, <code>.webm</code>, <code>.wmv</code>, <code>.mov</code>, <code>.mkv</code></span>
 
-`AWS S3` `GCS (Google Cloud Storage)` `Azure (Azure Blob Storage)`
+<b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
+<span>
+Videos in any directory structure without annotations<span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
+DAVIS (coming soon)<span> | </span>
+MOT (coming soon)
+</span>
 
-**Supported image formats:** 
+<b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
-`.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
-
-**Annotation formats** (click to see instructions):
-
-- Videos in any directory structure without annotations
-- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md)
-- DAVIS (coming soon)
-- MOT (coming soon)
-
-<br>
-
-**Video file size limit:**
-
-- Community Free plan: 100MB
-- Community Pro plan: 500MB
-- Enterprise Edition: Unlimited
+  <div>
+    <div>- Community Free plan: 100MB</div>
+    <div>- Community Pro plan: 500MB</div>
+    <div>- Enterprise Edition: Unlimited</div>
+  </div>
+</div>

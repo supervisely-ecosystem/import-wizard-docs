@@ -32,4 +32,4 @@ ann = sly.Annotation(img_size=[img.height, img.width], labels=[cat])
 api.annotation.upload_ann(image_info.id, ann)
 ```
 
-To learn more about Supervisely Python SDK click [here](https://developer.supervisely.com/).
+To learn more about Supervisely Python SDK click <a href="https://developer.supervisely.com/" target="_blank">here</a>.

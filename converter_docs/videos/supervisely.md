@@ -6,7 +6,7 @@
 
 Easily import your videos with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found [here](https://docs.supervise.ly/data-organization/00_ann_format_navi)
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
@@ -44,13 +44,14 @@ All videos will be uploaded to a single dataset, so you don't have to worry abou
 
 Items even can be placed in any subdirectories or the root directory. Just make sure that the annotation file names match the video file names (e.g. annotaion file `video_1.jpg.json` is for the video `video_1.jpg`) and that the annotation file format is correct (we will provide an example in the next section). The application will do the rest.
 
-Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file [here](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags).
+Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags" target="_blank">here</a>.
 
 # Individual Video Annotations
 
 For each video, we store the annotations in a separate `json` file named `video_name.video_format.json` with the following file structure:
 
 ![Video annotation example](https://docs.supervisely.com/~gitbook/image?url=https:%2F%2F1080806899-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M4BHwRbuyIoH-xoF3Gv%252Fuploads%252Fgit-blob-3d3aef25fa899e1c5e9d61d7ba4775fbc3c6f3b3%252Fvideo_frame.png%3Falt=media&width=768&dpr=4&quality=100&sign=5c3ac5b81581797e825afcaf66390a6c12ffd6d7c40377fa44986a9064e92131)
+
 ```json
 {
   "size": {
@@ -102,9 +103,9 @@ For each video, we store the annotations in a separate `json` file named `video_
 
 - `size` - string - is equal to image(frame) size
 - `description` - string - (optional) - this field is used to store the text we want to assign to the video. In the labeling intrface it corresponds to the 'data' filed.
-- `tags` - **list** of strings that will be interpreted as video [tags](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/03_supervisely_format_tags)
+- `tags` - **list** of strings that will be interpreted as video <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/03_supervisely_format_tags" target="_blank">tags</a>
 - `key` - string, unique key for a given video (used in key_id_map.json to get the video ID)
-- `objects` - **list** of [objects on the video](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects)
+- `objects` - **list** of <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/04_supervisely_format_objects" target="_blank">objects on the video</a>
 - `frames` - **list** of frames of which the video consists. List contains only frames with an object from the 'objects' field
   - `index` - integer - number of the current frame
   - `figures` - integer - list of objects which the current frame contains
@@ -132,24 +133,22 @@ For each video, we store the annotations in a separate `json` file named `video_
 
 ## Key id map file
 
-Key_id_map.json file is optional. It is created when annotating the video inside Supervisely interface and sets the correspondence between the unique identifiers of the video, object and the frame on which the object is located.  If you annotate manually, you do not need to create this file. This will not affect the work being done.
-
-
+Key_id_map.json file is optional. It is created when annotating the video inside Supervisely interface and sets the correspondence between the unique identifiers of the video, object and the frame on which the object is located. If you annotate manually, you do not need to create this file. This will not affect the work being done.
 
 Json format of key_id_map.json:
 
 ```json
 {
-    "tags": {},
-    "objects": {
-        "198f727d40c749eebcacc4aed299b39a": 20520
-    },
-    "figures": {
-        "65f21690780e43b49863c3cbd07eab3a": 503130811
-    },
-    "videos": {
-        "c8168b43ae1b45c38930f456df9d0f2b": 157876296
-    }
+  "tags": {},
+  "objects": {
+    "198f727d40c749eebcacc4aed299b39a": 20520
+  },
+  "figures": {
+    "65f21690780e43b49863c3cbd07eab3a": 503130811
+  },
+  "videos": {
+    "c8168b43ae1b45c38930f456df9d0f2b": 157876296
+  }
 }
 ```
 
@@ -160,11 +159,10 @@ Fields definitions:
 - `videos` - dictionary, where the key is unique string, generated inside Supervisely environment to set correspondence of video in annotation, and value is a unique integer ID corresponding to the current video
 - `tags` - dictionary, where the keys are unique strings, generated inside Supervisely environment to set correspondence of tag on current frame in annotation, and values are a unique integer ID corresponding to the current tag
 
-
 # Useful links
 
-- [Supervisely Annotation Format](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi)
-- [Supervisely Video Annotation](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/06_supervisely_format_videos)
-- [[SDK CLI] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project)
-- [[CLI Tool Beta] Upload projects in Supervisely format](https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format)
-- [[Supervisely Ecosystem] Import video in Supervisely format](https://ecosystem.supervisely.com/apps/import-videos-in-sly-format)
+- <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi" target="_blank">Supervisely Annotation Format</a>
+- <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/06_supervisely_format_videos" target="_blank">Supervisely Video Annotation</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
+- <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-videos-in-sly-format" target="_blank">[Supervisely Ecosystem] Import video in Supervisely format</a>

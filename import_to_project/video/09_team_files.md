@@ -11,21 +11,23 @@ Team Files serves as the repository for storing your data. You can conveniently 
 Select folder, file or an archive and press the RUN button. Supervisely will automatically detect the data format, validate it, and upload to Supervisely.
 When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
-**Supported video formats:** 
+<div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
+  <b style="font-weight: 600; flex: none;" class="mr5">Video formats:</b>
+  <span><code>.avi</code>, <code>.mp4</code>, <code>.3gp</code>, <code>.flv</code>, <code>.webm</code>, <code>.wmv</code>, <code>.mov</code>, <code>.mkv</code></span>
 
-`.avi` `.mp4` `.3gp` `.flv` `.webm` `.wmv` `.mov` `.mkv`
+<b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
+<span>
+Videos in any directory structure without annotations<span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
+DAVIS (coming soon)<span> | </span>
+MOT (coming soon)
+</span>
 
-**Annotation formats** (click to see instructions):
+<b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
-- Videos in any directory structure without annotations
-- [Supervisely](https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md)
-- DAVIS (coming soon)
-- MOT (coming soon)
-
-<br>
-
-**Video file size limit:**
-
-- Community Free plan: 100MB
-- Community Pro plan: 500MB
-- Enterprise Edition: Unlimited
+  <div>
+    <div>- Community Free plan: 100MB</div>
+    <div>- Community Pro plan: 500MB</div>
+    <div>- Enterprise Edition: Unlimited</div>
+  </div>
+</div>

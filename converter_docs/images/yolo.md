@@ -4,7 +4,7 @@
 
 # Overview
 
-This converter allows to import images with annotations in [YOLO](https://docs.ultralytics.com/datasets/detect/) format. YOLO format has a config `.yaml` file that contains information about classes and datasets, usually named `data_config.yaml` . Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image.
+This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> format. YOLO format has a config `.yaml` file that contains information about classes and datasets, usually named `data_config.yaml` . Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image.
 
 ⚠️ **Note:** If YOLO project do not contain `data_config.yaml` file, it will use default COCO class names.
 
@@ -188,5 +188,5 @@ The label file corresponding to the below image contains 2 persons (class 0) and
 
 # Useful links
 
-- [YOLO format](https://docs.ultralytics.com/datasets/detect/)
-- [[Supervisely Ecosystem] Convert YOLO v5 to Supervisely format](https://ecosystem.supervisely.com/apps/convert-yolov5-to-supervisely-format)
+- <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO format</a>
+- <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">[Supervisely Ecosystem] Convert YOLO v5 to Supervisely format</a>
