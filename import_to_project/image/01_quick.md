@@ -32,8 +32,8 @@ Images in any directory structure without annotations<span> | </span>
 <b style="font-weight: 600; flex: none;" class="mr5">Image file size limit:</b>
 
   <div>
-    <div>Community Free plan: 25MB</div>
-    <div>Community Pro plan: 300MB</div>
-    <div>Enterprise Edition: Unlimited</div>
+    <div>- Community Free plan: 25MB</div>
+    <div>- Community Pro plan: 300MB</div>
+    <div>- Enterprise Edition: Unlimited</div>
   </div>
 </div>
