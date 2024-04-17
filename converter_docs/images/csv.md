@@ -85,4 +85,4 @@ Regardless of the file format you choose (`.csv`, `.tsv`, or `.txt`), you can sp
 
 - [[Supervisely Ecosystem] Import Images from CSV](https://ecosystem.supervise.ly/apps/import-images-from-csv)
 
-    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-from-csv" src="https://imgur.com/Cqe7fjv.png" width="450px" style='padding-bottom: 20px'/>
+    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-from-csv" src="https://imgur.com/Cqe7fjv.png" width="350px" style='padding-bottom: 10px'/>
