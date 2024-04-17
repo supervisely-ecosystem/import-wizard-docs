@@ -8,7 +8,7 @@ Import data from Team Files directly into your project.
 
 Team Files serves as the repository for storing your data. You can conveniently upload data here at any time from the Team Files page.
 
-Select folder, file or an archive and press the RUN button. Supervisely will automatically detect the data format, validate it, and upload to Supervisely.
+Select a folder, file or archive and press the RUN button. Supervisely will automatically detect the data format, validate it, and upload to Supervisely.
 When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
 <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">

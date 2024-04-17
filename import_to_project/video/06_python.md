@@ -6,13 +6,13 @@ Integrate your workflow with Supervisely or automate processes using Python SDK.
 
 ### Overview
 
-To get started, install Supervisely Python SDK:
+To get started, install <a href="https://pypi.org/project/supervisely/" target="_blank">Supervisely Python SDK</a>:
 
 ```bash
 pip install supervisely
 ```
 
-An integration example:
+An integration example (find more in our <a href="https://developer.supervisely.com/" target="_blank">Developer portal</a>):
 
 ```python
 # upload video

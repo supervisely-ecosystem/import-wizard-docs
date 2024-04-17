@@ -6,13 +6,13 @@ Integrate your workflow with Supervisely or automate processes using Python SDK.
 
 ### Overview
 
-To get started, install Supervisely Python SDK:
+To get started, install <a href="https://pypi.org/project/supervisely/" target="_blank">Supervisely Python SDK</a>:
 
 ```bash
 pip install supervisely
 ```
 
-An integration example:
+An integration example (find more in our <a href="https://developer.supervisely.com/" target="_blank">Developer portal</a>):
 
 ```python
 # upload image
@@ -31,5 +31,3 @@ cat = sly.Label(sly.Rectangle(top=100, left=150, bottom=200, right=250), cat_cla
 ann = sly.Annotation(img_size=[img.height, img.width], labels=[cat])
 api.annotation.upload_ann(image_info.id, ann)
 ```
-
-To learn more about Supervisely Python SDK click <a href="https://developer.supervisely.com/" target="_blank">here</a>.
