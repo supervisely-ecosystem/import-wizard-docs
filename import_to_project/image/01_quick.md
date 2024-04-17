@@ -2,12 +2,11 @@
 
 ### Description
 
-Upload images or labeled data from your computer with auto-detection of annotation format.
+Upload images or labeled data from your computer with auto-detection of annotation format
 
 ### Overview
 
-Drag and drop files, folders or an archive. Supervisely will automatically detect annotation format, correct `EXIF` issues, verify, and import your data.
-When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
+Drag and drop files, folders or an archive. Supervisely will automatically detect annotation format, correct `EXIF` issues, verify, and import your data. When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
 <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
   <b style="font-weight: 600; flex: none;" class="mr5">Image formats:</b>
