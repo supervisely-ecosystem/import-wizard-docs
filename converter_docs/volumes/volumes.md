@@ -2,14 +2,14 @@
 
 # Overview
 
-This is the most common format for uploading images to the platform. Supervisely will check and verify the format of the input data and if no other annotation format is detected, the images will be uploaded to the platform.
+This option allows you to upload volumes to the platform without any annotations. All volumes from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-dicom-volumes" target="_blank">Import DICOM Volumes</a> application from the Supervisely Ecosystem.
 
 # Format description
 
 **Supported image formats:** `.nrrd`, `.dcm`.<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable.<br>
-**Grouped by:** Any structure (uploaded to a single dataset)<br>
+**Grouped by:** Any structure (will be uploaded to a single dataset).<br>
 
 # Input files structure
 
@@ -18,17 +18,17 @@ Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-
 Recommended directory structure:
 
 ```text
-📦project name
-┣ 🖼️IMG_01.png
-┣ 🖼️IMG_02.png
-┣ 🖼️IMG_03.png
-┣ 🖼️IMG_04.png
-┣ 🖼️IMG_05.png
-┣ 🖼️IMG_06.png
-┣ 🖼️IMG_07.png
-┣ 🖼️IMG_08.png
-┣ 🖼️IMG_09.png
-┗ 🖼️IMG_10.png
+📦folder
+┣ 🩻item_01.nrrd
+┣ 🩻item_02.nrrd
+┣ 🩻item_03.nrrd
+┣ 🩻item_04.nrrd
+┣ 🩻item_05.nrrd
+┣ 🩻item_06.nrrd
+┣ 🩻item_07.nrrd
+┣ 🩻item_08.nrrd
+┣ 🩻item_09.nrrd
+┗ 🩻item_10.nrrd
 ```
 
 # Useful links

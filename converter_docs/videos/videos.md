@@ -2,14 +2,14 @@
 
 # Overview
 
-This is the most common format for uploading images to the platform. Supervisely will check and verify the format of the input data and if no other annotation format is detected, the images will be uploaded to the platform.
+This option allows you to upload videos to the platform without any annotations. All videos from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-videos-supervisely" target="_blank">Import Videos</a> application from the Supervisely Ecosystem.
 
 # Format description
 
 **Supported image formats:** `.avi`, `.mp4`, `.3gp`, `.flv`, `.webm`, `.wmv`, `.mov`, `.mkv`.<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable.<br>
-**Grouped by:** Any structure (uploaded to a single dataset)<br>
+**Grouped by:** Any structure (will be uploaded to a single dataset).<br>
 
 # Input files structure
 
@@ -18,17 +18,17 @@ Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-
 Recommended directory structure:
 
 ```text
-📦project name
-┣ 🖼️IMG_01.png
-┣ 🖼️IMG_02.png
-┣ 🖼️IMG_03.png
-┣ 🖼️IMG_04.png
-┣ 🖼️IMG_05.png
-┣ 🖼️IMG_06.png
-┣ 🖼️IMG_07.png
-┣ 🖼️IMG_08.png
-┣ 🖼️IMG_09.png
-┗ 🖼️IMG_10.png
+📦folder
+┣ 🎬video_01.mp4
+┣ 🎬video_02.mp4
+┣ 🎬video_03.mp4
+┣ 🎬video_04.mp4
+┣ 🎬video_05.mp4
+┣ 🎬video_06.mp4
+┣ 🎬video_07.mp4
+┣ 🎬video_08.mp4
+┣ 🎬video_09.mp4
+┗ 🎬video_10.mp4
 ```
 
 # Useful links

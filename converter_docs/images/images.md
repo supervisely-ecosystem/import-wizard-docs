@@ -2,14 +2,14 @@
 
 # Overview
 
-This is the most common format for uploading images to the platform. Supervisely will check and verify the format of the input data and if no other annotation format is detected, the images will be uploaded to the platform.
+This option allows you to upload images to the platform without any annotations. All images from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-images" target="_blank">Import Images</a> application from the Supervisely Ecosystem.
 
 # Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable.<br>
-**Grouped by:** Any structure (uploaded to a single dataset)<br>
+**Grouped by:** Any structure (will be uploaded to a single dataset).<br>
 
 # Input files structure
 
