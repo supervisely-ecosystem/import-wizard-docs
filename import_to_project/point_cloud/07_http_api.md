@@ -6,7 +6,7 @@ Use API to interact with Supervisely to do almost anything you can do through th
 
 ### Overview
 
-Everything you do visually in the UI can also be accomplished through the API to programmatically interact with Supervisely. You can customize any action using over 300 methods available. Detailed documentation for these methods can be found in our <a href="https://dev.supervise.ly/api-docs/" target="_blank">Supervisely REST API Docs</a>.
+Everything you do visually in the UI can also be accomplished through the API to programmatically interact with Supervisely. You can customize any action using over 300 methods available. Detailed documentation for these methods can be found in our <a href="https://api.docs.supervisely.com/" target="_blank">Supervisely REST API Docs</a>.
 
 cURL Example to get dataset info:
 

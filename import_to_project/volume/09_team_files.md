@@ -24,8 +24,8 @@ Volumes in any directory structure without annotations (NRRD, DICOM files)<span>
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
   <div>
-    <div>- Community Free plan: 150MB</div>
-    <div>- Community Pro plan: 150MB</div>
-    <div>- Enterprise Edition: Unlimited</div>
+    <div>Community Free plan: 150MB</div>
+    <div>Community Pro plan: 150MB</div>
+    <div>Enterprise Edition: Unlimited</div>
   </div>
 </div>
