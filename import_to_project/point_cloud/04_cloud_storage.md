@@ -6,8 +6,6 @@ Import data from connected cloud storage such as AWS S3, Google Cloud or Azure w
 
 ### Overview
 
-✨ _Available in Enterprise Edition._
-
 Import data from connected cloud storage without re-uploading it to Supervisely. Useful for large datasets.
 
 Select folders or files and press `Run`. Supervisely will detect data format, convert, if needed, and import it to Supervisely. Learn how to connect cloud storage <a href="https://docs.supervisely.com/enterprise-edition/advanced-tuning/s3" target="_blank">here</a>.
