@@ -13,7 +13,7 @@ This option allows you to upload volumes to the platform without any annotations
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/15013758/sample_images.zip)<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-dicom-volumes/files/12547806/my_nrrd_project.zip)<br>
 
 Recommended directory structure:
 

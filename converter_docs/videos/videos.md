@@ -13,7 +13,7 @@ This option allows you to upload videos to the platform without any annotations.
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/15013758/sample_images.zip)<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-videos-supervisely/files/12537259/my_videos_project.zip)<br>
 
 Recommended directory structure:
 
@@ -22,13 +22,7 @@ Recommended directory structure:
 ┣ 🎬video_01.mp4
 ┣ 🎬video_02.mp4
 ┣ 🎬video_03.mp4
-┣ 🎬video_04.mp4
-┣ 🎬video_05.mp4
-┣ 🎬video_06.mp4
-┣ 🎬video_07.mp4
-┣ 🎬video_08.mp4
-┣ 🎬video_09.mp4
-┗ 🎬video_10.mp4
+┗ 🎬video_04.mp4
 ```
 
 # Useful links
