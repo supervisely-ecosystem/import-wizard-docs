@@ -8,9 +8,9 @@ Each page of the `.PDF` file will be converted to a separate image. The images w
 # Format description
 
 **Supported image formats:** `.pdf`<br>
-**With annotations:** Yes<br>
-**Supported annotation format:** No<br>
-**Grouped by:** Not Applicable<br>
+**With annotations:** No<br>
+**Supported annotation format:** Not applicable<br>
+**Grouped by:** Any structure (uploaded to a single dataset)<br>
 
 ![PDF import results](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/488fec72-f2fe-4078-a4b3-3105a06e1b8a)
 

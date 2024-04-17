@@ -12,7 +12,7 @@ Images will be grouped by directories, files from the "split" directory will be 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable <br>
-**Grouped by:** folders<br>
+**Grouped by:** Folders<br>
 
 # Input files structure
 

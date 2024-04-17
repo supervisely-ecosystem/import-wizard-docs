@@ -8,10 +8,10 @@ Just organize images into groups and drop them to the import. The app will do th
 
 # Format description
 
-**Supported format:** structured catalogs<br>
-**With annotations:** yes<br>
-**Annotation types:** tags <br>
-**Grouped by:** tag values<br>
+**Supported format:** Structured catalogs<br>
+**With annotations:** Yes<br>
+**Annotation types:** Tags in Supervisely format<br>
+**Grouped by:** Tag values<br>
 
 ## Key Features
 

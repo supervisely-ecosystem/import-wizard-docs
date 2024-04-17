@@ -9,9 +9,9 @@ Easily import your images with annotations in the Supervisely format. The Superv
 # Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
-**With annotations:** yes<br>
+**With annotations:** Yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (will be uploaded to a single dataset)<br>
+**Grouped by:** Any structure (will be uploaded to a single dataset)<br>
 
 # Input files structure
 

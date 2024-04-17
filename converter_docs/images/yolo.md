@@ -103,9 +103,9 @@ names:
 # Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
-**With annotations:** yes<br>
+**With annotations:** Yes<br>
 **Supported annotation format:** `.txt`.<br>
-**Grouped by:** any structure (uploaded to a single dataset)<br>
+**Grouped by:** Any structure (uploaded to a single dataset)<br>
 
 # Input files structure
 
