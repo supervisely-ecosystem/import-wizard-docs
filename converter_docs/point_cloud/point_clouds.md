@@ -13,7 +13,7 @@ This option allows you to upload point clouds to the platform without any annota
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-pointcloud-pcd/files/12537340/my_pcd_project.zip)<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/15025187/sample_pcd.zip)<br>
 
 Recommended directory structure:
 

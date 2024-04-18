@@ -210,7 +210,7 @@ Json format of key_id_map.json:
 
 ## Format of frame_pointcloud_map.json
 
-This file create for mapping between pointcloud files and annotation frames in the correct order.
+This file set mapping between pointcloud files and annotation frames in the correct order.
 
 ```json
 {

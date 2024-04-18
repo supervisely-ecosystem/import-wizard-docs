@@ -13,23 +13,46 @@ This option allows you to upload point clouds as episodes to the platform withou
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-pointcloud-episode/files/12546714/my_pointcloud_episodes_project.zip)<br>
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/15025197/sample_pcde.zip)
+Example data with related images: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/files/15025207/sample_pcde_w_rimg.zip)
+
+<br>
 
 Recommended directory structure:
 
 ```text
-📦folder
-┣ 📦item_01.pcd
-┣ 📦item_02.pcd
-┣ 📦item_03.pcd
-┣ 📦item_04.pcd
-┣ 📦item_05.pcd
-┣ 📦item_06.pcd
-┣ 📦item_07.pcd
-┣ 📦item_08.pcd
-┣ 📦item_09.pcd
-┗ 📦item_10.pcd
+📦folder (with related images)          📦folder
+ ┣ 📂pointcloud                          ┣ 📂pointcloud
+ ┃ ┣ 📦0000000000.pcd                    ┃ ┣ 📦0000000000.pcd
+ ┃ ┣ 📦0000000001.pcd                    ┃ ┣ 📦0000000001.pcd
+ ┃ ┗ 📦0000000002.pcd                    ┃ ┗ 📦0000000002.pcd
+ ┣ 📂related_images                      ┗ 📜frame_pointcloud_map.json
+ ┃ ┣ 📂0000000000_pcd
+ ┃ ┃ ┣ 🖼️0000000000.png
+ ┃ ┃ ┗ 📜0000000000.png.json
+ ┃ ┣ 📂0000000001_pcd
+ ┃ ┃ ┣ 🖼️0000000001.png
+ ┃ ┃ ┗ 📜0000000001.png.json
+ ┃ ┣ 📂0000000002_pcd
+ ┃ ┃ ┣ 🖼️0000000002.png
+ ┃ ┃ ┗ 📜0000000002.png.json
+ ┗ 📜frame_pointcloud_map.json                   
 ```
+
+Frames mapping file structure:
+
+<details>
+<summary>📜frame_pointcloud_map.json</summary>
+
+```json
+{
+    "0": "0000000000.pcd",
+    "1": "0000000001.pcd",
+    "2": "0000000002.pcd"
+}
+```
+</details>
+
 
 # Useful links
 
