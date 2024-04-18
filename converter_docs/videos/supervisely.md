@@ -25,14 +25,14 @@ Both directory and archive are supported.
   📦input_folder
    ┣ 📂dataset_name_01
    ┃  ┣ 📂ann
-   ┃  ┃  ┣ 📄vid_0748.jpeg.json
-   ┃  ┃  ┗ 📄vid_8144.jpeg.json
+   ┃  ┃  ┣ 📄vid_0748.mp4.json
+   ┃  ┃  ┗ 📄vid_8144.mp4.json
    ┃  ┣ 📂video
-   ┃  ┃  ┣ 🏞️vid_0748.jpeg
-   ┃  ┃  ┗ 🏞️vid_8144.jpeg
+   ┃  ┃  ┣ 🎬vid_0748.mp4
+   ┃  ┃  ┗ 🎬vid_8144.mp4
    ┃  ┗ 📂meta (optional)
-   ┃     ┣ 📄vid_0748.jpeg.json
-   ┃     ┗ 📄vid_8144.jpeg.json
+   ┃     ┣ 📄vid_0748.mp4.json
+   ┃     ┗ 📄vid_8144.mp4.json
    ┣ 📄meta.json
    ┗ 📄key_id_map.json file (optional)
 ```
