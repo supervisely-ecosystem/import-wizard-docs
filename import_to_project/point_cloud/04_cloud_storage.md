@@ -17,8 +17,9 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
   <span><code>.pcd</code>, <code>.ply</code>, <code>.las</code>, <code>.laz</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
-<span>Point clouds in any directory structure without annotations (PCD, PLY, LAS, LAZ files)<span> | </span>
-<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
+<span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/point_clouds.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD, PLY, LAS, LAZ format point clouds</a><span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a>
 </span>
 
 </div>
