@@ -14,7 +14,7 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
   <b style="font-weight: 600; flex: none;" class="mr5">Providers:</b>
   <span>AWS S3, Google Cloud Storage, Azure Blob Storage, File System.</span>
   <b style="font-weight: 600; flex: none;" class="mr5">Image formats:</b>
-  <span><code>.jpg</code>, <code>.jpeg</code>, <code>.mpo</code>, <code>.bmp</code>, <code>.png</code>, <code>.webp</code>, <code>.tiff</code>, <code>.tif</code>, <code>.nrrd</code>, <code>.jfif</code>, <code>.avif</code>, <code>.heic</code>, <code>NIfTI and DICOM</code></span>
+  <span><code>.jpg</code>, <code>.jpeg</code>, <code>.mpo</code>, <code>.bmp</code>, <code>.png</code>, <code>.webp</code>, <code>.tiff</code>, <code>.tif</code>, <code>.nrrd</code>, <code>.jfif</code>, <code>.avif</code>, <code>.heic</code>,<code>NIfTI</code>, <code>DICOM</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
