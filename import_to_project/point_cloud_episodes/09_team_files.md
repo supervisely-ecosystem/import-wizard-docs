@@ -17,8 +17,8 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-Point cloud episodes without annotations<span> | </span>
-<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/point_cloud_episodes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Point cloud episodes</a><span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a>
 </span>
 
 </div>

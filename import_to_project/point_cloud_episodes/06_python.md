@@ -14,7 +14,7 @@ pip install supervisely
 
 ### Examples
 
-> Find more in our <a href="https://developer.supervisely.com/" target="_blank">Developer portal</a>.
+For more information, visit our <a href="https://developer.supervisely.com/" target="_blank">Developer Portal</a>.
 
 **Upload one point cloud to Supervisely.**
 
