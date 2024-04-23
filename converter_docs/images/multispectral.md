@@ -5,6 +5,12 @@
 This converter allows to import of multispectral images as channels or as separate images without annotations.<br>
 Images will be grouped by directories, files from the "split" directory will be split into separate images by channels and the files from the "images" directory will be uploaded as they are.<br>
 
+> Note: To use the multispectral import feature, you need to create a project with the `Multispectral image annotation` setting enabled. You can also enable this setting in the project settings after the import. Here is a illustration of how to upload multispectral images:
+
+![Import Multispectral images](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/79905215/5571a96b-9c2f-42cd-abed-904acec3d625)
+
+Result of the import:
+
 ![Result of the import](https://developer.supervisely.com/~gitbook/image?url=https:%2F%2Fgithub-production-user-asset-6210df.s3.amazonaws.com%2F118521851%2F286217532-c6551cd6-d207-4d13-a9ce-9b31d3e57b8f.png&width=768&dpr=2&quality=100&sign=5575e36422d48d1b5023237e4dd251079e05d8bb2227741e4fc119501625c1b5)
 
 # Format description
