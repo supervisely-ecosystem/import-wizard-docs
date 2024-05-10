@@ -15,25 +15,9 @@ Supervisely supports the following annotation types: **instances**, **keypoints*
 **Supported annotation format:** `.json`.<br>
 **Grouped by:** any structure (will be uploaded to one dataset).<br>
 
-# Advanced option: how to speed up the import process
-
-🏋️‍♂️ Use this option **if you have a large dataset already uploaded to Supervisely** and you don't want to upload images again (for example, you have a dataset with images and you want to upload annotations only).
-
-All you need to do is upload the JSON file with annotations in COCO format. The application will match the annotations with the images by their names and upload the annotations to the existing dataset.
-
-**Key points:**
-
-- **Press `+ Import data` button inside the dataset**: you need to run the import process from the dataset that contains the images.
-
-- **Image names**: the application will match the annotations with the images by their names. So, make sure that the names of the images in the dataset match the names of the images in the COCO annotations file.
-
-- **Impact on existing annotations**: if you import annotations to the dataset that already contains annotations, the new annotations will be merged with the existing ones. If you want to keep the original annotations, clone the dataset before importing the new annotations.
-
 # Default option: Import images and annotations together
 
 Use this option **if you have images and annotations in COCO format** and you want to upload them together to Supervisely.
-
-**Input files structure:**
 
 You can download an example data:
 
@@ -54,6 +38,20 @@ Recommended directory structure:
            ┣ 🖼️0004.png
            ┗ 🖼️0005.png
 ```
+
+# Advanced option: how to speed up the import process
+
+🏋️‍♂️ Use this option **if you have a large dataset already uploaded to Supervisely** and you don't want to upload images again (for example, you have a dataset with images and you want to upload annotations only).
+
+All you need to do is upload the JSON file with annotations in COCO format. The application will match the annotations with the images by their names and upload the annotations to the existing dataset.
+
+Key points:
+
+- **Press `+ Import data` button inside the dataset**: you need to run the import process from the dataset that contains the images.
+
+- **Image names**: the application will match the annotations with the images by their names. So, make sure that the names of the images in the dataset match the names of the images in the COCO annotations file.
+
+- **Impact on existing annotations**: if you import annotations to the dataset that already contains annotations, the new annotations will be merged with the existing ones. If you want to keep the original annotations, clone the dataset before importing the new annotations.
 
 # COCO Annotation
 
