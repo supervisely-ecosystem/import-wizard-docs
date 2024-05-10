@@ -2,20 +2,38 @@
 
 # Overview
 
-This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file, usually named `instances.json`.
+This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file.
 
-Supervisely supports the following annotation types: instances, keypoints, captions.
+Supervisely supports the following annotation types: **instances**, **keypoints**, **captions**.
 
-![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173)
+<!-- ![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173) -->
 
 # Format description
 
 **Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (uploaded to a single dataset)<br>
+**Grouped by:** any structure (will be uploaded to one dataset).<br>
 
-# Input files structure
+# Advanced option: how to speed up the import process
+
+🏋️‍♂️ Use this option **if you have a large dataset already uploaded to Supervisely** and you don't want to upload images again (for example, you have a dataset with images and you want to upload annotations only).
+
+All you need to do is upload the JSON file with annotations in COCO format. The application will match the annotations with the images by their names and upload the annotations to the existing dataset.
+
+**Key points:**
+
+- **Press `+ Import data` button inside the dataset**: you need to run the import process from the dataset that contains the images.
+
+- **Image names**: the application will match the annotations with the images by their names. So, make sure that the names of the images in the dataset match the names of the images in the COCO annotations file.
+
+- **Impact on existing annotations**: if you import annotations to the dataset that already contains annotations, the new annotations will be merged with the existing ones. If you want to keep the original annotations, clone the dataset before importing the new annotations.
+
+# Default option: Import images and annotations together
+
+Use this option **if you have images and annotations in COCO format** and you want to upload them together to Supervisely.
+
+**Input files structure:**
 
 You can download an example data:
 
@@ -139,7 +157,7 @@ Annotations for keypoints are just like in Object Detection (Segmentation) above
 - **v** indicates visibility — v=0: not labeled (in which case x=y=0), v=1: labeled but not visible (behind an object for example), and v=2: labeled and visible
 
 All keypoints with 0 visibility are ignored and will not be presented in the project.
-As for other 2: you can specify label preferences in the modal window whether you want to include key points that are labeled, but not visible or import only clearly visible keypoints.
+As for the other 2: you can specify label preferences in the modal window whether you want to include key points that are labeled, but not visible or import only clearly visible keypoints.
 
 **Visibility flag example:**
 
