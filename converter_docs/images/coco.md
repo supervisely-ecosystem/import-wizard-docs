@@ -51,7 +51,7 @@ Key points:
 
 - **Image names**: the application will match the annotations with the images by their names. So, make sure that the names of the images in the dataset match the names of the images in the COCO annotations file.
 
-- **Impact on existing annotations**: if you import annotations to the dataset that already contains annotations, the new annotations will be merged with the existing ones. If you want to keep the original annotations, clone the dataset before importing the new annotations.
+- **Impact on existing annotations**: new annotations will be merged with the existing ones. If you want to keep the original annotations, clone the dataset before importing new annotations.
 
 # COCO Annotation
 
