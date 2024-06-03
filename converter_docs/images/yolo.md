@@ -2,9 +2,16 @@
 
 # Overview
 
-This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> format. YOLO format has a config `.yaml` file that contains information about classes and datasets, usually named `data_config.yaml` . Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image.
+This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> **segmentation** and **detection** formats. 
 
-⚠️ **Note:** If YOLO project do not contain `data_config.yaml` file, it will use default COCO class names.
+Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image. 
+
+    - Segmentation labels will be converted to polygons. Labels format: `<class-index> <x1> <y1> <x2> <y2> ... <xn> <yn>`
+    - Detection labels will be converted to rectangles. Labels format: `<class-index> <x_center> <y_center> <width> <height>`
+
+YOLO format data should have a specific configuration file that contains information about classes and datasets, usually named `data_config.yaml`.
+
+⚠️ **Note:** If the YOLO project does not contain `data_config.yaml` file, it will use default COCO class names.
 
 ![Import results example](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/4452bac4-9316-41f4-a90c-e27786af738a)
 
@@ -161,16 +168,30 @@ val: ../lemons/images/val # path to val imgs (or "images/val")
 
 # Individual Image Annotations
 
-Annotation files are in `.txt` format and should contain object labels on each line.
-Box coordinates must be in normalized xywh format (from 0 to 1).
-If your boxes are in pixels, you should divide x_center and width by image width, and y_center and height by image height.
-Class numbers should be zero-indexed (start with 0).
+Annotation files are in `.txt` format and should contain object labels on each line:
 
-The Annotation `.txt` file should be formatted with one row per object in:
+- Class numbers that correspond to the class names in the `data_config.yaml` file.
+- Label coordinates must be in normalized format (from 0 to 1).
+
+**1. Segmentation**
+
+Labels should be formatted with one row per object in:
 
 ```text
-class_id x_center y_center width height
+<class-index> <x1> <y1> <x2> <y2> ... <xn> <yn>
 ```
+
+**2. Detection:**
+
+Labels should be formatted with one row per object in:
+
+```text
+<class-index> <x_center> <y_center> <width> <height>
+```
+
+If your boxes are in pixels, you should divide x_center and width by image width, and y_center and height by image height.
+
+**Example:**
 
 The label file corresponding to the below image contains 2 persons (class 0) and a tie (class 27) from original COCO classes.
 
