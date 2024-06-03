@@ -20,6 +20,18 @@ While this converter primarily supports 2D medical images, it is possible to imp
 
   Uses `.dcm` and `.DICOM` extensions
 
+  If your DICOM data contains one of the following metadata fields, it will be used as `group` tag in the project:
+
+    - `StudyInstanceUID`
+    - `StudyID`
+    - `SeriesInstanceUID`
+    - `TreatmentSessionUID`
+    - `Manufacturer`
+    - `ManufacturerModelName`
+    - `Modality`
+
+  Moreover, all other DICOM metadata will be saved as image metadata and can be viewed in the Labeling interface.
+
   ***
 
 - **NRRD**
