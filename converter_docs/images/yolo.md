@@ -6,8 +6,8 @@ This converter allows to import images with annotations in <a href="https://docs
 
 Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image. 
 
-    - Segmentation labels will be converted to polygons. Labels format: `<class-index> <x1> <y1> <x2> <y2> ... <xn> <yn>`
-    - Detection labels will be converted to rectangles. Labels format: `<class-index> <x_center> <y_center> <width> <height>`
+- Segmentation labels will be converted to polygons. Labels format: `<class-index> <x1> <y1> <x2> <y2> ... <xn> <yn>`
+- Detection labels will be converted to rectangles. Labels format: `<class-index> <x_center> <y_center> <width> <height>`
 
 YOLO format data should have a specific configuration file that contains information about classes and datasets, usually named `data_config.yaml`.
 
