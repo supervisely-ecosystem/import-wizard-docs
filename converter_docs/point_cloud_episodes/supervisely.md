@@ -32,7 +32,7 @@ Root folder for the project named `project name`
   - `related_images` optional folder, contains photo-context data:
     - Frame folder, each named according to pointcloud (`/related_images/frame1/`), which contains:
       - image files (`.png \ .jpg`)
-      - image ann files (`.json`) - json files, named according to image name (`1.png -> 1.json`)
+      - photo context image annotation file (`.json`) - json files, named according to image name (`1.png -> 1.png.json`). Read more in the "Photo context image annotation file" section below.
 
 # Format of Annotations
 

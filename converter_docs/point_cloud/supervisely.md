@@ -66,6 +66,11 @@ All the positional coordinates (x, y, z) are in meters. Supervisely supports all
 
 The PCD file format description can be found <a href="https://pointclouds.org/documentation/tutorials/pcd_file_format.html" target="_blank">here</a>
 
+`related_images` optional folder, contains photo-context data:
+    - Frame folder, each named according to pointcloud (`/related_images/scene_1_pcd/`), which contains:
+      - image files (`.png \ .jpg`)
+      - photo context image annotation file (`.json`) - json files, named according to image name (`1.png -> 1.png.json`). Read more in the "Photo context image annotation file" section below.
+
 # Format of Annotations
 
 Point cloud Annotations refer to each point cloud and contains information about labels on the point clouds in the datasets.
@@ -170,6 +175,57 @@ Main idea of `key` fields and `id` you can see below in "Key id map" file sectio
 Rotation values bound inside \[**-pi** ; **pi**] When `yaw = 0` box direction will be strict `+y`
 
 Read more about the `key_id_map.json` file and photo context annotations in the documentation <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds#key-id-map-file" target="_blank">here</a>.
+
+## Photo context image annotation file
+
+```json
+    {
+        "name": "host-a005_cam4_1231201437716091006.jpeg"
+        "entityId": 2359620,
+        "meta": {
+            "deviceId": "CAM_BACK_LEFT",
+            "timestamp": "2019-01-11T03:23:57.802Z",
+            "sensorsData": {
+                "extrinsicMatrix": [
+                    -0.8448329028461443,
+                    -0.5350302199120708,
+                    0.00017334762588639086,
+                    -0.012363736761232369,
+                    -0.0035124448582330757,
+                    0.005222293412494302,
+                    -0.9999801949951969,
+                    -0.16621728572112304,
+                    0.5350187183638307,
+                    -0.8448167798004226,
+                    -0.006291229448121315,
+                    -0.3527897896721229
+                ],
+                "intrinsicMatrix": [
+                    882.42699274,
+                    0,
+                    602.047851885,
+                    0,
+                    882.42699274,
+                    527.99972239,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        }
+    }
+```
+
+**Fields description:**
+
+- name - string - Name of image file
+- Id - (OPTIONAL) - integer >= 1 ID of the photo in the system. It is not required when upload and is filled in automatically when the project is loaded.
+- entityId (OPTIONAL) - integer >= 1 ID of the Point Cloud in the system, that photo attached to. Doesn't required while uploading.
+- deviceId - string- Device ID or name.
+- timestamp - string <date-time> - Time when the frame occurred in ISO 8601 format
+- sensorsData - Sensors data such as Pinhole camera model parameters. See wiki: <a href="https://en.wikipedia.org/wiki/Pinhole_camera_model" target="_blank">Pinhole camera model</a> and <a href="https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html" target="_blank">OpenCV docs for 3D reconstruction</a>.
+  - intrinsicMatrix - Array of number <float> - 3x3 flatten matrix (dropped last zeros column) of intrinsic parameters in row-major order, also called camera matrix. It's used to denote camera calibration parameters. See <a href="https://en.wikipedia.org/wiki/Camera_resectioning#Intrinsic_parameters" target="_blank">Intrinsic parameters</a>.
+  - extrinsicMatrix - Array of number <float> - 4x3 flatten matrix (dropped last zeros column) of extrinsic parameters in row-major order, also called joint rotation-translation matrix. It's used to denote the coordinate system transformations from 3D world coordinates to 3D camera coordinates. See <a href="https://en.wikipedia.org/wiki/Camera_resectioning#Extrinsic_parameters" target="_blank">Extrinsic_parameters</a>.
 
 # Useful links
 
