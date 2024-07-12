@@ -15,10 +15,10 @@ Result of the import:
 
 # Format description
 
-**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable <br>
-**Grouped by:** Folders<br>
+**Grouped by:** Folders (corresponding tags will be assigned to images)<br>
 
 # Input files structure
 

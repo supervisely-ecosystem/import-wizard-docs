@@ -12,10 +12,10 @@ Just organize images into groups and drop them to the import. The app will do th
 
 # Format description
 
-**Supported format:** Structured catalogs<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** Yes<br>
 **Annotation types:** Tags in Supervisely format<br>
-**Grouped by:** Tag values<br>
+**Grouped by:** Folders (corresponding tags will be assigned to images)<br>
 
 ## Key Features
 

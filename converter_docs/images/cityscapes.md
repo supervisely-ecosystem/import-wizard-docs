@@ -6,14 +6,14 @@ This converter allows to import images with `.json` annotations in <a href="http
 
 ⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` extension.
 
-![cityscapes_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0a7c5af7-158d-4658-a5ab-9902155d9dc1)
+![Result of the import](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/0a7c5af7-158d-4658-a5ab-9902155d9dc1)
 
 # Format description
 
-**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (uploaded to a single dataset)<br>
+**Grouped by:** Any structure (will be uploaded as a single dataset)<br>
 
 # Input files structure
 

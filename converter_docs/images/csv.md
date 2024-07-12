@@ -11,7 +11,7 @@ Additionally, you can assign tags to each image by providing a tag column in the
 **Supported file formats:** `.csv`, `.tsv`, and `.txt`.<br>
 **With annotations:** yes (optional)<br>
 **Supported annotation types:** tags <br>
-**Grouped by:** Not applicable<br>
+**Grouped by:** Any structure (will be uploaded as a single dataset)<br>
 
 ## Key Features
 

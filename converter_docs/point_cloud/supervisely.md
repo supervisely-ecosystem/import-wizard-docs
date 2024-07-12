@@ -11,7 +11,7 @@ Easily import your pointclouds with annotations in the Supervisely format. The S
 **Supported point cloud format:** `.pcd`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Data structure:** any structure (will be uploaded to a single dataset)<br>
+**Data structure:** Information is provided below.
 
 # Input files structure
 

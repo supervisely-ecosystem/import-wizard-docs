@@ -11,7 +11,7 @@ Easily import your volumes with annotations in the Supervisely format. The Super
 **Supported volume formats:** `.nrrd`, `.dcm`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Data structure:** structured as a Supervisely project (explained below)<br>
+**Data structure:** Information is provided below.
 
 # Input files structure
 

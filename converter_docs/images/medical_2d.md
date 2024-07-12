@@ -10,7 +10,7 @@ While this converter primarily supports 2D medical images, it is possible to imp
 
 **Supported image formats:** `.nrrd`, `.dcm`, `.nii` and `.nii.gz`<br>
 **With annotations:** No<br>
-**Grouped by:** Not applicable (yet)<br>
+**Grouped by:** Any structure (will be uploaded as a single dataset)<br>
 
 ## Formats explained
 

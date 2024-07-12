@@ -2,16 +2,18 @@
 
 # Overview
 
-Easily import your images with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
+Easiest way to import your images with annotations is to use the Supervisely format.
+Check out the <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">Supervisely JSON format</a> documentation for more details.
 
-> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
+The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`), `alpha mask`, `2D cuboid`. It is a universal format for various task types and is used in the Supervisely platform.
+
 
 # Format description
 
-**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** Yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** Any structure (will be uploaded to a single dataset)<br>
+**Data structure:** Information is provided below.
 
 # Input files structure
 
@@ -36,12 +38,20 @@ Both directory and archive are supported.
    ┗ 📄meta.json
 ```
 
+Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, app will try to create it from the annotations (if possible). Learn more about the `meta.json` file [here](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags).
+
+
 **Struggled with the structure?** No worries!
-All images will be uploaded to a single dataset, so you don't have to worry about the full project structure in Supervisely format. All you need is to prepare images with annotations and `meta.json` file (recommended).
 
-Items even can be placed in any subdirectories or the root directory. Just make sure that an annotation file names match the image file names (e.g. annotaions file `image_1.jpg.json` is for the image `image_1.jpg`) and that the annotation file format is correct (we will provide an example in the next section). The application will do the rest.
+If you don't have the recommended structure, don't worry. You can upload images and annotations in any structure. In this case, the app will upload all images and annotations to a single dataset.
 
-Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, it will try to create it from the annotations. Learn more about the `meta.json` file <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags" target="_blank">here</a>.
+Just make sure that:
+
+- Annotation files are in the `.json` format.
+- Annotation files have the corresponding file name to the image file name (e.g. `image_1.jpg.json` is for the image `image_1.jpg`).
+- Annotation files have the correct format (look at the example below).
+- Image files are in the supported formats (provided above).
+- Image and annotation files can be placed in any subdirectories or the root directory.
 
 # Individual Image Annotations
 

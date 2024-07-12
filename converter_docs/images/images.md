@@ -6,10 +6,10 @@ This option allows you to upload images to the platform without any annotations.
 
 # Format description
 
-**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** No<br>
 **Supported annotation format:** Not applicable.<br>
-**Grouped by:** Any structure (will be uploaded to a single dataset).<br>
+**Grouped by:** Any structure (will be uploaded as a single dataset).<br>
 
 # Input files structure
 

@@ -4,16 +4,16 @@
 
 This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file.
 
-Supervisely supports the following annotation types: **instances**, **keypoints**, **captions**.
+Autoimport supports the following COCO annotation types: **instances**, **keypoints**, **captions**.
 
-<!-- ![coco_result](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173) -->
+![Result of the import](https://github.com/supervisely-ecosystem/import-wizard-docs/assets/48913536/7e481382-5d85-4283-8d12-9ffb1418b173)
 
 # Format description
 
-**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, and `.jfif`.<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** yes<br>
 **Supported annotation format:** `.json`.<br>
-**Grouped by:** any structure (will be uploaded to one dataset).<br>
+**Grouped by:** any structure (will be uploaded as a single dataset).<br>
 
 # Default option: Import images and annotations together
 
@@ -152,35 +152,7 @@ Example annotation for instances for one image in COCO format:
 Annotations for keypoints are just like in Object Detection (Segmentation) above, except a number of keypoints is specified in sets of 3, (x, y, v).
 
 - **x** and **y** indicate pixel positions in the image.
-- **v** indicates visibility — v=0: not labeled (in which case x=y=0), v=1: labeled but not visible (behind an object for example), and v=2: labeled and visible
-
-All keypoints with 0 visibility are ignored and will not be presented in the project.
-As for the other 2: you can specify label preferences in the modal window whether you want to include key points that are labeled, but not visible or import only clearly visible keypoints.
-
-**Visibility flag example:**
-
-<div>
-    <table style="width: 100%">
-        <tr>
-            <th>Visibility = 1</th>
-            <th>Visibility = 2</th>
-        </tr>
-        <tr>
-            <td style="width:50%">
-            <img src="https://user-images.githubusercontent.com/48913536/215511152-c6d181be-9bb8-4b39-a43e-0b6ba9cdb3d6.png" style="max-width:100%;">
-            </td>
-            <td style="width:50%">
-            <img src="https://user-images.githubusercontent.com/48913536/215511138-d909dd0e-bf2d-4686-80c8-586ade92c271.png" style="max-width:100%;">
-            </td>
-        </tr>
-    </table>
-</div>
-
-**Example:** 229, 256, 2 means there’s a keypoint at pixel x=229, y=256 and 2 indicates that it is a visible keypoint
-
-In the case of a class person, keypoints indicate different body parts.
-The skeleton indicates connections between points.
-For example, [16, 14] means "left_ankle" connects to "left_knee".
+- **v** indicates visibility — v=0: not labeled (in which case x=y=0), v=1: labeled but not visible (behind an object for example), and v=2: labeled and visible. Only keypoints with v=2 will be uploaded to the project.
 
 Example of the annotation file with keypoints:
 
