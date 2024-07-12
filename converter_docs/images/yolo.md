@@ -212,7 +212,7 @@ For Dim=3:
 ```
 
 
-**Example:**
+**Yolo coordinates explanation:**
 
 The label file corresponding to the below image contains 2 persons (class 0) and a tie (class 27) from original COCO classes.
 
