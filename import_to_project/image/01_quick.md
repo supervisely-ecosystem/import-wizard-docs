@@ -10,7 +10,7 @@ Drag and drop files, folders or an archive. Supervisely will automatically detec
 
 <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
   <b style="font-weight: 600; flex: none;" class="mr5">Image formats:</b>
-  <span><code>.jpg</code>, <code>.jpeg</code>, <code>.mpo</code>, <code>.bmp</code>, <code>.png</code>, <code>.webp</code>, <code>.tiff</code>, <code>.tif</code>, <code>.nrrd</code>, <code>.jfif</code>, <code>.avif</code>, <code>.heic</code>, <code>NIfTI</code>, <code>DICOM</code></span>
+  <span><code>.jpg</code>, <code>.jpeg</code>, <code>.mpo</code>, <code>.bmp</code>, <code>.png</code>, <code>.webp</code>, <code>.tiff</code>, <code>.tif</code>, <code>.nrrd</code>, <code>.jfif</code>, <code>.avif</code>, <code>.heic</code>, <code>NIfTI</code>, <code>DICOM</code>, <code>.exr</code>, <code>.hdr</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
