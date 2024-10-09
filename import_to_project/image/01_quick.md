@@ -25,7 +25,8 @@ Drag and drop files, folders or an archive. Supervisely will automatically detec
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/multispectral.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Multispectral images</a><span> | </span>
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/medical_2d.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Medical 2D (single)</a><span> | </span>
 <a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/csv.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Links from CSV or TXT</a><span> | </span>
-<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/pdf.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PDFs pages as images</a>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/pdf.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PDFs pages as images</a><span> | </span>
+<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/high_color_depth.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >High Color Depth</a>
 </span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
