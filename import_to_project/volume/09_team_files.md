@@ -17,8 +17,8 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/volumes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Volumes (NRRD, DICOM files)</a><span> | </span>
-<a href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
+<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/volumes/volumes.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/volumes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Volumes (NRRD, DICOM files)</a><span> | </span>
+<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/volumes/supervisely.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
 </span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
