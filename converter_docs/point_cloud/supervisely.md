@@ -4,7 +4,7 @@
 
 Easily import your pointclouds with annotations in the Supervisely format. The Supervisely json-based annotation format supports `cuboid_3d` shape figures. It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervisely.com/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
@@ -233,6 +233,6 @@ Read more about the `key_id_map.json` file and photo context annotations in the 
 - <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/point-clouds" target="_blank">Supervisely Pointcloud Annotation</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
-- <a href="https://ecosystem.supervise.ly/apps/import-pointcloud-project" target="_blank">Import Point Cloud Project</a> app.
-- <a href="https://ecosystem.supervise.ly/apps/export-pointclouds-project-in-supervisely-format" target="_blank">Export pointclouds project in Supervisely format</a> app.
-- <a href="https://ecosystem.supervise.ly/projects/demo-pointcloud-project-annotated" target="_blank">Demo pointcloud project with labels</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-pointcloud-project" target="_blank">Import Point Cloud Project</a> app.
+- <a href="https://ecosystem.supervisely.com/apps/export-pointclouds-project-in-supervisely-format" target="_blank">Export pointclouds project in Supervisely format</a> app.
+- <a href="https://ecosystem.supervisely.com/projects/demo-pointcloud-project-annotated" target="_blank">Demo pointcloud project with labels</a>
