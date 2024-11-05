@@ -4,7 +4,7 @@
 
 Easily import your volumes with annotations in the Supervisely format. The Supervisely json-based annotation format supports such figures: `rectangle`, `line (polyline)`, `polygon`, `point`, `bitmap` (`mask`), `graph` (`keypoints`). It is a universal format that supports various types of annotations and is used in the Supervisely platform.
 
-> All information about the Supervisely JSON format can be found <a href="https://docs.supervise.ly/data-organization/00_ann_format_navi" target="_blank">here</a>
+> All information about the Supervisely JSON format can be found <a href="https://docs.supervisely.com/data-organization/00_ann_format_navi" target="_blank">here</a>
 
 # Format description
 
