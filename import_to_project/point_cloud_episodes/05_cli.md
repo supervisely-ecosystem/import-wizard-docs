@@ -29,7 +29,7 @@ To learn more about Supervisely SDK CLI click <a href="https://developer.supervi
 Installation:
 
 ```bash
-sudo curl -fsSL https://config.enterprise.supervise.ly/cli -o /usr/local/bin/supervisely && sudo chmod +x /usr/local/bin/supervisely
+sudo curl -fsSL https://config.enterprise.supervisely.com/cli -o /usr/local/bin/supervisely && sudo chmod +x /usr/local/bin/supervisely
 ```
 
 Run this single command to upload your local project:
