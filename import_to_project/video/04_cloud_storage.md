@@ -18,8 +18,8 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/videos/videos.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/videos.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Videos</a><span> | </span>
-<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/videos/supervisely.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/import-using-web-ui" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/videos.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Videos</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/videos/supervisely.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
 DAVIS (coming soon)<span> | </span>
 MOT (coming soon)
 </span>
