@@ -2,20 +2,20 @@
 
 # Overview
 
-Easily import your pointclouds with annotations in the LYFT format. LYFT is an annotation format used in the well-regarded `Lyft Level 5 Prediction` datset. 
+Easily import your pointclouds with annotations in the LYFT format. LYFT is an annotation format used in the well-regarded `Lyft Level 5 Prediction` dataset. 
 
-Originaly, the dataset is suited to be imported as Pointcloud Episodes, even though it is available in Pointcloud format aswell.
+Originaly, the dataset is suited to be imported as Pointcloud Episodes, even though it is available in Pointcloud format as well.
 
 # Format description
 
 **Supported point cloud format:** `.bin`<br>
 **With annotations:** yes<br>
-**Supported annotation format:** `.json`.<br>
+**Supported annotation format:** `.json`<br>
 **Data structure:** Information is provided below.
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely/supervisely/releases/download/v6.73.264/lyft-sample.zip).
+Example data: [download ⬇️](https://github.com/supervisely/docs/releases/download/v0.0.1/lyft-sample.zip).
 
 Both directory and archive are supported.
 
