@@ -13,7 +13,7 @@ Easily import your pointclouds with annotations in the LYFT format. LYFT is an a
 
 # Input files structure
 
-Example data: [download ⬇️](LINK).
+Example data: [download ⬇️](https://github.com/supervisely/supervisely/releases/download/v6.73.264/lyft-sample.zip).
 
 Both directory and archive are supported.
 
