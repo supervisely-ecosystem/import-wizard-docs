@@ -20,6 +20,7 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <span>
 <a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/point_cloud_episodes/point_cloud_episodes.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/point_cloud_episodes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Point cloud episodes</a><span> | </span>
 <a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/point_cloud_episodes/supervisely.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/lyft.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a>
 </span>
 
 </div>
