@@ -15,7 +15,7 @@ When uploading as Pointcloud Episodes, pointclouds will be grouped by scene, and
 
 # Input files structure
 
-Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/untagged-1656e030accc7923cd41/lyft-sample.zip).
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.2/lyft-sample.zip).
 
 Both directory and archive are supported.
 
