@@ -20,9 +20,10 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/point_clouds" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/point_clouds.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD, PLY, LAS, LAZ format point clouds</a><span> | </span>
-<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/supervisely" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a><span> | </span>
-<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/lyft" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud-episodes/point_clouds_episodes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/point_cloud_episodes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD, PLY, LAS, LAZ format point clouds</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud-episodes/supervisely" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud-episodes/lyft" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud-episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a>
 </span>
 
 </div>

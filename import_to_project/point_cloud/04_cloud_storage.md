@@ -21,6 +21,7 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/point_clouds" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/point_clouds.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD, PLY, LAS, LAZ format point clouds</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/supervisely" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely format</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/lyft" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-formats-pointcloud/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a>
 </span>
 
 </div>
