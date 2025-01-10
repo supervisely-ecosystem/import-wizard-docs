@@ -2,7 +2,7 @@
 
 # Overview
 
-Easily import your pointclouds with annotations in the LYFT format. LYFT is an annotation format used in the well-regarded `Lyft Level 5 Prediction` dataset. 
+Easily import your pointclouds with annotations in the LYFT format. LYFT is an annotation format used in the well-regarded `Lyft Level 5 Prediction` dataset.
 
 Originaly, the dataset is suited to be imported as Pointcloud Episodes, even though it is available in Pointcloud format as well.
 
@@ -21,7 +21,7 @@ Both directory and archive are supported.
 
 **Format directory structure:**
 
-```
+```text
 📦pointcloud_project (folder or .tar/.zip archive)
 ├──📂dataset1
 │ ├──📂data
@@ -58,13 +58,13 @@ Both directory and archive are supported.
 
 Every `.bin` file in a sequence has to be stored inside a `lidar` folder of dataset.
 
-| Key | Value                                                     |
-| --- | --------------------------------------------------------- |
-| x   | The x coordinate of the point.                            |
-| y   | The y coordinate of the point.                            |
-| z   | The z coordinate of the point.                            |
-| i   | Intensity of the return signal.                           |
-| r   | Ring index.                                               |
+| Key | Value                           |
+|-----|---------------------------------|
+| x   | The x coordinate of the point.  |
+| y   | The y coordinate of the point.  |
+| z   | The z coordinate of the point.  |
+| i   | Intensity of the return signal. |
+| r   | Ring index.                     |
 
 The LYFT format description can be found <a href="https://mmdetection3d.readthedocs.io/en/stable/advanced_guides/datasets/lyft.html" target="_blank">here</a>
 
