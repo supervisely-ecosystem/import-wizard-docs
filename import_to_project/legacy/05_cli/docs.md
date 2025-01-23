@@ -21,7 +21,7 @@ Save the `.env` file to `~/supervisely.env` with your credentials. [Learn about 
 The content of this file will look something like this:
 
 ```python
-SERVER_ADDRESS="https://app.supervise.ly"
+SERVER_ADDRESS="https://app.supervisely.com"
 API_TOKEN="4r47N.....blablabla......xaTatb"
 ```
 
