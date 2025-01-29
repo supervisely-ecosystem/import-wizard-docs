@@ -2,7 +2,7 @@
 
 # Overview
 
-This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> format for **segmentation**, **detection** and **pose estimation** tasks.
+This converter allows to import images with annotations in <a href="https://docs.ultralytics.com/datasets/detect/" target="_blank">YOLO</a> format for **segmentation**, **detection** and **pose estimation** tasks. Import as links from cloud storage (with annotations) is supported.
 
 Each image should have a corresponding `.txt` file with the same name, which contains information about objects in the image. 
 

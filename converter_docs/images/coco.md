@@ -2,7 +2,7 @@
 
 # Overview
 
-This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file.
+This converter allows to import images with annotations in <a href="https://cocodataset.org/#home" target="_blank">COCO</a> format. COCO format has all annotations in one `.json` file. Import as links from cloud storage (with annotations) is supported.
 
 Autoimport supports the following COCO annotation types: **instances**, **keypoints**, **captions**.
 

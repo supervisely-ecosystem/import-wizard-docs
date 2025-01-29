@@ -2,7 +2,7 @@
 
 # Overview
 
-This converter allows to import images with `.json` annotations in <a href="https://github.com/mcordts/cityscapesScripts" target="_blank">Cityscapes</a> format.
+This converter allows to import images with `.json` annotations in <a href="https://github.com/mcordts/cityscapesScripts" target="_blank">Cityscapes</a> format. Import as links from cloud storage (with annotations) is supported.
 
 ⚠️ **Note:** images must have suffix `_leftImg8bit` and annotations suffix `_gtFine_polygons` and `.json` extension.
 
