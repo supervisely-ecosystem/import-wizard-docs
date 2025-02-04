@@ -19,102 +19,180 @@ Just organize images into groups and drop them to the import. The app will do th
 
 ## Key Features
 
-- All images in groups in the created project will be tagged
-- `Images Grouping` option will be turned on by default in the created project
-- Images will be grouped by tag's value
-- Tag value is defined by group directory name
-- Works with `.nrrd` image format (2D only)
+-   🏷️ NEW: Upload multi-view project with grouped labels
+-   All images in groups in the created project will be tagged
+-   `Images Grouping` option will be turned on by default in the created project
+-   Images will be grouped by tag's value
+-   Tag value is defined by group directory name
+-   Works with `.nrrd` image format (2D only)
 
 ## How to Use
 
 #### 1. Prepare structure:
 
-- **Archive** `zip`, `tar`, `tar.xz`, `tar.gz`
+-   **Archive** `zip`, `tar`, `tar.xz`, `tar.gz`
 
-  ```text
-    📦 my_project.zip
-     ┗ 📂 cars catalog
-        ┗ 📂 used cars
-           ┣ 📂 105
-           ┃  ┣ 🏞️ car_105_front.jpg
-           ┃  ┗ 🏞️ car_105_top.jpg
-           ┣ 📂 202
-           ┃  ┣ 🏞️ car_202_front.jpg
-           ┃  ┗ 🏞️ car_202_top.jpg
-           ┣ 📂 357
-           ┃  ┣ 🏞️ car_357_front.jpg
-           ┃  ┗ 🏞️ car_357_top.jpg
-           ┣ 🏞️ car_401_front.jpg
-           ┣ 🏞️ car_401_top.jpg
-           ┗ 🏞️ car_401_side.jpg
-  ```
+    ```text
+      📦 my_project.zip
+       ┗ 📂 cars catalog
+          ┗ 📂 used cars
+             ┣ 📂 105
+             ┃  ┣ 🏞️ car_105_front.jpg
+             ┃  ┗ 🏞️ car_105_top.jpg
+             ┣ 📂 202
+             ┃  ┣ 🏞️ car_202_front.jpg
+             ┃  ┗ 🏞️ car_202_top.jpg
+             ┣ 📂 357
+             ┃  ┣ 🏞️ car_357_front.jpg
+             ┃  ┗ 🏞️ car_357_top.jpg
+             ┣ 🏞️ car_401_front.jpg
+             ┣ 🏞️ car_401_top.jpg
+             ┗ 🏞️ car_401_side.jpg
+    ```
 
-- **Folder**
+-   **Folder**
 
-  ```text
-    📂 cars catalog
-     ┗ 📂 used cars
-        ┣ 📂 car_id_105
-        ┃  ┣ 🏞️ car_105_front.jpg
-        ┃  ┗ 🏞️ car_105_top.jpg
-        ┣ 📂 car_id_202
-        ┃  ┣ 🏞️ car_202_front.jpg
-        ┃  ┗ 🏞️ car_202_top.jpg
-        ┣ 📂 car_id_357
-        ┃  ┣ 🏞️ car_357_front.jpg
-        ┃  ┗ 🏞️ car_357_top.jpg
-        ┣ 🏞️ car_401_front.jpg
-        ┣ 🏞️ car_401_top.jpg
-        ┗ 🏞️ car_401_side.jpg
-  ```
+    ```text
+      📂 cars catalog
+       ┗ 📂 used cars
+          ┣ 📂 car_id_105
+          ┃  ┣ 🏞️ car_105_front.jpg
+          ┃  ┗ 🏞️ car_105_top.jpg
+          ┣ 📂 car_id_202
+          ┃  ┣ 🏞️ car_202_front.jpg
+          ┃  ┗ 🏞️ car_202_top.jpg
+          ┣ 📂 car_id_357
+          ┃  ┣ 🏞️ car_357_front.jpg
+          ┃  ┗ 🏞️ car_357_top.jpg
+          ┣ 🏞️ car_401_front.jpg
+          ┣ 🏞️ car_401_top.jpg
+          ┗ 🏞️ car_401_side.jpg
+    ```
 
-  #### Structure explained:
+    **Structure explained:**
 
-  - Archive must contain only 1 project directory.
-  - Inside project directory must be 1 dataset directory.
-  - Group directories must be populated with images and placed inside dataset directory. All images inside groups will be tagged with folder name value.
-  - All images in the root dataset directory will be uploaded as a regular images and will not be tagged.
+    -   Archive must contain only 1 project directory.
+    -   Inside project directory must be 1 dataset directory.
+    -   Group directories must be populated with images and placed inside dataset directory. All images inside groups will be tagged with folder name value.
+    -   All images in the root dataset directory will be uploaded as a regular images and will not be tagged.
 
-  You can download an example data:
+-   🏷️ **NEW: Supervisely Project Folder or Archive with label groups**
 
-  - images: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip)
-  - NRRD: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/research.zip)
+    This type of structure will work only if you have the required data in the files:
 
-- To display single images switch off `Images Grouping` setting.
+    -   All images must be tagged with a group tag of the same value.
+    -   All necessary labels must be tagged with a label group tag of the same value.
+    -   The project settings in `meta.json` must contain a `multiView` section with the correct data.
 
-  ![Switch off multi view mode](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.2/enabled-disabled.gif?raw=true)
+    **Recommended structure**
 
-- If you want to disable images grouping for the whole project, go to `Project` → `Settings` → `Visuals` and uncheck
+    ```text
+    📦archive
+     ┗📂project folder
+       ┣ 📂dataset_name_01
+       ┃  ┣ 📂ann
+       ┃  ┃  ┣ 📄car_105_front.jpeg.json
+       ┃  ┃  ┣ 📄car_105_top.jpeg.json
+       ┃  ┃  ┣ 📄car_202_front.json
+       ┃  ┃  ┗ 📄car_202_top.json
+       ┃  ┣ 📂img
+       ┃  ┃  ┣ 🏞️car_105_front.jpg
+       ┃  ┃  ┣ 🏞️car_105_top.jpg
+       ┃  ┃  ┣ 🏞️car_202_front.jpg
+       ┃  ┃  ┗ 🏞️car_202_top.jpg
+       ┃  ┗ 📂meta (optional)
+       ┃     ┣ 📄car_105_front.jpeg.json
+       ┃     ┣ 📄car_105_top.jpeg.json
+       ┃     ┣ 📄car_202_front.json
+       ┃     ┗ 📄car_202_top.json
+       ┗ 📄meta.json
+    ```
 
-  ![Disable multi-view mode in project settings](https://i.imgur.com/qOGICD3.png)
+    **Annotation explained:**
 
-- Windowing tool is available when working with `.nrrd` files. It helps to filter pixels to see bones, air, liquids etc.
+    Below is the annotation for each image, for example `car_105_front.jpeg.json`. Only the lines of interest are shown; other lines are omitted, but the structure is preserved.
 
-  ![Nrrd windowing tool](https://i.imgur.com/gW37Tyn.png)
+    ```json
+    {
+    	"tags": [
+    		{
+    			"name": "multiview",
+    			"value": "Image Group 1"
+    		}
+    	],
+    	"objects": [
+    		{
+    			"classTitle": "wheel",
+    			"tags": [
+    				{
+    					"name": "@label-group-id",
+    					"value": "Label Group 1"
+    				}
+    			]
+    		}
+    	]
+    }
+    ```
 
-- Images view synchronization
+    For an image group, an image must be tagged with the `multiview` tag (in our example) and assigned a value that represents the group, such as `Image Group 1`.
 
-  <div>
-    <table>
-      <tr style="width: 100%">
-    <td>
-    <b>Synchronization OFF</b>
-    <img src="https://user-images.githubusercontent.com/48913536/172838253-4817336b-814b-4504-86cc-870c6665a14b.png" style="width:100%;"/>
-    </td>
-    <td>
-    <b>Synchronization ON</b>
-    <img src="https://user-images.githubusercontent.com/48913536/172838244-45fa76cc-50e2-41e5-819a-81ceb3387ade.png" style="width:100%;"/>
-    </td>
-      </tr>
-    </table>
-  </div>
+    For a label group, an object (label) must be tagged with the `@label-group-id` tag and assigned a value that represents the group. For example `Label Group 1`
+
+    **Meta explained**
+
+    Required setting for the project to import as multi-view. Also shown only lines of interest.
+
+    ```json
+    {
+    	"projectSettings": {
+    		"multiView": {
+    			"enabled": true,
+    			"tagName": "multiview"
+    		}
+    	}
+    }
+    ```
+
+You can download an example data:
+
+-   images: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip)
+-   NRRD: [download ⬇️](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/research.zip)
+
+-   To display single images switch off `Images Grouping` setting.
+
+    ![Switch off multi view mode](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.2/enabled-disabled.gif?raw=true)
+
+-   If you want to disable images grouping for the whole project, go to `Project` → `Settings` → `Visuals` and uncheck
+
+    ![Disable multi-view mode in project settings](https://i.imgur.com/qOGICD3.png)
+
+-   Windowing tool is available when working with `.nrrd` files. It helps to filter pixels to see bones, air, liquids etc.
+
+    ![Nrrd windowing tool](https://i.imgur.com/gW37Tyn.png)
+
+-   Images view synchronization
+
+    <div>
+      <table>
+        <tr style="width: 100%">
+      <td>
+      <b>Synchronization OFF</b>
+      <img src="https://user-images.githubusercontent.com/48913536/172838253-4817336b-814b-4504-86cc-870c6665a14b.png" style="width:100%;"/>
+      </td>
+      <td>
+      <b>Synchronization ON</b>
+      <img src="https://user-images.githubusercontent.com/48913536/172838244-45fa76cc-50e2-41e5-819a-81ceb3387ade.png" style="width:100%;"/>
+      </td>
+        </tr>
+      </table>
+    </div>
 
 # Useful links
 
-- [[Supervisely Ecosystem] Group Images for Multiview Labeling](https://ecosystem.supervisely.com/apps/group-images-for-multiview-labeling)
+-   [[Supervisely Ecosystem] Group Images for Multiview Labeling](https://ecosystem.supervisely.com/apps/group-images-for-multiview-labeling)
 
-    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://github.com/supervisely-ecosystem/group-images-for-multiview-labeling/assets/57998637/823cf901-8d8c-4a64-b884-c59f5ff83e93" width="350px" style='padding-bottom: 10px'/>
+      <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://github.com/supervisely-ecosystem/group-images-for-multiview-labeling/assets/57998637/823cf901-8d8c-4a64-b884-c59f5ff83e93" width="350px" style='padding-bottom: 10px'/>
 
-- [[Supervisely Ecosystem] Import images groups](https://ecosystem.supervisely.com/apps/import-images-groups)
+-   [[Supervisely Ecosystem] Import Multi-View Image Groups](https://ecosystem.supervisely.com/apps/import-images-groups)
 
-    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://i.imgur.com/wAiE0ld.png" width="350px" style='padding-bottom: 10px'/>
+      <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://github.com/user-attachments/assets/c9b09a05-256a-4ea1-9ca4-bef9804c2254" width="380px" style='padding-bottom: 10px'/>
