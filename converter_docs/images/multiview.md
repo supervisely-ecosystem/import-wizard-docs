@@ -158,10 +158,10 @@ Just organize images into groups and drop them to the import. The app will do th
 
     **Image Labeling Tool Interface**
 
-    1. Multiview group
-    2. Labeling group
+      - 1 Multiview group
+      - 2 Labeling group
 
-    ![Labeling Tool Interface](https://github.com/user-attachments/assets/49951c76-95ad-4650-b6fb-ac89f4b500fc)
+    ![Labeling Tool Interface](https://github.com/user-attachments/assets/5283e0b7-eb22-48ce-ae3b-e991191857da)
 
 You can download an example data:
 
