@@ -161,7 +161,7 @@ Just organize images into groups and drop them to the import. The app will do th
     1. Multiview group
     2. Labeling group
 
-    ![Labeling Tool Interface](https://github.com/user-attachments/assets/eca8819e-1ad1-4089-9f58-0d27329d33fa)
+    ![Labeling Tool Interface](https://github.com/user-attachments/assets/49951c76-95ad-4650-b6fb-ac89f4b500fc)
 
 You can download an example data:
 
