@@ -31,3 +31,4 @@ When uploading to an existing project, Supervisely will automatically validate a
     <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
     <div>Enterprise Edition: <b>Unlimited</b></div>
 </div>
+</div>

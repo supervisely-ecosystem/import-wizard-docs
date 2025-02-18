@@ -29,3 +29,4 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
     <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
     <div>Enterprise Edition: <b>Unlimited</b></div>
 </div>
+</div>
