@@ -21,9 +21,8 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
-  <div>
-    <div>Community Free plan: 150MB</div>
-    <div>Community Pro plan: 150MB</div>
-    <div>Enterprise Edition: Unlimited</div>
-  </div>
+<div>
+    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
+    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
+    <div>Enterprise Edition: <b>Unlimited</b></div>
 </div>

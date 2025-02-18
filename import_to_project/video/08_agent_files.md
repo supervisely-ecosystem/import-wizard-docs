@@ -26,11 +26,10 @@ DAVIS (coming soon)<span> | </span>
 MOT (coming soon)
 </span>
 
-<b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
+<b style="font-weight: 600; flex: none;" class="mr5">Video size limit:</b>
 
-  <div>
-    <div>Community Free plan: 100MB</div>
-    <div>Community Pro plan: 500MB</div>
-    <div>Enterprise Edition: Unlimited</div>
-  </div>
+<div>
+    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>100</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per video</i></div>
+    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>500</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per video</i></div>
+    <div>Enterprise Edition: <b>Unlimited</b>  <i style="color:rgb(53, 53, 53); font-size: 12px">(video size, resolution, etc.)</i></div>
 </div>

@@ -29,11 +29,10 @@ Drag and drop files, folders or an archive. Supervisely will automatically detec
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/images/high-color-depth" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/images/high_color_depth.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >High Color Depth</a>
 </span>
 
-<b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
+<b style="font-weight: 600; flex: none;" class="mr5">Image size limit:</b>
 
-  <div>
-    <div>Community Free plan: 25MB</div>
-    <div>Community Pro plan: 300MB</div>
-    <div>Enterprise Edition: Unlimited</div>
-  </div>
+<div>
+    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>25</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per image</i></div>
+    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>300</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per image</i></div>
+    <div>Enterprise Edition: <b>Unlimited</b>  <i style="color:rgb(53, 53, 53); font-size: 12px">(image size, resolution, number of channels, etc.)</i></div>
 </div>
