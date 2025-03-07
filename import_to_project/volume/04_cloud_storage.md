@@ -18,10 +18,11 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
-<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/volumes/volumes.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/volumes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Volumes (NRRD, DICOM files)</a><span> | </span>
-<a href="https://github.com/supervisely-ecosystem/import-wizard-docs/blob/master/converter_docs/volumes/supervisely.md" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/nifti" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/nifti.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >NIfTI</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/nifti" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/nifti.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >NifTI Instance & Semantic segmentation</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/supervisely" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/volumes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/volumes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >NRRD, DICOM files</a>
 </span>
-
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
 <div>
