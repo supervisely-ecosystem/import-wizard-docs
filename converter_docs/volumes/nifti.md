@@ -6,8 +6,6 @@ This converter allows you to import **NIfTI** files into a Supervisely project. 
 
 The converter supports both **semantic** and **instance segmentation** annotations, as well as import of volumes with no annotations. We will provide an examples of the input structure below.
 
-**Import from S3 cloud storage is supported.**
-
 The converter is backwards compatible with the <a href="https://ecosystem.supervisely.com/apps/export-volume-project-to-cloud-storage"> Export volume project to cloud storage </a> application.
 
 <!-- If the volumes were originally imported from cloud storage, the **source** volumes will be exported. -->
