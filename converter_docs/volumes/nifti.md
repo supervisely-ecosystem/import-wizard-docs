@@ -23,7 +23,7 @@ All volumes from the input directory and its subdirectories will be uploaded to 
 
 # Input files structure
 
-### Example 1: grouped by volume name
+### **Example 1: grouped by volume name**
 
 The NIfTI file should be structured as follows:
 
@@ -45,7 +45,7 @@ Annotation files should be named according to the following pattern:
 - The class name should be unique for the current volume (e.g. `tumor.nii.gz`, `lung.nii.gz`).
 - Annotation files can contain multiple objects of the same class (each object should be represented by a different value in the mask).<br>
 
-### Example 2: grouped by plane
+### **Example 2: grouped by plane**
 
 The NIfTI file should be structured as follows:
 
@@ -61,7 +61,7 @@ The NIfTI file should be structured as follows:
 - **prefix**\_inference_2.nii (or `.nii.gz`) - second class (may contain multiple objects)
 - ...
 
-The **prefix** should be one of: `cor`, `sag`, `axl`.
+The prefix must be one of: `cor`, `sag`, or `axl`. The converter uses these prefixes to group volumes and their annotation files, requiring exactly three volumes — one for each prefix per dataset.
 
 Structure example for semantic segmentation:
 
@@ -92,7 +92,7 @@ Structure example for instance segmentation:
 └──🩻 sag_inference_1.nii
 ```
 
-## Class color map file (optional)
+### Class color map file (optional)
 
 The converter will look for an optional `TXT` file in the input directory. If present, it will be used to create the classes with names and colors corresponding to the pixel values in the NIfTI files.
 
