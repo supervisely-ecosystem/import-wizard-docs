@@ -16,7 +16,7 @@ When uploading to an existing project, Supervisely will automatically validate a
 
 <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
   <b style="font-weight: 600; flex: none;" class="mr5">Volume formats:</b>
-  <span><code>.nrrd</code>, <code>.dcm</code></span>
+  <span><code>.nrrd</code>, <code>.dcm</code>, <code>.nii</code>, <code>.nii.gz</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
