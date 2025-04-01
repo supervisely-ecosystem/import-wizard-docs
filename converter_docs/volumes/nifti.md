@@ -45,8 +45,6 @@ Annotation files should be named according to the following pattern:
 
 ### **Example 2: grouped by plane**
 
-**Please note:** If you want to import multiple DICOM items, you need to group them by folder and import each item separately. The converter only supports importing one set of files at a time (one set of *axl*, *cor*, and *sag* axis files).
-
 The NIfTI file should be structured as follows:
 
 **For semantic segmentation:**
@@ -113,6 +111,43 @@ where:
 - 1, 2, ... are the pixel values in the NIfTI files
 - Femur, Femoral cartilage, ... are the names of the classes
 - 255, 0, 0, ... are the RGB colors of the classes
+
+### **Example 3: grouped by plane w/ multiple items**
+
+If you need to import multiple items at once, place each item in a separate folder. 
+The converter supports any folder structure. Folders may be at different levels, and files will be matched by directory (annotation files must be in the same folder as their corresponding volume). All files will be imported into the same dataset.
+
+Structure example for multiple items directory:
+
+```text
+📂 dataset_name # ⬅︎ may be archive, root files or nested directory instead
+├──📄 cls_color_map.txt  # ⬅︎ optional file
+├──📂 item_1
+│  ├──🩻 axl_anatomic.nii
+│  ├──🩻 axl_inference_1.nii
+│  ├──🩻 axl_inference_2.nii
+│  ├──🩻 cor_anatomic.nii
+│  ├──🩻 cor_inference_1.nii
+│  ├──🩻 cor_inference_3.nii
+│  └──🩻 sag_anatomic.nii
+├──📂 item_2
+│  ├──🩻 axl_anatomic.nii
+│  ├──🩻 axl_inference_1.nii
+│  ├──🩻 axl_inference_2.nii
+│  ├──🩻 cor_anatomic.nii
+│  ├──🩻 cor_inference_1.nii
+│  ├──🩻 cor_inference_3.nii
+│  └──🩻 sag_anatomic.nii
+├──📂 item_2
+│  ├──🩻 axl_anatomic.nii
+│  ├──🩻 axl_inference_1.nii
+│  ├──🩻 axl_inference_2.nii
+│  ├──🩻 cor_anatomic.nii
+│  ├──🩻 cor_inference_1.nii
+│  ├──🩻 cor_inference_3.nii
+│  ├──🩻 sag_anatomic.nii
+└──└──🩻 sag_inference_1.nii
+```
 
 # Useful links
 
