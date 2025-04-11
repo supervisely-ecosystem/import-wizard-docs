@@ -2,6 +2,8 @@
 
 # Overview
 
+⚠️ **Important:** For most use cases, the standard Supervisely format is sufficient and recommended. This blob format is specifically designed for special cases. Only use this format when dealing with performance bottlenecks related to file system limitations.
+
 Supervisely provides a powerful optimization for projects containing a large number of small image files through its blob file system. Instead of handling thousands of individual files, blob files consolidate many images into a single large binary file. This approach dramatically improves upload and download speeds, especially when dealing with datasets containing tens or hundreds of thousands of images.
 
 Check out the <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/01_project_structure_new#understanding-blob-files-and-offsets-for-optimized-project-handling" target="_blank">Supervisely JSON format</a> documentation for more details.
