@@ -44,17 +44,38 @@ Both directory and archive are supported.
 
 Project meta file `meta.json` is recommended to be present in the project directory. It contains classes and tags definitions for the project. If it is not present, app will try to create it from the annotations (if possible). Learn more about the `meta.json` file [here](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/02_project_classes_and_tags).
 
-**Struggled with the structure?** No worries!
+## Blob Format Explained
 
-If you don't have the recommended structure, don't worry. You can upload images and annotations in any structure. In this case, the app will upload all images and annotations to a single dataset.
+-   A blob file in Supervisely is essentially a `.tar` archive that contains multiple images bundled together.
+-   The file naming convention for images inside a blob is the same as for the standard Supervisely format.
+-   The offset file `.pkl` is a companion file to the blob archive that contains metadata about where each image is located within the blob file. It's a Python pickle file that maps each image filename to its exact byte position in the blob file.
+    For every dataset, you can have multiple blob files, and each file must be described by a separate `.pkl` file containing the offsets of the images that will belong to the dataset.
 
-Just make sure that:
+    ```python
 
--   Annotation files are in the `.json` format.
--   Annotation files have the corresponding file name to the image file name (e.g. `image_1.jpg.json` is for the image `image_1.jpg`).
--   Annotation files have the correct format (look at the example below).
--   Image files are in the supported formats (provided above).
--   Image and annotation files can be placed in any subdirectories or the root directory.
+    	# An approximate representation of the content in the pickle file for offsets look like this:
+
+    	[
+    		# Batch 1
+    		[
+    			BlobImageInfo(name='IMG_00001.jpeg', offset_start=0, offset_end=148388),
+    			BlobImageInfo(name='IMG_00002.jpeg', offset_start=148388, offset_end=296712),
+    			# ...
+    		],
+    		# Batch 2
+    		[
+    			BlobImageInfo(name='IMG_10001.jpeg', offset_start=296712, offset_end=445100),
+    			BlobImageInfo(name='IMG_10002.jpeg', offset_start=445100, offset_end=593424),
+    			# ...
+    		],
+    		# Batch N
+    		# ...
+    	]
+
+    	# Offset values are provided as an example.
+    ```
+
+-   Projects can also include regular images in the `img` directory of datasets, i.e., they can be mixed.
 
 # Individual Image Annotations
 
@@ -163,3 +184,7 @@ Example:
 -   <a href="https://ecosystem.supervisely.com/apps/import-images-in-sly-format" target="_blank">[Supervisely Ecosystem] Import images in Supervisely format</a>
 
     <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-in-sly-format" src="https://i.imgur.com/Y6RcQPT.png" width="350px" style='padding-bottom: 10px'/>
+
+-   <a href="https://ecosystem.supervisely.com/apps/export-to-supervisely-format-blob" target="_blank">[Supervisely Ecosystem] Export to Supervisely format: Blob</a>
+
+    <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/export-to-supervisely-format-blob" src="https://github.com/supervisely-ecosystem/export-to-supervisely-format-blob/releases/download/v0.0.6/app-badge.png" width="420px" style='padding-bottom: 10px'/>
