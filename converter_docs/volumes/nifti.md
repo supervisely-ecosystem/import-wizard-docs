@@ -149,9 +149,11 @@ where:
 - Femur, Femoral cartilage, ... are the names of the classes
 - 255, 0, 0, ... are the RGB colors of the classes
 
-### Upload annotations separately
+# Upload annotations separately
 
-Import of annotations for uploaded volumes is supported. By default, the volumes will be matched with annotations by name but a `.json` file can be provided to serve as a custom mapping. Works both for current dataset only and project-wide.
+Plane-structured converter supports uploading annotations separately (uploading annotations to existing volumes). This functionality supports both dataset-scope and project-wide annotation imports.
+
+By default, annotations are matched with their corresponding volumes based on filenames. However, a custom mapping can be provided via a `.json` file to explicitly define the mapping.
 
 Input structure example for dataset scope:
 
@@ -167,6 +169,7 @@ Input structure example for dataset scope:
 Input structure example for project-wide import:
 
 ```text
+📄 mapping.json # ⬅︎ optional file
 📄 cls_color_map.txt  # ⬅︎ optional file
 📂 dataset_name_1
 ├──🩻 axl_inference_1.nii
@@ -182,13 +185,27 @@ Input structure example for project-wide import:
 └──🩻 cor_inference_3.nii
 ```
 
-Mapping structure should include annotation filename as a key, and volume ID as value.
+### JSON mapping
 
-Example JSON mapping:
+Mapping structure should be as follows: 
 ```
 {
     "cor_inference_1.nii": 123,
     "sag_mask_2.nii": 456
+}
+```
+Where key should be annotation filename, and volume ID as value
+
+If you want to import annotations for the entire project via a JSON mapping:
+
+1. Pack annotations inside folders with corresponding dataset name as in an example above
+2. Specify the dataset name in a `.json` file in a path-like manner (`dataset_name/annotation_filename`)
+
+Example JSON structure with dataset specification:
+```
+{
+    "dataset1/cor_inference_1.nii": 123,
+    "dataset2/sag_mask_2.nii": 456
 }
 ```
 
