@@ -26,8 +26,8 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
 <div>
-    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
-    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>150</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
+    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>25</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
+    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>100</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
     <div>Enterprise Edition: <b>Unlimited</b></div>
 </div>
 </div>
