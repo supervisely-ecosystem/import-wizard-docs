@@ -22,4 +22,6 @@ When uploading to an existing project, Supervisely will automatically validate a
 </span> <span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI-360 format</a>
 </span>
+
+<div class="entity-size-limits-row"></div><div></div>
 </div>

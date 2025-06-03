@@ -26,4 +26,5 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 </span>
 </span>
 
+<div class="entity-size-limits-row"></div><div></div>
 </div>

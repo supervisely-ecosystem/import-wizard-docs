@@ -23,11 +23,6 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/supervisely" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/supervisely.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Supervisely</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/volumes/volumes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/volumes/volumes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >NRRD, DICOM files</a>
 </span>
-<b style="font-weight: 600; flex: none;" class="mr5">File size limit:</b>
 
-<div>
-    <div>Community Free plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>25</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
-    <div>Community Pro plan: <i style="color:rgb(53, 53, 53); font-size: 12px">max</i> <b>100</b> <i style="color:rgb(53, 53, 53); font-size: 12px">MB per volume</i></div>
-    <div>Enterprise Edition: <b>Unlimited</b></div>
-</div>
+<div class="entity-size-limits-row"></div><div></div>
 </div>

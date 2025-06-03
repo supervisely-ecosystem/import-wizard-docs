@@ -27,4 +27,5 @@ When uploading to an existing project, Supervisely will automatically validate a
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/kitti3d" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/kitti3d.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI 3D format</a>
 </span>
 
+<div class="entity-size-limits-row"></div><div></div>
 </div>

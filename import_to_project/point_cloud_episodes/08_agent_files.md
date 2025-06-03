@@ -28,4 +28,5 @@ When uploading to an existing project, Supervisely will automatically validate a
 </span>
 </span>
 
+<div class="entity-size-limits-row"></div><div></div>
 </div>
