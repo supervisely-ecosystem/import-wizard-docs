@@ -19,7 +19,9 @@ When uploading to an existing project, Supervisely will automatically validate a
   <span><code>.avi</code>, <code>.mp4</code>, <code>.3gp</code>, <code>.flv</code>, <code>.webm</code>, <code>.wmv</code>, <code>.mov</code>, <code>.mkv</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Codecs:</b>
-<span>Any codec is supported; videos are automatically converted to <code>H.264</code> (video) and <code>AAC</code> (audio).</span>
+<span>
+  Any codec is supported; videos are automatically converted to <code>H.264</code> (video) and <code>AAC</code> (audio)
+</span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
