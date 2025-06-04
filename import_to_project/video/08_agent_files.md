@@ -18,6 +18,9 @@ When uploading to an existing project, Supervisely will automatically validate a
   <b style="font-weight: 600; flex: none;" class="mr5">Video formats:</b>
   <span><code>.avi</code>, <code>.mp4</code>, <code>.3gp</code>, <code>.flv</code>, <code>.webm</code>, <code>.wmv</code>, <code>.mov</code>, <code>.mkv</code></span>
 
+<b style="font-weight: 600; flex: none;" class="mr5">Codecs:</b>
+<span>Any codec is supported; videos are automatically converted to <code>H.264</code> (video) and <code>AAC</code> (audio).</span>
+
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
 <a href="https://docs.supervisely.com/import-and-export/import/import-using-web-ui" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/videos/videos.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Videos</a><span> | </span>
