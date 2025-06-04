@@ -10,7 +10,6 @@ Drag and drop files, folders or an archive. Supervisely will automatically detec
 When uploading to an existing project, Supervisely will automatically validate and merge classes, tags, and annotations.
 
 <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 5px; grid-row-gap: 10px; grid-auto-rows: auto;">
-  <div style="margin-left: 12px;">
   <b style="font-weight: 600; flex: none;" class="mr5">Video formats:</b>
   <span><code>.avi</code>, <code>.mp4</code>, <code>.3gp</code>, <code>.flv</code>, <code>.webm</code>, <code>.wmv</code>, <code>.mov</code>, <code>.mkv</code></span>
 
@@ -18,7 +17,6 @@ When uploading to an existing project, Supervisely will automatically validate a
   <span>
     Any codec is supported; videos are automatically converted to <code>H.264</code> (video) and <code>AAC</code> (audio)
   </span>
-  </div>
 
   <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
   <span>
