@@ -160,9 +160,8 @@ Layer, Label-2, Label-4, ...
 
 where:
 - **Layer**: The frame number in the NIfTI file (starting from 1).
-- **Label-2, Label-4, ...**: Corresponding labels for the NIfTI file, which should match with the pixel values in the NIfTI file.
+- **Label-2, Label-4, ...**: Corresponding labels for the NIfTI file, which contains the `Label-` prefix with the corresponding pixel value in the NIfTI file.
 
-<!-- After uploading, the scores will be displayed in the Labeling Toolbox, but you need to enable the "Show Figure Score and Comment" option in the toolbox settings to see them. -->
 To view the scores and comments in the Labeling Toolbox, you need to enable the "Show Figure Score and Comment" option in the toolbox settings.
 
 ![settings](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.3/settings.jpg)
