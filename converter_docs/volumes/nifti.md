@@ -94,7 +94,7 @@ Structure example for instance segmentation:
 
 ### **Example 3: grouped by plane w/ multiple items**
 
-If you need to import multiple items at once, place each item in a separate folder. 
+If you need to import multiple items at once, place each item in a separate folder.
 The converter supports any folder structure. Folders may be at different levels, and files will be matched by directory (annotation files must be in the same folder as their corresponding volume). All files will be imported into the same dataset.
 
 Structure example for multiple items directory:
@@ -159,6 +159,7 @@ Layer, Label-2, Label-4, ...
 ![csv_example](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.3/csv_example.jpg)
 
 where:
+
 - **Layer**: The frame number in the NIfTI file (starting from 1).
 - **Label-2, Label-4, ...**: Corresponding labels for the NIfTI file, which contains the `Label-` prefix with the corresponding pixel value in the NIfTI file.
 
@@ -171,8 +172,6 @@ After enabling this option and uploading the NIfTI files with scores, you will s
 ![toolbox](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.3/toolbox.jpg)
 
 **Impotant**: You can import and export scores, but you cannot edit them in the Labeling Toolbox. Comments can be edited in the Labeling Toolbox, but they will not be saved back to the CSV files.
-
-
 
 ### Class color map file (optional)
 
@@ -234,13 +233,15 @@ Input structure example for project-wide import:
 
 ### JSON mapping
 
-Mapping structure should be as follows: 
+Mapping structure should be as follows:
+
 ```
 {
     "cor_inference_1.nii": 123,
     "sag_mask_2.nii": 456
 }
 ```
+
 Where key should be annotation filename, and volume ID as value
 
 If you want to import annotations for the entire project via a JSON mapping:
@@ -249,6 +250,7 @@ If you want to import annotations for the entire project via a JSON mapping:
 2. Specify the dataset name in a `.json` file in a path-like manner (`dataset_name/annotation_filename`)
 
 Example JSON structure with dataset specification:
+
 ```
 {
     "dataset1/cor_inference_1.nii": 123,
