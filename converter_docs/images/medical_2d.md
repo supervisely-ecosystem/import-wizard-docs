@@ -69,7 +69,7 @@ Recommended directory structure:
 
 # Useful links
 
-- <a href="https://ecosystem.supervisely.com/apps/import-dicom-studies" target="_blank">[Supervisely Ecosystem] Import DICOM studies</a>
+- <a href="../../../../supervisely-ecosystem/import-dicom-studies" target="_blank">[Supervisely Ecosystem] Import DICOM studies</a>
 - <a href="https://teem.sourceforge.net/nrrd/" target="_blank">Nearly Raw Raster Data (NRRD): Format, Examples etc.</a>
 - <a href="https://dicom.nema.org/medical/dicom/current/output/html/part01.html#chapter_6" target="_blank">Overview of The Content of The DICOM Standard</a>
 - <a href="https://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative (NIfTI)</a>
