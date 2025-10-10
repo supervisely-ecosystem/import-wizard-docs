@@ -2,7 +2,7 @@
 
 # Overview
 
-This option allows you to upload videos to the platform without any annotations. All videos from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-videos-supervisely" target="_blank">Import Videos</a> application from the Supervisely Ecosystem.
+This option allows you to upload videos to the platform without any annotations. All videos from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="../../../../supervisely-ecosystem/import-videos-supervisely" target="_blank">Import Videos</a> application from the Supervisely Ecosystem.
 
 # Format description
 
@@ -27,4 +27,4 @@ Recommended directory structure:
 
 # Useful links
 
-- <a href="https://ecosystem.supervisely.com/apps/import-videos-supervisely" target="_blank">[Supervisely Ecosystem] Import Videos</a>
+- <a href="../../../../supervisely-ecosystem/import-videos-supervisely" target="_blank">[Supervisely Ecosystem] Import Videos</a>
