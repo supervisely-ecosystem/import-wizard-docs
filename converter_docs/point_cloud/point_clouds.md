@@ -2,7 +2,7 @@
 
 # Overview
 
-This option allows you to upload point clouds to the platform without any annotations. All items from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-pointcloud-pcd" target="_blank">Import Pointclouds PCD</a> application from the Supervisely Ecosystem.
+This option allows you to upload point clouds to the platform without any annotations. All items from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="../../../../supervisely-ecosystem/import-pointcloud-pcd" target="_blank">Import Pointclouds PCD</a> application from the Supervisely Ecosystem.
 
 # Format description
 
@@ -33,4 +33,4 @@ Recommended directory structure:
 
 # Useful links
 
-- <a href="https://ecosystem.supervisely.com/apps/import-pointcloud-pcd" target="_blank">[Supervisely Ecosystem] Import Pointclouds PCD</a>
+- <a href="../../../../supervisely-ecosystem/import-pointcloud-pcd" target="_blank">[Supervisely Ecosystem] Import Pointclouds PCD</a>
