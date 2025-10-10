@@ -2,7 +2,7 @@
 
 # Overview
 
-This option allows you to upload images to the platform without any annotations. All images from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="https://ecosystem.supervisely.com/apps/import-images" target="_blank">Import Images</a> application from the Supervisely Ecosystem.
+This option allows you to upload images to the platform without any annotations. All images from the input directory and its subdirectories will be uploaded to a single dataset. If you need to preserve the directory structure, you can use the <a href="../../../../supervisely-ecosystem/import-images" target="_blank">Import Images</a> application from the Supervisely Ecosystem.
 
 # Format description
 
@@ -33,4 +33,4 @@ Recommended directory structure:
 
 # Useful links
 
-- <a href="https://ecosystem.supervisely.com/apps/import-images" target="_blank">[Supervisely Ecosystem] Import Images</a>
+- <a href="../../../../supervisely-ecosystem/import-images" target="_blank">[Supervisely Ecosystem] Import Images</a>
