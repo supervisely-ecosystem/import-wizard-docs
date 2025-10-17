@@ -163,4 +163,4 @@ Fields definitions:
 - <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/06_supervisely_format_videos" target="_blank">Supervisely Video Annotation</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
-- <a href="../../../../supervisely-ecosystem/import-videos-in-sly-format" target="_blank">[Supervisely Ecosystem] Import video in Supervisely format</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-videos-in-sly-format" target="_blank">[Supervisely Ecosystem] Import video in Supervisely format</a>
