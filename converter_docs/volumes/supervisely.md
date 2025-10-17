@@ -371,4 +371,4 @@ JSON file format of `key_id_map.json`:
 - <a href="https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/08_supervisely_format_volume" target="_blank">Supervisely Volume Annotation</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
 - <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
-- <a href="../../../../supervisely-ecosystem/import-volumes-with-anns" target="_blank">[Supervisely Ecosystem] Import Volumes in Supervisely format</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-volumes-with-anns" target="_blank">[Supervisely Ecosystem] Import Volumes in Supervisely format</a>
