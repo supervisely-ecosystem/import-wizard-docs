@@ -31,4 +31,4 @@ Recommended directory structure:
 
 # Useful links
 
-- [[Supervisely Ecosystem] Import PDF as Images](../../../../supervisely-ecosystem/import-pdf-as-images)
+- [[Supervisely Ecosystem] Import PDF as Images](https://ecosystem.supervisely.com/apps/import-pdf-as-images)
