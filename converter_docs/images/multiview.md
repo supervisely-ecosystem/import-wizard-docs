@@ -199,10 +199,10 @@ You can download an example data:
 
 # Useful links
 
--   [[Supervisely Ecosystem] Group Images for Multiview Labeling](../../../../supervisely-ecosystem/group-images-for-multiview-labeling)
+-   [[Supervisely Ecosystem] Group Images for Multiview Labeling](https://ecosystem.supervisely.com/apps/group-images-for-multiview-labeling)
 
       <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://github.com/supervisely-ecosystem/group-images-for-multiview-labeling/assets/57998637/823cf901-8d8c-4a64-b884-c59f5ff83e93" width="350px" style='padding-bottom: 10px'/>
 
--   [[Supervisely Ecosystem] Import Multiview Image Groups](../../../../supervisely-ecosystem/import-images-groups)
+-   [[Supervisely Ecosystem] Import Multiview Image Groups](https://ecosystem.supervisely.com/apps/import-images-groups)
 
       <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-groups" src="https://github.com/user-attachments/assets/1788313e-8ef3-4f42-9277-38e32aa9dfa6" width="380px" style='padding-bottom: 10px'/>
