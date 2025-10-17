@@ -50,7 +50,7 @@ In this example, we have 3 groups with images. In the first group, we have one i
 
 - [[Supervisely Developer Portal] Multispectral Images](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multispectral-images)
 - [[Supervisely Blog] How to Annotate Multispectral Images for Computer Vision Models](https://supervisely.com/blog/labeling-multispectral-images/)
-- [[Supervisely Ecosystem] Import Multispectral Images](../../../../supervisely-ecosystem/import-multispectral-images)
+- [[Supervisely Ecosystem] Import Multispectral Images](https://ecosystem.supervisely.com/apps/import-multispectral-images)
 
 # Python SDK example
 
