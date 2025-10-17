@@ -183,10 +183,10 @@ Example:
 -   <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/images" target="_blank">Supervisely Image Annotation</a>
 -   <a href="https://developer.supervisely.com/getting-started/command-line-interface/sdk-cli#upload-a-project" target="_blank">[SDK CLI] Upload projects in Supervisely format</a>
 -   <a href="https://developer.supervisely.com/getting-started/command-line-interface/cli-tool/workflow-automation#upload-projects-in-supervisely-format" target="_blank">[CLI Tool Beta] Upload projects in Supervisely format</a>
--   <a href="../../../../supervisely-ecosystem/import-images-in-sly-format" target="_blank">[Supervisely Ecosystem] Import images in Supervisely format</a>
+-   <a href="https://ecosystem.supervisely.com/apps/import-images-in-sly-format" target="_blank">[Supervisely Ecosystem] Import images in Supervisely format</a>
 
     <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/import-images-in-sly-format" src="https://i.imgur.com/Y6RcQPT.png" width="350px" style='padding-bottom: 10px'/>
 
--   <a href="../../../../supervisely-ecosystem/export-to-supervisely-format-blob" target="_blank">[Supervisely Ecosystem] Export to Supervisely format: Blob</a>
+-   <a href="https://ecosystem.supervisely.com/apps/export-to-supervisely-format-blob" target="_blank">[Supervisely Ecosystem] Export to Supervisely format: Blob</a>
 
     <img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/export-to-supervisely-format-blob" src="https://github.com/supervisely-ecosystem/export-to-supervisely-format-blob/releases/download/v0.0.6/app-badge.png" width="420px" style='padding-bottom: 10px'/>
