@@ -303,4 +303,4 @@ Image caption annotations are pretty simple. There are no categories in this `.j
 
 - <a href="https://cocodataset.org/#home" target="_blank">COCO dataset</a>
 - <a href="https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch" target="_blank">COCO annotation structure</a>
-- <a href="../../../../supervisely-ecosystem/import-coco" target="_blank">[Supervisely Ecosystem] Import COCO</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-coco" target="_blank">[Supervisely Ecosystem] Import COCO</a>
