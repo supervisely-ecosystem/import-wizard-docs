@@ -141,4 +141,4 @@ Example of the annotation file from provided sample data:
 # Useful links
 
 - <a href="https://github.com/mcordts/cityscapesScripts" target="_blank">Cityscapes format</a>
-- <a href="../../../../supervisely-ecosystem/import-cityscapes" target="_blank">[Supervisely Ecosystem] Import Cityscapes</a>
+- <a href="https://ecosystem.supervisely.com/apps/import-cityscapes" target="_blank">[Supervisely Ecosystem] Import Cityscapes</a>
