@@ -1,5 +1,7 @@
 <h1 align="left" style="border-bottom: 0"> <img align="left" src="https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.1/multi_view_logo.png" width="80" style="padding-right: 20px;"> Multiview Video Format</h1>
 
+![Multi-View Interface](https://github.com/supervisely-ecosystem/import-wizard-docs/releases/download/v0.0.3/multi_view.png)
+
 # Overview
 
 Import format for multiview video projects in Supervisely. Videos are grouped by datasets - all videos within one dataset form a synchronized multiview group.
@@ -70,64 +72,69 @@ Example data: [download ⬇️](https://github.com/user-attachments/files/236591
    ┗ 📄 meta.json
   ```
 
-  **Structure explained:**
+**Structure explained:**
 
-  - Inside project directory can be one or multiple dataset directories
-  - **Each dataset = one multiview group:** All videos within the same dataset will be displayed together
-  - Each dataset directory can contain:
-    - `video/` - directory with video files
-    - `ann/` - (optional) directory with annotations in Supervisely format
-    - `metadata/` - (optional) directory with video metadata files
-  - Annotation file names pattern: `{video_name}.{video_ext}.json`
-  - Metadata file names pattern: `{video_name}.{video_ext}.meta.json`
+- Inside project directory can be one or multiple dataset directories
+- **Each dataset = one multiview group:** All videos within the same dataset will be displayed together
+- Each dataset directory can contain:
+- `video/` - directory with video files
+- `ann/` - (optional) directory with annotations in Supervisely format
+- `metadata/` - (optional) directory with video metadata files
+- Annotation file names pattern: `{video_name}.{video_ext}.json`
+- Metadata file names pattern: `{video_name}.{video_ext}.meta.json`
 
-  **Meta explained**
+**Meta explained**
 
-  Required setting for the project to import as multiview. Also shown only lines of interest.
+Required setting for the project to import as multiview. Also shown only lines of interest.
 
-  ```json
-  {
-    "projectSettings": {
-      "multiView": {
-        "enabled": true,
-        "tagName": null,
-        "tagId": null,
-        "isSynced": false
-      },
-      "labelingInterface": "multi_view"
+```json
+{
+"projectSettings": {
+    "multiView": {
+    "enabled": true,
+    "tagName": null,
+    "tagId": null,
+    "isSynced": false
+    },
+    "labelingInterface": "multi_view"
+}
+}
+```
+
+**Annotation explained**
+
+This format uses the standard Supervisely video annotation format. Check [the documentation](https://docs.supervisely.com/customization-and-integration/00_ann_format_navi/06_supervisely_format_videos) for more details.
+
+
+```json
+{
+"objects": [
+    {
+    "key": "object_key_1",
+    "classTitle": "Car",
+    "tags": []
     }
-  }
-  ```
+]
+}
+```
 
-  **Annotation explained**
+**Metadata explained**
 
-  This format uses the standard Supervisely video annotation format.
+Optional JSON file with custom video information:
 
-  ```json
-  {
-    "objects": [
-      {
-        "key": "object_key_1",
-        "classTitle": "Car",
-        "tags": []
-      }
-    ]
-  }
-  ```
+```json
+{
+"offsetType": "frame",
+"offsetValue": 5,
+"videoStreamIndex": 0
+}
+```
 
-  **Metadata explained**
+`offsetType` - type of offset, can be `frame` or `time (ms)`<br>
+`offsetValue` - offset value in frames or milliseconds<br>
+`videoStreamIndex` - index of the video stream in the multiview group (starting from 0)<br>
 
-  Optional JSON file with custom video information:
-
-  ```json
-  {
-    "offsetType": "frame",
-    "offsetValue": 5,
-    "videoStreamIndex": 0
-  }
-  ```
-
-  Can contain offset value, video stream index and offset type.
+Can contain offset value, video stream index and offset type.
 
 # Useful links
 
