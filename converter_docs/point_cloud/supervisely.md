@@ -2,7 +2,7 @@
 
 # Overview
 
-Easily import your pointclouds with annotations in the Supervisely format. The Supervisely json-based annotation format supports `cuboid_3d` shape figures. It is a universal format that supports various types of annotations and is used in the Supervisely platform.
+Easily import your pointclouds with annotations in the Supervisely format. The Supervisely json-based annotation format supports `cuboid_3d` shape figures. It is a universal format that supports various types of annotations and is used in the Supervisely platform. Import as links from cloud storage (with annotations) is supported.
 
 > All information about the Supervisely JSON format can be found <a href="https://docs.supervisely.com/data-organization/00_ann_format_navi" target="_blank">here</a>
 
