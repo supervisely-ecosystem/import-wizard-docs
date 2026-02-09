@@ -26,9 +26,7 @@ Just organize images into groups and drop them to the import. The app will do th
 -   Tag value is defined by group directory name
 -   Works with `.nrrd` image format (2D only)
 
-## How to Use
-
-#### 1. Prepare structure:
+## Data Structure
 
 -   **Archive** `zip`, `tar`, `tar.xz`, `tar.gz`
 
