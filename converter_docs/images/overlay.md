@@ -10,10 +10,8 @@ The format follows a Supervisely-like dataset structure, where source images are
 
 # Format description
 
-**Supported base image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
-**Supported overlay image formats:** `.jpg`, `.jpeg`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.avif`, `.heic`, and `.heif` (`.png` is recommended when transparency is needed)<br>
+**Supported image formats:** `.jpg`, `.jpeg`, `.mpo`, `.bmp`, `.png`, `.webp`, `.tiff`, `.tif`, `.jfif`, `.avif`, `.heic`, and `.heif`<br>
 **With annotations:** Yes, for source images only<br>
-**With overlays:** Yes<br>
 **Supported annotation format:** `.json` for source image annotations<br>
 **Data structure:** Information is provided below.<br>
 
@@ -59,24 +57,7 @@ Both directory and archive are supported.
 - Overlay images are matched to the source image by the name of the subdirectory, not by overlay file name.
 - Annotation files are matched only to source images.
 - Overlay display settings such as opacity are configured in the web interface and are not expected in the file system.
-
-## Recommendations
-
-- It is recommended that each overlay image has the same width and height as the source image.
-- Use `.png` overlays when you need transparency.
 - If only one overlay is provided for an image, it should still be placed inside that image's overlay subdirectory.
-
-## Example mapping
-
-- `img/image_001.jpg`
-  - `ann/image_001.jpg.json`
-  - `overlay/image_001.jpg/overlay_01.png`
-  - `overlay/image_001.jpg/overlay_02.png`
-- `img/image_002.jpg`
-  - `ann/image_002.jpg.json`
-  - `overlay/image_002.jpg/overlay.png`
-
-In this example, `image_001.jpg` will have a standard Supervisely annotation file and two overlays, while `image_002.jpg` will have one annotation file and one overlay.
 
 ## Source image annotations
 
