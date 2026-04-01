@@ -19,6 +19,8 @@ The format follows a Supervisely-like dataset structure, where source images are
 
 Both directory and archive are supported.
 
+Example data: [download ⬇️](https://github.com/supervisely-ecosystem/overlay-sample-project/releases/download/v1.0.1/project.zip)<br>
+
 **Recommended directory structure:**
 
 ```text
@@ -46,8 +48,6 @@ Both directory and archive are supported.
 				 ┗ 🖼️heatmap.png
 ```
 
-## Structure rules
-
 - Source images must be placed in the `img` directory.
 - Source image annotations must be placed in the `ann` directory and follow the standard Supervisely naming rule: `image_name.ext.json`.
 - Overlay images must be placed in the `overlay` directory.
@@ -69,8 +69,3 @@ Example:
 - `ann/image_001.jpg.json`
 
 Overlay images do not require annotation files.
-
-# Useful links
-
-- <a href="https://ecosystem.supervisely.com/apps/import-images" target="_blank">[Supervisely Ecosystem] Import Images</a>
-- <a href="https://developer.supervisely.com/getting-started/supervisely-annotation-format/images" target="_blank">Supervisely Image Annotation</a>
