@@ -33,4 +33,3 @@ Drag and drop files, folders or an archive. Supervisely will automatically detec
 
 <div class="entity-size-limits-row"></div><div></div>
 </div>
-
