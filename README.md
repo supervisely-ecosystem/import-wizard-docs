@@ -89,4 +89,15 @@ This repository contains documentation for the Import Wizard feature in Supervis
 
 </details>
 
+<details>
+  <summary>Meshes</summary>
 
+- [Quick import](import_to_project/mesh/01_quick.md)
+- [Cloud Storage](import_to_project/mesh/04_cloud_storage.md)
+- [Python SDK](import_to_project/mesh/06_python.md)
+- [REST API](import_to_project/mesh/07_http_api.md)
+- [Your Agent](import_to_project/mesh/08_agent_files.md)
+- [Team Files](import_to_project/mesh/09_team_files.md)
+- [Custom Import App](import_to_project/mesh/11_custom.md)
+
+</details>
