@@ -24,12 +24,12 @@ Both directory and archive are supported.
 **Recommended directory structure:**
 
 ```text
-pcd_semantic_labels_project
-|-- class_mapping.json
-|-- scene_01.pcd
-|-- scene_02.pcd
-|-- scene_03.pcd
-`-- ...
+📦pcd_with_labels (folder or .tar/.zip archive)
+├──📄class_mapping.json
+├──📄scene_01.pcd
+├──📄scene_02.pcd
+├──📄scene_03.pcd
+└──📄...
 ```
 
 Nested directories are supported. The project must contain exactly one `class_mapping.json` file.
