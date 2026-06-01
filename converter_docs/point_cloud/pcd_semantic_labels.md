@@ -21,7 +21,7 @@ Example data: [download ⬇️](https://github.com/user-attachments/files/284705
 
 Both directory and archive are supported.
 
-**Recommended directory structure:**
+Recommended directory structure:
 
 ```text
 📦pcd_with_labels (folder or .tar/.zip archive)
