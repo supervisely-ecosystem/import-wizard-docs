@@ -17,6 +17,8 @@ This format is intended for PCD files where every point can have a numeric class
 
 # Input files structure
 
+Example data: [download ⬇️](https://github.com/user-attachments/files/28470515/pcd_semantic_labels_demo.zip).
+
 Both directory and archive are supported.
 
 **Recommended directory structure:**
