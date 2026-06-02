@@ -21,7 +21,7 @@ When uploading to an existing project, Supervisely will automatically validate a
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/kitti3d" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/kitti3d.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI 3D format</a>
 <span> | </span>
-<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/pcd_semantic_labels" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/pcd_semantic_labels" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD with semantic labels</a>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/pcd_semantic_labels" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/pcd_semantic_labels.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >PCD with semantic labels</a>
 </span>
 
 <div class="entity-size-limits-row"></div><div></div>
