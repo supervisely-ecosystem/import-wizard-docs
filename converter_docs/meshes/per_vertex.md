@@ -31,7 +31,7 @@ Both directory and archive are supported. Datasets may be nested; the directory 
 
 # PLY File Requirements
 
-The `.ply` file must be in **ASCII** format (`format ascii 1.0`; binary PLY is not supported) and must contain per-vertex color properties (`red`, `green`, `blue` or `diffuse_red`, `diffuse_green`, `diffuse_blue`) in addition to the standard geometry properties:
+The `.ply` file must be in **ASCII** format (`format ascii 1.0`; binary PLY is not supported) and must contain per-vertex color properties (`red`, `green`, `blue` or `diffuse_red`, `diffuse_green`, `diffuse_blue`) **and** the `class_id`/`object_id` properties in addition to the standard geometry properties. Files without `class_id` and `object_id` are not recognized as this format.
 
 ```
 property uchar red
@@ -41,9 +41,9 @@ property int class_id
 property int object_id
 ```
 
-- **Vertex colors** define the annotation: a vertex whose color exactly matches the color of a class from `meta.json` is imported as annotated with that class. Any other color (including white, the recommended neutral color for unannotated vertices) means the vertex is not annotated.
-- **`object_id`** is needed to reconstruct object instances: vertices sharing the same `object_id` are grouped into a single object. Without it, all vertices of a class are merged into one object.
-- **`class_id`** is not used during import (classes are resolved by color); it is written on export for convenience of downstream PLY processing.
+- **Vertex colors** define the class: a vertex whose color exactly matches the color of a class from `meta.json` is annotated with that class.
+- **`class_id`** is the annotation marker: a vertex with `class_id = -1` is never imported as annotated, even if its color matches a class. This allows background vertices to coexist with a class of the same color (e.g. white).
+- **`object_id`** carries instance segmentation: vertices sharing the same `object_id` are grouped into a single object instance. Vertices with `object_id = -1` are imported as semantic (non-instance) annotation of their class.
 
 **Example PLY header:**
 
@@ -67,16 +67,15 @@ end_header
 
 **Vertex value conventions:**
 
-| Value                       | Meaning                                         |
-| --------------------------- | ----------------------------------------------- |
-| color matches a class color | Vertex is annotated with that class             |
-| any other color             | Vertex is not annotated (background)            |
-| `object_id = -1`            | Vertex does not belong to any object instance   |
-| `object_id >= 0`            | Unique object (instance) ID within the mesh     |
-| `class_id = -1`             | Auxiliary marker: vertex is not annotated       |
-| `class_id > 0`              | Auxiliary: class ID, written for downstream use |
+| Value                                      | Meaning                                       |
+| ------------------------------------------ | --------------------------------------------- |
+| color matches a class + `class_id != -1`   | Vertex is annotated with that class           |
+| `class_id = -1`                            | Vertex is not annotated, regardless of color  |
+| color does not match any class             | Vertex is not annotated (background)          |
+| `object_id = -1`                           | Vertex does not belong to any object instance |
+| `object_id >= 0`                           | Unique object (instance) ID within the mesh   |
 
-> ℹ️ White (`255 255 255`) is reserved as the neutral color for unannotated vertices — do not use it as a class color.
+> ℹ️ White (`255 255 255`) is the neutral color written by the export for unannotated vertices of colorless meshes. Thanks to the `class_id`/`object_id` markers it can also be used as a class color.
 
 # meta.json
 
@@ -124,13 +123,32 @@ The `meta.json` file defines the classes. Vertex colors in the `.ply` files are 
 
 At least one mesh in the project must contain annotated vertices (colors matching a class), otherwise the format will not be detected.
 
-# How Instances Are Resolved
+# Semantic vs Instance Segmentation
 
-Vertices sharing the same `object_id` (and the same class color) belong to the same object instance. This allows multiple disconnected regions of the mesh to be grouped into a single labeled object.
+The `object_id` value controls how annotated vertices are grouped into objects. Vertices are grouped by the `(class, object_id)` pair:
 
-**Example:** if three separate mesh patches all have the color of class `scratch` and `object_id = 42`, they will be imported as a single object of class `scratch` with instance ID `42`.
+**Instance segmentation** — give each object its own `object_id` (`>= 0`). Vertices sharing the same `object_id` (and the same class color) are imported as one object instance. This also allows multiple disconnected regions of the mesh to be grouped into a single object: if three separate mesh patches all have the color of class `scratch` and `object_id = 42`, they become a single object of class `scratch`.
 
-> ⚠️ Each `object_id` must map to exactly one class.
+```
+# two separate scratch instances
+x y z <scratch color> <class_id> 42
+x y z <scratch color> <class_id> 42
+x y z <scratch color> <class_id> 43
+x y z <scratch color> <class_id> 43
+```
+
+**Semantic segmentation** — set `object_id = -1` for annotated vertices. All vertices of the same class are then merged into a single object per class, even if they form disconnected regions:
+
+```
+# one merged "scratch" object, no instances
+x y z <scratch color> <class_id> -1
+x y z <scratch color> <class_id> -1
+x y z <scratch color> <class_id> -1
+```
+
+Both modes can be mixed in one file: vertices of a class with `object_id = -1` form one semantic object, while vertices with explicit IDs form separate instances of that class.
+
+> ⚠️ An `object_id` is expected to belong to a single class — an object instance cannot span two classes. If the same `object_id` does appear with two different class colors, the import will not fail: the vertices are split into separate objects, one per class.
 
 # Mesh Cleanup on Import
 
