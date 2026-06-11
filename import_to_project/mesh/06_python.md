@@ -20,7 +20,7 @@ mesh_info = api.mesh.upload_path(<dataset_id>, name="model.ply", path="meshes/mo
 
 # Update project meta
 project_meta = sly.ProjectMeta.from_json(api.project.get_meta(<project_id>))
-car_class = sly.ObjClass("scratch", sly.Mesh, color=[0, 255, 0])
+scratch_class = sly.ObjClass("scratch", sly.Mesh, color=[0, 255, 0])
 project_meta = project_meta.add_obj_class(scratch_class)
 api.project.update_meta(<project_id>, project_meta)
 ```
