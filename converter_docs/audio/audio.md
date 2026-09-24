@@ -19,8 +19,11 @@ Recommended directory structure:
 📦 project name
 ├── 🎵 recording_01.wav
 ├── 🎵 recording_02.flac
-├── 🎵 recording_03.mp3
-└── 🎵 recording_04.wav
+└── 📂 bench_b
+    ├── 🎵 recording_03.mp3
+    └── 🎵 recording_04.m4a
 ```
+
+Files with other extensions are skipped.
 
 Audio is always uploaded as files. Importing audio as links is not supported: if the option is selected, the recordings are uploaded anyway.
