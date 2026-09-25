@@ -5,7 +5,7 @@
 Easiest way to import your audio with annotations is to use the Supervisely format.
 Check out the <a href="https://docs.supervisely.com/data-organization/00_ann_format_navi" target="_blank">Supervisely JSON format</a> documentation for more details.
 
-In an audio project a label is a tag applied to a range of samples of a recording, optionally about one channel. Each recording has a corresponding annotation `.json` file. The spectrogram settings the recordings are analysed under belong to the project and are stored in `meta.json`.
+In an audio project a label is a tag applied to a range of samples of a recording, optionally about one channel, or to the whole recording. Each recording has a corresponding annotation `.json` file. The spectrogram settings the recordings are analysed under belong to the project and are stored in `meta.json`.
 
 # Format description
 
@@ -59,6 +59,11 @@ Each recording has a corresponding annotation file named after it, e.g. `recordi
       "frameRange": [40000, 55999],
       "channel": null,
       "value": "driver"
+    },
+    {
+      "name": "road",
+      "frameRange": null,
+      "value": "gravel"
     }
   ]
 }
@@ -67,12 +72,12 @@ Each recording has a corresponding annotation file named after it, e.g. `recordi
 **Fields definitions:**
 
 - `sampleCount`, `sampleRate`, `channels` — shape of the recording. The platform does not store them; they are written on export and are optional on import
-- `tags` — segment labels of the recording
+- `tags` — labels of the recording: segments, and whole-recording tags with `"frameRange": null`
 - `name` — name of the tag from `meta.json`
-- `frameRange` — first and last sample of the segment, **both inclusive**, as zero-based indices into the original recording. At 16 kHz, `[16000, 31999]` is the second second of audio
-- `channel` — zero-based channel the label is about, or `null` for all channels
+- `frameRange` — first and last sample of the segment, **both inclusive**, as zero-based indices into the original recording. At 16 kHz, `[16000, 31999]` is the second second of audio. `null` labels the whole recording; a tag can be on a recording only once
+- `channel` — zero-based channel a segment is about, or `null` for all channels. A whole-recording tag has no channel
 - `value` — tag value, for tags that have one
-- `meta`, `tagId`, `id`, `labelerLogin` and other server-side fields are written on export and are optional on import. `meta` is kept as is; ids are replaced with the ones of the destination project
+- `meta`, `tagId`, `id`, `labelerLogin` and other server-side fields are written on export and are optional on import. `meta` and `customData` are kept as is; ids are replaced with the ones of the destination project
 
 # Spectrogram settings
 
@@ -83,7 +88,8 @@ Each recording has a corresponding annotation file named after it, e.g. `recordi
   "classes": [],
   "tags": [
     { "name": "engine_knock", "value_type": "none", "color": "#148A0F" },
-    { "name": "speaker", "value_type": "any_string", "color": "#0F8A6E" }
+    { "name": "speaker", "value_type": "any_string", "color": "#0F8A6E" },
+    { "name": "road", "value_type": "any_string", "color": "#8A0F59" }
   ],
   "projectType": "audio",
   "projectSettings": {
