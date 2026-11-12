@@ -14,7 +14,7 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
   <b style="font-weight: 600; flex: none;" class="mr5">Providers:</b>
   <span>AWS S3, Google Cloud Storage, Azure Blob Storage, File System.</span>
   <b style="font-weight: 600; flex: none;" class="mr5">Point clouds format:</b>
-  <span><code>.pcd</code></span>
+  <span><code>.pcd</code>, <code>.pcap</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
@@ -24,6 +24,8 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a> <span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI-360 format</a>
 </span>
+<span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/seyond_pcap" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/seyond_pcap.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Seyond lidar .pcap</a>
 </span>
 
 <div class="entity-size-limits-row"></div><div></div>
