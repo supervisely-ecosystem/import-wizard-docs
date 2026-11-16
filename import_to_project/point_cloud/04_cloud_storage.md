@@ -14,7 +14,7 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
   <b style="font-weight: 600; flex: none;" class="mr5">Providers:</b>
   <span>AWS S3, Google Cloud Storage, Azure Blob Storage, File System.</span>
   <b style="font-weight: 600; flex: none;" class="mr5">Point cloud formats:</b>
-  <span><code>.pcd</code>, <code>.ply</code>, <code>.las</code>, <code>.laz</code></span>
+  <span><code>.pcd</code>, <code>.ply</code>, <code>.las</code>, <code>.laz</code>, <code>.pcap</code></span>
 
 <b style="font-weight: 600; flex: none;" class="mr5">Annotation formats:</b>
 <span>
@@ -23,6 +23,8 @@ Select folders or files and press `Run`. Supervisely will detect data format, co
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/lyft" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/kitti3d" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/kitti3d.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI 3D format</a>
+<span> | </span>
+<a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointclouds/seyond_pcap" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud/seyond_pcap.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Seyond lidar .pcap</a>
 </span>
 
 <div class="entity-size-limits-row"></div><div></div>
