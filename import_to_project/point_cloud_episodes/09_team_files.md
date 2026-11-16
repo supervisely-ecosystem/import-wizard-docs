@@ -22,9 +22,9 @@ When uploading to an existing project, Supervisely will automatically validate a
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/lyft" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/lyft.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Lyft format</a><span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >nuScenes format</a> <span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/nuscenes" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/nuscenes.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >KITTI-360 format</a>
-</span>
 <span> | </span>
 <a href="https://docs.supervisely.com/import-and-export/import/supported-annotation-formats/pointcloud_episodes/seyond_pcap" data-modal-href="https://raw.githubusercontent.com/supervisely-ecosystem/import-wizard-docs/master/converter_docs/point_cloud_episodes/seyond_pcap.md" data-key="sly-open-modal" data-modal-event="open-md-modal" >Seyond lidar .pcap</a>
+</span>
 </span>
 
 <div class="entity-size-limits-row"></div><div></div>
