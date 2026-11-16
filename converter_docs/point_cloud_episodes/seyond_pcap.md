@@ -10,6 +10,7 @@ A capture is the lidar's own UDP output recorded to a file, usually one file per
 
 **Supported point cloud format:** `.pcap` (classic libpcap, as written by `tcpdump`; not pcapng)<br>
 **Supported lidars:** Seyond Falcon (sphere point cloud packets). Captures from other Seyond models, such as Robin W, are recognised and skipped with a message.<br>
+**Supervisely version:** 6.18.14 or later; Import as Links from cloud storage needs 6.18.17<br>
 **With annotations:** Only labels exported by the Export Seyond lidar pcap app<br>
 **Supported annotation format:** `.json` (Supervisely format, in the `supervisely_labels` folder the export app writes)<br>
 **Grouped by:** Sensor and time (a dataset for each episode).<br>
